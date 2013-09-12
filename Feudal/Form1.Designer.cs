@@ -31,20 +31,20 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.govtTab = new System.Windows.Forms.TabPage();
             this.ecoTab = new System.Windows.Forms.TabPage();
-            this.endTurnButton = new System.Windows.Forms.Button();
             this.milTab = new System.Windows.Forms.TabPage();
+            this.techTab = new System.Windows.Forms.TabPage();
+            this.endTurnButton = new System.Windows.Forms.Button();
             this.infoBox = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resourceBox = new System.Windows.Forms.ListBox();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.techTab = new System.Windows.Forms.TabPage();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.resourceBox = new System.Windows.Forms.ListBox();
             this.mainTabControl.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -82,15 +82,6 @@
             this.ecoTab.Text = "Economy";
             this.ecoTab.UseVisualStyleBackColor = true;
             // 
-            // endTurnButton
-            // 
-            this.endTurnButton.Location = new System.Drawing.Point(782, 27);
-            this.endTurnButton.Name = "endTurnButton";
-            this.endTurnButton.Size = new System.Drawing.Size(98, 69);
-            this.endTurnButton.TabIndex = 2;
-            this.endTurnButton.Text = "Advance Month\r\n(End Turn)";
-            this.endTurnButton.UseVisualStyleBackColor = true;
-            // 
             // milTab
             // 
             this.milTab.Location = new System.Drawing.Point(4, 22);
@@ -99,6 +90,24 @@
             this.milTab.TabIndex = 2;
             this.milTab.Text = "Military";
             this.milTab.UseVisualStyleBackColor = true;
+            // 
+            // techTab
+            // 
+            this.techTab.Location = new System.Drawing.Point(4, 22);
+            this.techTab.Name = "techTab";
+            this.techTab.Size = new System.Drawing.Size(864, 360);
+            this.techTab.TabIndex = 3;
+            this.techTab.Text = "Technology";
+            this.techTab.UseVisualStyleBackColor = true;
+            // 
+            // endTurnButton
+            // 
+            this.endTurnButton.Location = new System.Drawing.Point(782, 27);
+            this.endTurnButton.Name = "endTurnButton";
+            this.endTurnButton.Size = new System.Drawing.Size(98, 69);
+            this.endTurnButton.TabIndex = 2;
+            this.endTurnButton.Text = "Advance Month\r\n(End Turn)";
+            this.endTurnButton.UseVisualStyleBackColor = true;
             // 
             // infoBox
             // 
@@ -119,6 +128,43 @@
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -130,29 +176,16 @@
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // fileToolStripMenuItem
+            // toolStripStatusLabel1
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(57, 17);
+            this.toolStripStatusLabel1.Text = "Waiting...";
             // 
-            // helpToolStripMenuItem
+            // toolStripProgressBar1
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
             // resourceBox
             // 
@@ -161,39 +194,6 @@
             this.resourceBox.Name = "resourceBox";
             this.resourceBox.Size = new System.Drawing.Size(139, 69);
             this.resourceBox.TabIndex = 6;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.optionsToolStripMenuItem.Text = "Options";
-            // 
-            // techTab
-            // 
-            this.techTab.Location = new System.Drawing.Point(4, 22);
-            this.techTab.Name = "techTab";
-            this.techTab.Size = new System.Drawing.Size(864, 360);
-            this.techTab.TabIndex = 3;
-            this.techTab.Text = "Technology";
-            this.techTab.UseVisualStyleBackColor = true;
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel";
             // 
             // feudalMainForm
             // 
