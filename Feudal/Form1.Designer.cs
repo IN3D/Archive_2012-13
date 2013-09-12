@@ -31,6 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(feudalMainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.tabGovt = new System.Windows.Forms.TabPage();
+            this.lbxProvStability = new System.Windows.Forms.ListBox();
+            this.lblGovtStability = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnChangeGovt = new System.Windows.Forms.Button();
+            this.lblGovtLeader = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblGovtType = new System.Windows.Forms.Label();
             this.pbxFlag = new System.Windows.Forms.PictureBox();
             this.tabEco = new System.Windows.Forms.TabPage();
             this.tabMil = new System.Windows.Forms.TabPage();
@@ -56,19 +64,14 @@
             this.lblMonthDate = new System.Windows.Forms.Label();
             this.lblYearDate = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblGovtType = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblGovtLeader = new System.Windows.Forms.Label();
-            this.btnChangeGovt = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblGovtStability = new System.Windows.Forms.Label();
-            this.lbxProvStability = new System.Windows.Forms.ListBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.tabBrowser = new System.Windows.Forms.TabPage();
             this.mainTabControl.SuspendLayout();
             this.tabGovt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tabBrowser.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -79,6 +82,7 @@
             this.mainTabControl.Controls.Add(this.tabTech);
             this.mainTabControl.Controls.Add(this.tabTrade);
             this.mainTabControl.Controls.Add(this.tabDip);
+            this.mainTabControl.Controls.Add(this.tabBrowser);
             this.mainTabControl.Location = new System.Drawing.Point(12, 102);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -103,6 +107,84 @@
             this.tabGovt.TabIndex = 0;
             this.tabGovt.Text = "Government";
             this.tabGovt.UseVisualStyleBackColor = true;
+            // 
+            // lbxProvStability
+            // 
+            this.lbxProvStability.FormattingEnabled = true;
+            this.lbxProvStability.HorizontalScrollbar = true;
+            this.lbxProvStability.Items.AddRange(new object[] {
+            "test province four-85%",
+            "test province one-100%",
+            "test province three-99%",
+            "test province two-94%"});
+            this.lbxProvStability.Location = new System.Drawing.Point(7, 163);
+            this.lbxProvStability.Name = "lbxProvStability";
+            this.lbxProvStability.Size = new System.Drawing.Size(130, 95);
+            this.lbxProvStability.TabIndex = 8;
+            // 
+            // lblGovtStability
+            // 
+            this.lblGovtStability.AutoSize = true;
+            this.lblGovtStability.Location = new System.Drawing.Point(338, 50);
+            this.lblGovtStability.Name = "lblGovtStability";
+            this.lblGovtStability.Size = new System.Drawing.Size(33, 13);
+            this.lblGovtStability.TabIndex = 7;
+            this.lblGovtStability.Text = "100%";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(272, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Stability:";
+            // 
+            // btnChangeGovt
+            // 
+            this.btnChangeGovt.Location = new System.Drawing.Point(213, 25);
+            this.btnChangeGovt.Name = "btnChangeGovt";
+            this.btnChangeGovt.Size = new System.Drawing.Size(53, 23);
+            this.btnChangeGovt.TabIndex = 5;
+            this.btnChangeGovt.Text = "Change";
+            this.btnChangeGovt.UseVisualStyleBackColor = true;
+            this.btnChangeGovt.Click += new System.EventHandler(this.btnChangeGovt_Click);
+            // 
+            // lblGovtLeader
+            // 
+            this.lblGovtLeader.AutoSize = true;
+            this.lblGovtLeader.Location = new System.Drawing.Point(338, 10);
+            this.lblGovtLeader.Name = "lblGovtLeader";
+            this.lblGovtLeader.Size = new System.Drawing.Size(41, 13);
+            this.lblGovtLeader.TabIndex = 4;
+            this.lblGovtLeader.Text = "Obama";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(272, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Leader:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(272, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Govt Type:";
+            // 
+            // lblGovtType
+            // 
+            this.lblGovtType.AutoSize = true;
+            this.lblGovtType.Location = new System.Drawing.Point(338, 30);
+            this.lblGovtType.Name = "lblGovtType";
+            this.lblGovtType.Size = new System.Drawing.Size(61, 13);
+            this.lblGovtType.TabIndex = 1;
+            this.lblGovtType.Text = "Democracy";
             // 
             // pbxFlag
             // 
@@ -319,83 +401,24 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "temp";
             // 
-            // lblGovtType
+            // webBrowser1
             // 
-            this.lblGovtType.AutoSize = true;
-            this.lblGovtType.Location = new System.Drawing.Point(338, 30);
-            this.lblGovtType.Name = "lblGovtType";
-            this.lblGovtType.Size = new System.Drawing.Size(61, 13);
-            this.lblGovtType.TabIndex = 1;
-            this.lblGovtType.Text = "Democracy";
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(861, 360);
+            this.webBrowser1.TabIndex = 9;
+            this.webBrowser1.Url = new System.Uri("https://github.com/IN3D/Feudal/wiki", System.UriKind.Absolute);
             // 
-            // label5
+            // tabBrowser
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(272, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Govt Type:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(272, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Leader:";
-            // 
-            // lblGovtLeader
-            // 
-            this.lblGovtLeader.AutoSize = true;
-            this.lblGovtLeader.Location = new System.Drawing.Point(338, 10);
-            this.lblGovtLeader.Name = "lblGovtLeader";
-            this.lblGovtLeader.Size = new System.Drawing.Size(41, 13);
-            this.lblGovtLeader.TabIndex = 4;
-            this.lblGovtLeader.Text = "Obama";
-            // 
-            // btnChangeGovt
-            // 
-            this.btnChangeGovt.Location = new System.Drawing.Point(213, 25);
-            this.btnChangeGovt.Name = "btnChangeGovt";
-            this.btnChangeGovt.Size = new System.Drawing.Size(53, 23);
-            this.btnChangeGovt.TabIndex = 5;
-            this.btnChangeGovt.Text = "Change";
-            this.btnChangeGovt.UseVisualStyleBackColor = true;
-            this.btnChangeGovt.Click += new System.EventHandler(this.btnChangeGovt_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(272, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Stability:";
-            // 
-            // lblGovtStability
-            // 
-            this.lblGovtStability.AutoSize = true;
-            this.lblGovtStability.Location = new System.Drawing.Point(338, 50);
-            this.lblGovtStability.Name = "lblGovtStability";
-            this.lblGovtStability.Size = new System.Drawing.Size(33, 13);
-            this.lblGovtStability.TabIndex = 7;
-            this.lblGovtStability.Text = "100%";
-            // 
-            // lbxProvStability
-            // 
-            this.lbxProvStability.FormattingEnabled = true;
-            this.lbxProvStability.HorizontalScrollbar = true;
-            this.lbxProvStability.Items.AddRange(new object[] {
-            "test province four-85%",
-            "test province one-100%",
-            "test province three-99%",
-            "test province two-94%"});
-            this.lbxProvStability.Location = new System.Drawing.Point(7, 163);
-            this.lbxProvStability.Name = "lbxProvStability";
-            this.lbxProvStability.Size = new System.Drawing.Size(130, 95);
-            this.lbxProvStability.TabIndex = 8;
+            this.tabBrowser.Controls.Add(this.webBrowser1);
+            this.tabBrowser.Location = new System.Drawing.Point(4, 22);
+            this.tabBrowser.Name = "tabBrowser";
+            this.tabBrowser.Size = new System.Drawing.Size(864, 360);
+            this.tabBrowser.TabIndex = 6;
+            this.tabBrowser.Text = "Wiki";
+            this.tabBrowser.UseVisualStyleBackColor = true;
             // 
             // feudalMainForm
             // 
@@ -428,6 +451,7 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabBrowser.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,6 +494,8 @@
         private System.Windows.Forms.Label lblGovtStability;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox lbxProvStability;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.TabPage tabBrowser;
     }
 }
 
