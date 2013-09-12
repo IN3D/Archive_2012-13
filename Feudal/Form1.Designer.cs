@@ -108,6 +108,7 @@
             this.endTurnButton.TabIndex = 2;
             this.endTurnButton.Text = "Advance Month\r\n(End Turn)";
             this.endTurnButton.UseVisualStyleBackColor = true;
+            this.endTurnButton.Click += new System.EventHandler(this.endTurnButton_Click);
             // 
             // infoBox
             // 

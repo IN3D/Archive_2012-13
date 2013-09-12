@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turns.cs" />
     <EmbeddedResource Include="aboutPage.resx">
       <DependentUpon>aboutPage.cs</DependentUpon>
     </EmbeddedResource>
