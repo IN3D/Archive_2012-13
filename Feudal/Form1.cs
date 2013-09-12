@@ -26,5 +26,10 @@ namespace Feudal
             aboutPage abtfrm = new aboutPage();
             abtfrm.Show();
         }
+
+        private void btnChangeGovt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
