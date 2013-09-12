@@ -11,7 +11,8 @@ namespace Feudal
         /// The main entry point for the application.
         /// </summary>
         /// test 1
-        /// Eric 09-12-13
+        /// 
+        ///Eric 09-12-2013
         [STAThread]
         static void Main()
         {
