@@ -5,7 +5,6 @@ Feudal
 
 --Use this structure for the project--
 <br/>
-<br/>
 master: only for release
 devel: this is the development branch. This one should always work (tests can’t be broken)
 topic/$name: when we start to develop a new feature, we create a topic branch
