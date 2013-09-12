@@ -27,9 +27,15 @@ namespace Feudal
             abtfrm.Show();
         }
 
+<<<<<<< HEAD
         private void endTurnButton_Click(object sender, EventArgs e)
         {
             
+=======
+        private void btnChangeGovt_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> origin/Topic/Menu
         }
     }
 }
