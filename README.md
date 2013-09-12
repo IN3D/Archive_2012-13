@@ -1,7 +1,7 @@
 Feudal
 ======
 Alpha build
-======
+------
 
 master: only for release
 devel: this is the development branch. This one should always work (tests can’t be broken)
