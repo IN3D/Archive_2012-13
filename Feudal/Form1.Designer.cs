@@ -88,8 +88,7 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(872, 386);
             this.mainTabControl.TabIndex = 0;
-            // 
-<<<<<<< HEAD
+            //
             // govtTab
             // 
             this.govtTab.Location = new System.Drawing.Point(4, 22);
@@ -145,7 +144,6 @@
             this.infoBox.Name = "infoBox";
             this.infoBox.Size = new System.Drawing.Size(619, 69);
             this.infoBox.TabIndex = 3;
-=======
             // tabGovt
             // 
             this.tabGovt.Controls.Add(this.lbxProvStability);
@@ -315,7 +313,6 @@
             this.lbxInfo.Name = "lbxInfo";
             this.lbxInfo.Size = new System.Drawing.Size(619, 69);
             this.lbxInfo.TabIndex = 3;
->>>>>>> origin/Topic/Menu
             // 
             // menuStrip1
             // 
