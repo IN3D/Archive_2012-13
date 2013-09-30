@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+<h3>Inspiration</h3>
+<br/>
+This project is inspired from the book "Pro Javascript for Web Apps" by Apress.
+The project source code can be found at <a href="http://www.apress.com/9781430244615">their website</a>,
+in the source code tab.
+<br/>
+This project was begun from Chapter 1 of the book.
+
+
+>>>>>>> origin/topic/Submit-Btn
 --Use this structure for the project--
 <br/>
 master: only for release<br/>
