@@ -1,8 +1,3 @@
-Feudal
-======
-<b>Alpha build</b>
-
-
 --Use this structure for the project--
 <br/>
 master: only for release<br/>
