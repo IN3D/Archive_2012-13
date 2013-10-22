@@ -20,7 +20,9 @@
     	
     	
     	$(document).ready(function(){
-	    	$('#buttonDiv input:submit').button().css("font-family", "Yanone");	
+	    	$('#buttonDiv input:submit').button().css("font-family", "Yanone");
+	    	
+	    	ko.applyBindings(cheeseModel);	
     	})
     </script>
 </head>
@@ -30,6 +32,18 @@
 			<span id="tagline">Gourmet European Cheese</span>
 	</div>
 	<form action="/shipping" method="post">
+		<div class="cheesegroup">
+			<div class="grouptitle" data-bind="text: category"></div>
+			
+			<div data-bind="foreach: items">
+				<div class="groupcontent">
+					<label data-bind="attr: {for: id}" class="cheesename">
+						<span data-bind="text: name">
+						</span> $(<span data-bind="text:price"></span>)</label>
+					<input data-bind="attr: {name: id}" value="0"/>
+				</div>
+			</div>
+		</div>
 	
 		<div id="buttonDiv">
 			<input type="submit" />
