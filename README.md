@@ -1,3 +1,10 @@
+<h3>Update 10/22/13</h3>
+<br/>
+This book has several errors in the code that have made using it a diffucult learning experience.
+As of 10/22/13 I'm setting this project down, in hopes of finding a book that will be better for learning from.
+
+<hr/>
+<hr/>
 <h3>Inspiration</h3>
 <br/>
 This project is inspired from the book "Pro Javascript for Web Apps" by Apress.
