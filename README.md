@@ -1,6 +1,6 @@
 <h3>Update 10/22/13</h3>
 <br/>
-This book has several errors in the code that have made using it a diffucult learning experience.
+This book has several errors in the code that have made using it a difficult learning experience.
 As of 10/22/13 I'm setting this project down, in hopes of finding a book that will be better for learning from.
 
 <hr/>
