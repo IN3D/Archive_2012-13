@@ -1,6 +1,6 @@
 Feudal
 <hr/>
-<b>Alpha build</b>
+<b>Alpha build</b><br/>
 Feudal is a long term/pet project in C# inspired by many of <a href="http://www.paradoxplaza.com/">Paradox Interactive's</a> games, specifically <a href="http://www.paradoxplaza.com/games/crusader-kings-ii">Crusader Kings 2</a> and <a href="http://www.europauniversalis4.com/">Europa Unversalis 4</a>.<br/>
 The game is a menu driven turn-based strategy game, set in an alternative future where humanity is rebuilding itself giving rise to feudal style powers. 
 
