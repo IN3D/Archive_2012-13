@@ -15,10 +15,6 @@ C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\ob
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\MainPage.xaml
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\SaveTheHumans.exe
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\SaveTheHumans.pdb
-C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\priconfig.xml.intermediate
-C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\layout.resfiles.intermediate
-C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\resources.resfiles.intermediate
-C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\pri.resfiles.intermediate
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\priconfig.xml
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\layout.resfiles
 C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\obj\Debug\resources.resfiles

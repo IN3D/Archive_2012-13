@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Media.Animation; //needed for the animateEnemy method
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -21,6 +22,8 @@ namespace SaveTheHumans
     /// </summary>
     public sealed partial class MainPage : SaveTheHumans.Common.LayoutAwarePage
     {
+        Random rnd = new Random();
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -47,6 +50,37 @@ namespace SaveTheHumans
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
+        }
+
+        private void startButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddEnemy();
+        }
+
+        private void AddEnemy()
+        {
+            ContentControl enemy = new ContentControl();
+            enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+            AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.Left)");
+            AnimateEnemy(enemy, rnd.Next((int) playArea.ActualHeight - 100),
+                rnd.Next((int) playArea.ActualHeight -100), "(Canvas.Top)");
+            playArea.Children.Add(enemy);
+
+        }
+
+        private void AnimateEnemy(ContentControl enemy, double from, double to, string propertyToAnimate)
+        {
+            Storyboard storyboard = new Storyboard() { AutoReverse = true, RepeatBehavior = RepeatBehavior.Forever };
+            DoubleAnimation animate = new DoubleAnimation()
+            {
+                From = from,
+                To = to,
+                Duration = new Duration(TimeSpan.FromSeconds(rnd.Next(4, 6)))
+            };
+            Storyboard.SetTarget(animate, enemy);
+            Storyboard.SetTargetProperty(animate, propertyToAnimate);
+            storyboard.Children.Add(animate);
+            storyboard.Begin();
         }
     }
 }
