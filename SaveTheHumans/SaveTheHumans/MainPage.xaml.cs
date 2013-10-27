@@ -23,10 +23,31 @@ namespace SaveTheHumans
     public sealed partial class MainPage : SaveTheHumans.Common.LayoutAwarePage
     {
         Random rnd = new Random();
+        DispatcherTimer enemyTimer = new DispatcherTimer();
+        DispatcherTimer targetTimer = new DispatcherTimer();
+        bool humanCaptured = false;
 
         public MainPage()
         {
             this.InitializeComponent();
+
+            enemyTimer.Tick += enemyTimer_Tick;
+            enemyTimer.Interval = TimeSpan.FromSeconds(2);
+
+            targetTimer.Tick += targetTimer_Tick;
+            targetTimer.Interval = TimeSpan.FromSeconds(.1);
+        }
+
+        private void targetTimer_Tick(object sender, object e)
+        {
+            progressBar.Value += 1;
+            if (progressBar.Value >= progressBar.Maximum)
+                EndTheGame();
+        }
+
+        private void enemyTimer_Tick(object sender, object e)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -61,9 +82,12 @@ namespace SaveTheHumans
         {
             ContentControl enemy = new ContentControl();
             enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+
+
+
             AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.Left)");
             AnimateEnemy(enemy, rnd.Next((int) playArea.ActualHeight - 100),
-                rnd.Next((int) playArea.ActualHeight -100), "(Canvas.Top)");
+                rnd.Next((int) playArea.ActualHeight - 100), "(Canvas.Top)");
             playArea.Children.Add(enemy);
 
         }

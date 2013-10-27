@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\SaveTheHumans.exe">
       <PackagePath>SaveTheHumans.exe</PackagePath>
-      <Modified>2013-10-27T18:36:51.271</Modified>
+      <Modified>2013-10-27T18:54:44.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\SaveTheHumans.pdb">
       <PackagePath>SaveTheHumans.pdb</PackagePath>
-      <Modified>2013-10-27T18:36:51.241</Modified>
+      <Modified>2013-10-27T18:54:44.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>

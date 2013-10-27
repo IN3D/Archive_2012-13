@@ -19,6 +19,8 @@ namespace SaveTheHumans
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.Button startButton; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.ProgressBar progressBar; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.Canvas playArea; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.StackPanel human; 
@@ -55,6 +57,7 @@ namespace SaveTheHumans
  
             pageRoot = (global::SaveTheHumans.Common.LayoutAwarePage)this.FindName("pageRoot");
             startButton = (global::Windows.UI.Xaml.Controls.Button)this.FindName("startButton");
+            progressBar = (global::Windows.UI.Xaml.Controls.ProgressBar)this.FindName("progressBar");
             playArea = (global::Windows.UI.Xaml.Controls.Canvas)this.FindName("playArea");
             human = (global::Windows.UI.Xaml.Controls.StackPanel)this.FindName("human");
             gameOverText = (global::Windows.UI.Xaml.Controls.TextBox)this.FindName("gameOverText");
