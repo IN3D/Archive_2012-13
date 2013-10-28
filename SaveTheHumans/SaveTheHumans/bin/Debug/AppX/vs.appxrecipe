@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\SaveTheHumans.exe">
       <PackagePath>SaveTheHumans.exe</PackagePath>
-      <Modified>2013-10-27T18:54:44.140</Modified>
+      <Modified>2013-10-28T08:40:22.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\SaveTheHumans.pdb">
       <PackagePath>SaveTheHumans.pdb</PackagePath>
-      <Modified>2013-10-27T18:54:44.112</Modified>
+      <Modified>2013-10-28T08:40:22.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-10-27T18:34:00.854</Modified>
+      <Modified>2013-10-28T08:15:13.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\erich_000\Documents\GitHub\SaveTheHumans\SaveTheHumans\SaveTheHumans\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

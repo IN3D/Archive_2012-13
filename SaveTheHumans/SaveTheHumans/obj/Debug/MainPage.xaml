@@ -39,12 +39,12 @@
         </Grid.RowDefinitions>
 
         <!-- Back button and page title -->
-        <Grid Grid.ColumnSpan="3">
+        <Grid x:Name="grid" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='2' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <Button x:ConnectionId='5' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
         <Button x:ConnectionId='1' x:Name="startButton" Content="Start!" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center"                          />
@@ -55,20 +55,20 @@
             <ContentControl Content="ContentControl" HorizontalAlignment="Center" VerticalAlignment="Center" Template="{StaticResource EnemyTemplate}"/>
         </StackPanel>
 
-        <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
-        <Canvas x:Name="playArea" Grid.Column="1" Grid.Row="1">
+        <ProgressBar x:Name="progressBar" Grid.Column="1" Grid.Row="2" Height="20"/>
+        <Canvas x:ConnectionId='2' x:Name="playArea" Grid.Column="1" Grid.Row="1"                                                                            >
             <Canvas.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
                     <GradientStop Color="#FF6E2929" Offset="1"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <StackPanel x:Name="human" Orientation="Vertical">
+            <StackPanel x:ConnectionId='3' x:Name="human" Orientation="Vertical"                                      >
                 <Ellipse Fill="White" Height="10" Width="10" Stroke="Black"/>
                 <Rectangle Fill="White" Height="25" Width="10" Stroke="Black"/>
             </StackPanel>
             <TextBox x:Name="gameOverText" Canvas.Left="229" TextWrapping="Wrap" Text="Game Over" FontFamily="Arial Black" FontSize="100" Width="551" Canvas.Top="154" FontWeight="Bold" FontStyle="Italic" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
-            <Rectangle x:Name="target" Height="50" Canvas.Left="808" Stroke="Black" Canvas.Top="96" Width="50" RenderTransformOrigin="0.5,0.5">
+            <Rectangle x:ConnectionId='4' x:Name="target" Height="50" Canvas.Left="808" Stroke="Black" Canvas.Top="96" Width="50" RenderTransformOrigin="0.5,0.5"                                       >
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="45"/>
                 </Rectangle.RenderTransform>
