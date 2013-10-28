@@ -8,77 +8,88 @@
     <script src="knockout-3.0.0rc.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="jquery-ui-1.8.16.custom.css"/>
     <noscript>
-    	<meta http-equiv="refresh" content="0; noscript.html"/>
+        <meta http-equiv="refresh" content="0; noscript.html"/>
     </noscript>
+
     <script>
-    	var cheeseModel = {
-    		products: [
-    			{category: "British Cheese"
-					items: [{id: "stilton", name: "Stilton", price: 9},
-	    				{id: "stinkingbishop", name: "Stinking Bishop", price: 17},
-						{id: "cheddar", name: "Cheddar", price: 17}]},
-    	
-						{category: "French Cheese",
-							items: [{id: "camembert", name: "Camembert", price: 18},
-							{id: "tomme", name: "Tomme", price: 19},
-							{id: "morbier", name: "Morbier", price: 9}]},
-	    			
-							{category: "Italain Cheese",
-								items: [{id: "gorgonzola", name: "Gorgonzola", price: 8},
-								{id: "fontina", name: "Fontina", price: 11},
-								{id: "parmesan", name: "Parmesan", price: 16}]}]
-								
-			};
-								
-				function mapProducts(func){
-					$.each(cheeseModel.products, function(catIndex, outerItem){
-						$.each(outerItem.items, function(itemIndex, innerItem){
-							func(innerItem);
-						});
-					});
-				}
-    	
-    	
-    	$(document).ready(function() {
-            $('#buttonDiv input').button().css("font-family", "Yanone");
+        var cheeseModel = {
+            products: [
+                {category: "British Cheese", items : [
+                    {id: "stilton", name: "Stilton", price: 9},
+                    {id: "stinkingbishop", name: "Stinking Bishop", price: 17},
+                    {id: "cheddar", name: "Cheddar", price: 17}]},
+
+                {category: "French Cheese", items: [
+                    {id: "camenbert", name: "Camenbert", price: 18},
+                    {id: "tomme", name: "Tomme", price: 19},
+                    {id: "morbier", name: "Morbier", price: 9}]},
+
+                {category: "Italian Cheese", items: [
+                    {id: "gorgonzola", name: "Gorgonzola", price: 8},
+                    {id: "fontina", name: "Fontina", price: 11},
+                    {id: "parmesan", name: "Parmesan", price: 16}]}]
+        };
+
+        function mapProducts(func) {
+            $.each(cheeseModel.products, function(catIndex, outerItem) {
+                $.each(outerItem.items, function(itemsIndex, innerItems){
+                    func(innerItems);
+                });
+            });
+        }
+
+        $(document).ready(function() {
+            $('#buttonDiv input:submit').button().css("font-family", "Yanone");
+
+            cheeseModel.specials = {
+                category: "Special Offers",
+                discount: 3,
+                ids: ["stilton", "tomme"],
+                items: []
+            };
+
             mapProducts(function(item) {
                 item.price = ko.observable(item.price);
             });
+
             ko.applyBindings(cheeseModel);
+
             $('#discount').click(function() {
                 mapProducts(function(item) {
-                    item.price(item.price() - 2);
+                    item.price(item.price() -2);
                 });
-			});
+            });
         });
     </script>
 </head>
 <body>
-	<div id="logobar">
-		<img src="cheeselux.png">
-			<span id="tagline">Gourmet European Cheese</span>
-	</div>
-	<form action="/shipping" method="post">
-		<div id="buttonDiv">
-			<input id="discount" type="button" value="Apply Discount" />
-		</div>
-		 <div data-bind="foreach: products">
-            <div class="cheesegroup">
-                <div class="grouptitle" data-bind="text: category"></div>
-                <div data-bind="foreach: items">
-                    <div class="groupcontent">
-                        <label data-bind="attr: {for: id}" class="cheesename">
+<div id="logobar">
+    <img src="cheeselux.png">
+    <span id="tagline">Gourmet European Cheese</span>
+</div>
+<form action="/shipping.html" method="post">
+    <div id="buttonDiv">
+        <input id="discount" type="button" value="Apply Discount" />
+    </div>
+
+    <div data-bind="foreach: products">
+        <div class="cheesegroup">
+            <div class="grouptitle" data-bind="text: category"></div>
+
+            <div data-bind="foreach: items">
+                <div class="groupcontent">
+                    <label data-bind="attr: {for: id}" class="cheesename">
                             <span data-bind="text: name">
                             </span> $(<span data-bind="text:price"></span>)</label>
-                        <input data-bind="attr: {name: id}" value="0"/>
-                    </div>
+                    <input data-bind="attr: {name: id}" value="0"/>
                 </div>
             </div>
-		</div>
-	
-		<div id="buttonDiv">
-			<input type="submit" />
-		</div>
-	</form>
+        </div>
+    </div>
+
+    <div id="buttonDiv">
+        <input type="submit"/>
+    </div>
+</form>
 </body>
 </html>
