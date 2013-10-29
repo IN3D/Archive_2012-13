@@ -1,4 +1,3 @@
-
 public class Month {
 
     private int monthNumber;
@@ -129,7 +128,7 @@ public class Month {
 
     public boolean greaterThan(Month eo) {
 
-        if (this.monthNumber < eo.getMonthNumber()) {
+        if (this.monthNumber > eo.getMonthNumber()) {
             return true;
         } else {
             return false;
@@ -138,7 +137,7 @@ public class Month {
 
     public boolean lessThan(Month eo) {
 
-        if (this.monthNumber > eo.getMonthNumber()) {
+        if (this.monthNumber < eo.getMonthNumber()) {
             return true;
         } else {
             return false;
