@@ -1,7 +1,9 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class RoomDimensionProg {
     public static Scanner keyboard = new Scanner(System.in);
+    static DecimalFormat format = new DecimalFormat("$#,##0.00;-$#,##0.00");
 
     public static void main(String[] args) {
         double tempL;
@@ -22,6 +24,6 @@ public class RoomDimensionProg {
         System.out.println("What is the price of the carpet you're using? ");
         carpet1.getPriceSqFoot(keyboard.nextDouble());
 
-        System.out.println("The price of carpeting your room will be "+carpet1.priceCalc());
+        System.out.println("The price of carpeting your room will be "+format.format(carpet1.priceCalc()));
     }
 }
