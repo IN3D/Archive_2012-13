@@ -29,7 +29,7 @@
                     {id: "fontina", name: "Fontina", price: 11},
                     {id: "parmesan", name: "Parmesan", price: 16}]}]
         };
-
+		
         function mapProducts(func) {
             $.each(cheeseModel.products, function(catIndex, outerItem) {
                 $.each(outerItem.items, function(itemsIndex, innerItems){
@@ -39,7 +39,16 @@
         }
 
         $(document).ready(function() {
-            $('#buttonDiv input:submit').button().css("font-family", "Yanone");
+            $('#buttonDiv input').button().css("font-family", "Yanone")
+            	.click(function() {
+	            	if (this.type == "submit") {
+		            	$('form').submit();
+	            	} else if (this.type == "reset") {
+		            	mapProducts(function(item) {
+			            	item.quantity(0);
+		            	})
+	            	}
+            	});
 
             cheeseModel.specials = {
                 category: "Special Offers",
@@ -47,12 +56,42 @@
                 ids: ["stilton", "tomme"],
                 items: []
             };
-
+            
             mapProducts(function(item) {
-                item.price = ko.observable(item.price);
+	            if($.inArray(item.id, cheeseModel.specials.ids) > -1) {
+		            item.price -= cheeseModel.specials.discount;
+		            cheeseModel.specials.items.push(item);
+	            }
+	            item.quantity = ko.observable(0);
+	            
+	            item.subtotal = ko.computed(function() {
+		            return this.quantity() * this.price;
+	            }, item);
+	            
             });
-
+            
+            cheeseModel.total = ko.computed(function() {
+	            var total = 0;
+	            myProducts(function(elem) {
+		            total += elem.subtotal();
+	            });
+	            return total;
+            });
+            
             ko.applyBindings(cheeseModel);
+            
+            $('div.cheeseGroup').not("#basket").css("Width", "50%");
+            
+            $('#baskeTable a')
+            	.button({icons: {primary: "ui-icon-closethick"},text: false})
+            	.click (function() {
+	            	var targetId = $(this).closet('tr').attr("data-prodId");
+	            	mapProducts(function(item) {
+		            	if (item.id == targetId) {
+			            	item.quantity(0);
+		            	}
+	            	});
+            	})
 
             $('#discount').click(function() {
                 mapProducts(function(item) {
@@ -61,13 +100,71 @@
             });
         });
     </script>
+    <script id="categoryTmp1" type="text/html">
+    	<div class="cheesegroup">
+    		<div class="grouptitle" data-bind="text: category"></div>
+    		
+    		<div data-bind="foreach: items">
+    			<div class="groupcontent">
+    				<label data-bind="attr: {for: id}" class="cheesename">
+    					<span data-bind="text: name">
+    					</span> $(<span data-bind="text:price"></span>)</label>
+    					<input data-bind="attr: {name: id}, value: quantity"/>
+    					<span data-bind="visible: subtotal" class="subtotal">
+    						($<span data-bind="text: subtotal"></span>)
+    					</span>
+    			</div>
+    		</div>
+    	</div>
+    </script>
+    <script id="basketRowTmp1" type="text/html">
+    	<tr data-bind="visible: quantity, attr: {'data-prodId': Id}">
+    		<td data-bind="text: name"></td>
+    		<td>$<span data-bind="text: subtotal"></span></td>
+    		<td><a href="#"></a></td>
+    	</tr>
+    </script>
 </head>
 <body>
 <div id="logobar">
     <img src="cheeselux.png">
     <span id="tagline">Gourmet European Cheese</span>
 </div>
+
+<div id="basket" class="cheesegroup basket">
+	<div class="grouptitle">Basket</div>
+	<div class="groupcontent">
+	
+	<div class="description" data-bind="ifnot: total">
+		No Products Selected
+	</div>
+	
+		<table id="basketTable" data-bind="visible: total">
+			<thead><tr><th>Cheese</th><th>Subtotal</th><th></th></tr></thead>
+			<tbody data-bind="foreach: products">
+			<!-- ko template: {name: 'basketRowTmp1', foreach: items} -->
+			<!-- /ko -->
+			</tbody>
+			<tfoot>
+				<tr><td class="sumline" colspan=2></td></tr>
+				<tr>
+					<th>Total:</th><td>$<span data-bind="text: total"></span></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	
+	<div class="cornerplaceholder"></div>
+	
+	<div id="buttonDiv">
+		<input type="submit" value="Submit Order"/>
+		<input type="reset" value="Reset"/>
+	</div>
+				
+	</div>
+<div data-bind="template: {name: 'categoryTmp1', data: specials}"></div>
 <form action="/shipping.html" method="post">
+	<div data-bind="template: {name: 'categoryTmp1', foreach: products"></div>
     <div id="buttonDiv">
         <input id="discount" type="button" value="Apply Discount" />
     </div>
@@ -82,6 +179,9 @@
                             <span data-bind="text: name">
                             </span> $(<span data-bind="text:price"></span>)</label>
                     <input data-bind="attr: {name: id}" value="0"/>
+                    <span data-bind="visible: subtotal" class="subtotal">
+                    	($<span data-bind="text: subtotal"></span>)
+                    </span>
                 </div>
             </div>
         </div>
