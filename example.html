@@ -29,18 +29,86 @@
                     {id: "fontina", name: "Fontina", price: 11},
                     {id: "parmesan", name: "Parmesan", price: 16}]}]
         };
-		
-        function mapProducts(func) {
+		//||---Not in the source code---||
+        /*function mapProducts(func) {
             $.each(cheeseModel.products, function(catIndex, outerItem) {
                 $.each(outerItem.items, function(itemsIndex, innerItems){
                     func(innerItems);
                 });
             });
-        }
+        }*/
 
         $(document).ready(function() {
-            $('#buttonDiv input').button().css("font-family", "Yanone")
-            	.click(function() {
+            $('#buttonDiv input:submit').button().css("font-family", "Yanone");
+            
+            cheeseModel.selectedCategory =
+            ko.observable(cheeseModel.products[0].category);
+
+            mapProducts(function(item) {
+                item.quantity = ko.observable(0);
+                item.subtotal = ko.computed(function() {
+                    return this.quantity() * this.price;
+                }, item);
+                item.quantity.subscribe(function() {
+                    updateState();
+                });
+            }, cheeseModel.products, "items");
+
+            cheeseModel.total = ko.computed(function() {
+                var total = 0;
+                mapProducts(function(elem) {
+                    total += elem.subtotal();
+                }, cheeseModel.products, "items");
+                return total;
+            });
+
+            $('div.cheesegroup').not("#basket").css("width", "50%");
+            $('div.navSelectors').buttonset();
+
+            ko.applyBindings(cheeseModel);
+
+            $(window).bind("popstate", function(event) {
+                var state = history.state ? history.state : event.originalEvent.state;
+                restoreState(state);
+                crossroads.parse(location.hash.slice(1));
+            });
+
+
+            corssroads.addRoute("remove/{id}", function(id) {
+                mapProducts(function(item) {
+                    if (item.id === id) {
+                        item.quantity(0);
+                    }
+                }, cheeseModel.products, "items");
+            });
+
+            $('#basketTable a')
+                    .button({icons: {primary: "ui-icon-closethick"}, text: false});
+
+            function updateState() {
+                var state = {
+                    category: cheeseModel.selectedCategory()
+                };
+                mapProducts(function(item) {
+                    if (item.quantity() > 0) {
+                        state[item.id] = item.quantity();
+                    }
+                }, cheeseModel.products, "items");
+                history.replaceState(state,"", "#select/" + cheeseModel.selectedCategory());
+            }
+
+            function restoreState(state) {
+                if (state) {
+                    mapProducts(function(item) {
+                        item.quantity(state[item.id] ? state[item.id] : 0);
+                    }, cheeseModel.products, "items");
+                    cheeseModel.selectedCategory(state.category);
+                }
+            }
+            
+            	//||---Not in the source code---||
+            	//No, seriously, none of it.
+            	/*.click(function() {
 	            	if (this.type == "submit") {
 		            	$('form').submit();
 	            	} else if (this.type == "reset") {
@@ -48,8 +116,8 @@
 			            	item.quantity(0);
 		            	})
 	            	}
-            	});
-
+            	}) 
+				
             cheeseModel.specials = {
                 category: "Special Offers",
                 discount: 3,
@@ -98,9 +166,13 @@
                     item.price(item.price() -2);
                 });
             });
+            */
+            
         });
+        
     </script>
-    <script id="categoryTmp1" type="text/html">
+
+    <!--<script id="categoryTmp1" type="text/html">
     	<div class="cheesegroup">
     		<div class="grouptitle" data-bind="text: category"></div>
     		
@@ -123,12 +195,20 @@
     		<td>$<span data-bind="text: subtotal"></span></td>
     		<td><a href="#"></a></td>
     	</tr>
-    </script>
+    </script> !!not in the source code!!-->
 </head>
 <body>
 <div id="logobar">
     <img src="cheeselux.png">
     <span id="tagline">Gourmet European Cheese</span>
+</div>
+
+<div class="cheesegroup">
+    <div class="navSelectors" data-bind="foreach: products">
+        <a data-bind="formatAttr: {attr: 'href', prefix: '#category/', value: category}, css: {selectedItem: (category === cheeseModel.selectedCategory())}">
+            <span data-bind="text: category"></span>
+        </a>
+    </div>
 </div>
 
 <div id="basket" class="cheesegroup basket">
@@ -142,8 +222,14 @@
 		<table id="basketTable" data-bind="visible: total">
 			<thead><tr><th>Cheese</th><th>Subtotal</th><th></th></tr></thead>
 			<tbody data-bind="foreach: products">
-			<!-- ko template: {name: 'basketRowTmp1', foreach: items} -->
-			<!-- /ko -->
+			<!-- ko foreach: items -->
+                <tr data-bind="visible: quantity, attr: {'data-prodId': id}">
+                    <td data-bind="text: name"></td>
+                    <td>$<span data-bind="text: subtotal"></span>
+                    <a data-bind="formatAttr: {attr: 'href', prefix: '#remove/', value: id}"></a>
+                    </td>
+                </tr>
+            <!-- /ko -->
 			</tbody>
 			<tfoot>
 				<tr><td class="sumline" colspan=2></td></tr>
@@ -158,10 +244,31 @@
 	
 	<div id="buttonDiv">
 		<input type="submit" value="Submit Order"/>
-		<input type="reset" value="Reset"/>
+		<!--<input type="reset" value="Reset"/>-->
 	</div>
 				
-	</div>
+</div>
+
+<form action="/shipping" method="post">
+    <!-- ko foreach: products -->
+    <div class="cheesegroup"
+         data-bind="fadeVisible: category === cheeseModel.selectedCategory()">
+        <div class="grouptitle" data-bind="text: category"></div>
+        <div data-bind="foreach: items">
+            <div class="groupcontent">
+                <label data-bind="attr: {for: id}" class="cheesename">
+                    <span data-bind="text: name"></span> $(<span data-bind="text:price"></span>)
+                </label>
+                <input data-bind="attr: {name: id}, value: quantity"/>
+                <span data-bind="visible: subtotal" class="subtotal">
+                    ($<span data-bind="text: subtotal"></span>)
+                </span>
+            </div>
+        </div>
+         </div>
+    <!-- /ko -->
+</form>
+<!--
 <div data-bind="template: {name: 'categoryTmp1', data: specials}"></div>
 <form action="/shipping.html" method="post">
 	<div data-bind="template: {name: 'categoryTmp1', foreach: products"></div>
@@ -191,5 +298,6 @@
         <input type="submit"/>
     </div>
 </form>
+-->
 </body>
 </html>
