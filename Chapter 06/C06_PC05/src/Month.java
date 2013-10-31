@@ -83,7 +83,8 @@ public class Month {
 
         return name;
     }
-
+    //this book isn't clear on what this is supposed to do
+    //waiting on the professor to confirm
     public String toString(int i) {
         String name;
 
