@@ -61,11 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmploymentDataSet.cs">
+      <DependentUpon>EmploymentDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmploymentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmploymentDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="PersonDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -87,6 +101,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <None Include="EmploymentDataSet.xsc">
+      <DependentUpon>EmploymentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmploymentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmploymentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmploymentDataSet.xss">
+      <DependentUpon>EmploymentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JobDataSet.xsc">
+      <DependentUpon>JobDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JobDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JobDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JobDataSet.xss">
+      <DependentUpon>JobDataSet.xsd</DependentUpon>
+    </None>
     <None Include="PersonDataSet.xsc">
       <DependentUpon>PersonDataSet.xsd</DependentUpon>
     </None>
