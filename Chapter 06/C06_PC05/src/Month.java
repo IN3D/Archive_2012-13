@@ -83,37 +83,33 @@ public class Month {
 
         return name;
     }
-    //this book isn't clear on what this is supposed to do
-    //waiting on the professor to confirm
-    public String toString(int i) {
+    public String toString() {
         String name;
 
-        if (i == 1)
+        if (monthNumber == 1)
             name = "January";
-        else if (i == 2)
+        else if (monthNumber == 2)
             name = "Febuary";
-        else if (i == 3)
+        else if (monthNumber == 3)
             name = "March";
-        else if (i == 4)
+        else if (monthNumber == 4)
             name = "April";
-        else if (i == 5)
+        else if (monthNumber == 5)
             name = "May";
-        else if (i == 6)
+        else if (monthNumber == 6)
             name = "June";
-        else if (i == 7)
+        else if (monthNumber == 7)
             name = "July";
-        else if (i == 8)
+        else if (monthNumber == 8)
             name = "August";
-        else if (i == 9)
+        else if (monthNumber == 9)
             name = "September";
-        else if (i == 10)
+        else if (monthNumber == 10)
             name = "October";
-        else if (i == 11)
+        else if (monthNumber == 11)
             name = "November";
-        else if (i == 12)
-            name = "December";
         else
-            name = "Invalid month number.";
+            name = "December";
 
         return name;
     }
