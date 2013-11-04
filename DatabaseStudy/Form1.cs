@@ -20,6 +20,8 @@ namespace DatabaseStudy
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'jobDataSet.PersonAge' table. You can move, or remove it, as needed.
+            this.personAgeTableAdapter.Fill(this.jobDataSet.PersonAge);
             // TODO: This line of code loads data into the 'employmentDataSet.Person' table. You can move, or remove it, as needed.
             this.personTableAdapter1.Fill(this.employmentDataSet.Person);
             // TODO: This line of code loads data into the 'jobDataSet.Employment' table. You can move, or remove it, as needed.
@@ -90,8 +92,16 @@ namespace DatabaseStudy
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.listBox2.DataSource = this.personDataSet.Person;
-            listBox2.DisplayMember = "Name";
+            this.listBox2.DataSource = this.jobDataSet.Employment;
+            listBox2.DisplayMember = "PersonName";
+            listBox2.ValueMember = "PersonID";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.listBox2.DataSource = this.jobDataSet.PersonAge;
+            listBox2.DisplayMember = "PersonName";
+            listBox2.ValueMember = "PersonID";
         }
     }
 }

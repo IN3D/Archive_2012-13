@@ -60,6 +60,9 @@
             this.personTableAdapter1 = new DatabaseStudy.EmploymentDataSetTableAdapters.PersonTableAdapter();
             this.personBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.personAgeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personAgeTableAdapter = new DatabaseStudy.JobDataSetTableAdapters.PersonAgeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.personDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personDataGridView)).BeginInit();
@@ -71,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.employmentDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personAgeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // personDataSet
@@ -90,6 +94,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EmploymentTableAdapter = null;
             this.tableAdapterManager.PersonTableAdapter = this.personTableAdapter;
             this.tableAdapterManager.UpdateOrder = DatabaseStudy.PersonDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -234,11 +239,14 @@
             // 
             // listBox2
             // 
+            this.listBox2.DataSource = this.personAgeBindingSource;
+            this.listBox2.DisplayMember = "PersonName";
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(455, 28);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(168, 238);
             this.listBox2.TabIndex = 3;
+            this.listBox2.ValueMember = "PersonID";
             // 
             // button1
             // 
@@ -303,11 +311,31 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(548, 301);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // personAgeBindingSource
+            // 
+            this.personAgeBindingSource.DataMember = "PersonAge";
+            this.personAgeBindingSource.DataSource = this.jobDataSet;
+            // 
+            // personAgeTableAdapter
+            // 
+            this.personAgeTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 328);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -330,6 +358,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.employmentDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personAgeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,6 +396,9 @@
         private EmploymentDataSetTableAdapters.PersonTableAdapter personTableAdapter1;
         private System.Windows.Forms.BindingSource personBindingSource3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource personAgeBindingSource;
+        private JobDataSetTableAdapters.PersonAgeTableAdapter personAgeTableAdapter;
     }
 }
 

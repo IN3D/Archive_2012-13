@@ -76,6 +76,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JobDataSet.cs">
+      <DependentUpon>JobDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="JobDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,6 +89,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PersonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PhonelistDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhonelistDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PhonelistDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhonelistDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,6 +147,28 @@
     </None>
     <None Include="PersonDataSet.xss">
       <DependentUpon>PersonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhonelistDataSet.xsc">
+      <DependentUpon>PhonelistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhonelistDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhonelistDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PhonelistDataSet.xss">
+      <DependentUpon>PhonelistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhonelistDataSet1.xsc">
+      <DependentUpon>PhonelistDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PhonelistDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhonelistDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PhonelistDataSet1.xss">
+      <DependentUpon>PhonelistDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
