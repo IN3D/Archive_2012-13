@@ -5,7 +5,7 @@
     <ignored path="C07_PC06.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/QuarterlySales.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384244096650" ignored="false" />
-    <file path="/QuarterlySalesProg.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384245655277" ignored="false" />
+    <file path="/QuarterlySalesProg.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384247026093" ignored="false" />
     <file path="/fragment.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384243273854" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,17 +70,10 @@
       <file leaf-file-name="QuarterlySalesProg.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QuarterlySalesProg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="31" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.9162844">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuarterlySales.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QuarterlySales.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="12" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.23394495">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -425,17 +418,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/QuarterlySales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QuarterlySalesProg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="31" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.9162844">
-          <folding />
+        <state line="12" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.23394495">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
