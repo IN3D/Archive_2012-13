@@ -5,6 +5,8 @@
     <ignored path="C08_PC14.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordSeparator.java" changelist="83c5767f-78e3-4bcd-8908-586c024c78a1" time="1384581970081" ignored="false" />
+    <file path="$PROJECT_DIR$/../C08_PC15/src/PigLatin.java" changelist="83c5767f-78e3-4bcd-8908-586c024c78a1" time="1384587326246" ignored="false" />
+    <file path="/PigLatin.java" changelist="83c5767f-78e3-4bcd-8908-586c024c78a1" time="1384587323787" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
