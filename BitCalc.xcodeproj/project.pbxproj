@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1983EF1D1837E2F000507AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF1C1837E2F000507AB1 /* Foundation.framework */; };
+		1983EF1F1837E2F000507AB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF1E1837E2F000507AB1 /* CoreGraphics.framework */; };
+		1983EF211837E2F000507AB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF201837E2F000507AB1 /* UIKit.framework */; };
+		1983EF271837E2F000507AB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1983EF251837E2F000507AB1 /* InfoPlist.strings */; };
+		1983EF291837E2F000507AB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983EF281837E2F000507AB1 /* main.m */; };
+		1983EF2D1837E2F000507AB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983EF2C1837E2F000507AB1 /* AppDelegate.m */; };
+		1983EF301837E2F000507AB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1983EF2E1837E2F000507AB1 /* Main.storyboard */; };
+		1983EF331837E2F000507AB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983EF321837E2F000507AB1 /* ViewController.m */; };
+		1983EF351837E2F000507AB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1983EF341837E2F000507AB1 /* Images.xcassets */; };
+		1983EF3C1837E2F000507AB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF3B1837E2F000507AB1 /* XCTest.framework */; };
+		1983EF3D1837E2F000507AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF1C1837E2F000507AB1 /* Foundation.framework */; };
+		1983EF3E1837E2F000507AB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983EF201837E2F000507AB1 /* UIKit.framework */; };
+		1983EF461837E2F000507AB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1983EF441837E2F000507AB1 /* InfoPlist.strings */; };
+		1983EF481837E2F000507AB1 /* BitCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983EF471837E2F000507AB1 /* BitCalcTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1983EF3F1837E2F000507AB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1983EF111837E2F000507AB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1983EF181837E2F000507AB1;
+			remoteInfo = BitCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1983EF191837E2F000507AB1 /* BitCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1983EF1C1837E2F000507AB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1983EF1E1837E2F000507AB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1983EF201837E2F000507AB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1983EF241837E2F000507AB1 /* BitCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitCalc-Info.plist"; sourceTree = "<group>"; };
+		1983EF261837E2F000507AB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1983EF281837E2F000507AB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1983EF2A1837E2F000507AB1 /* BitCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitCalc-Prefix.pch"; sourceTree = "<group>"; };
+		1983EF2B1837E2F000507AB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1983EF2C1837E2F000507AB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1983EF2F1837E2F000507AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1983EF311837E2F000507AB1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1983EF321837E2F000507AB1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1983EF341837E2F000507AB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1983EF3A1837E2F000507AB1 /* BitCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1983EF3B1837E2F000507AB1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1983EF431837E2F000507AB1 /* BitCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitCalcTests-Info.plist"; sourceTree = "<group>"; };
+		1983EF451837E2F000507AB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1983EF471837E2F000507AB1 /* BitCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitCalcTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1983EF161837E2F000507AB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF1F1837E2F000507AB1 /* CoreGraphics.framework in Frameworks */,
+				1983EF211837E2F000507AB1 /* UIKit.framework in Frameworks */,
+				1983EF1D1837E2F000507AB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1983EF371837E2F000507AB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF3C1837E2F000507AB1 /* XCTest.framework in Frameworks */,
+				1983EF3E1837E2F000507AB1 /* UIKit.framework in Frameworks */,
+				1983EF3D1837E2F000507AB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1983EF101837E2F000507AB1 = {
+			isa = PBXGroup;
+			children = (
+				1983EF221837E2F000507AB1 /* BitCalc */,
+				1983EF411837E2F000507AB1 /* BitCalcTests */,
+				1983EF1B1837E2F000507AB1 /* Frameworks */,
+				1983EF1A1837E2F000507AB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1983EF1A1837E2F000507AB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF191837E2F000507AB1 /* BitCalc.app */,
+				1983EF3A1837E2F000507AB1 /* BitCalcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1983EF1B1837E2F000507AB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF1C1837E2F000507AB1 /* Foundation.framework */,
+				1983EF1E1837E2F000507AB1 /* CoreGraphics.framework */,
+				1983EF201837E2F000507AB1 /* UIKit.framework */,
+				1983EF3B1837E2F000507AB1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1983EF221837E2F000507AB1 /* BitCalc */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF2B1837E2F000507AB1 /* AppDelegate.h */,
+				1983EF2C1837E2F000507AB1 /* AppDelegate.m */,
+				1983EF2E1837E2F000507AB1 /* Main.storyboard */,
+				1983EF311837E2F000507AB1 /* ViewController.h */,
+				1983EF321837E2F000507AB1 /* ViewController.m */,
+				1983EF341837E2F000507AB1 /* Images.xcassets */,
+				1983EF231837E2F000507AB1 /* Supporting Files */,
+			);
+			path = BitCalc;
+			sourceTree = "<group>";
+		};
+		1983EF231837E2F000507AB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF241837E2F000507AB1 /* BitCalc-Info.plist */,
+				1983EF251837E2F000507AB1 /* InfoPlist.strings */,
+				1983EF281837E2F000507AB1 /* main.m */,
+				1983EF2A1837E2F000507AB1 /* BitCalc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1983EF411837E2F000507AB1 /* BitCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF471837E2F000507AB1 /* BitCalcTests.m */,
+				1983EF421837E2F000507AB1 /* Supporting Files */,
+			);
+			path = BitCalcTests;
+			sourceTree = "<group>";
+		};
+		1983EF421837E2F000507AB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1983EF431837E2F000507AB1 /* BitCalcTests-Info.plist */,
+				1983EF441837E2F000507AB1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1983EF181837E2F000507AB1 /* BitCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1983EF4B1837E2F000507AB1 /* Build configuration list for PBXNativeTarget "BitCalc" */;
+			buildPhases = (
+				1983EF151837E2F000507AB1 /* Sources */,
+				1983EF161837E2F000507AB1 /* Frameworks */,
+				1983EF171837E2F000507AB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitCalc;
+			productName = BitCalc;
+			productReference = 1983EF191837E2F000507AB1 /* BitCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1983EF391837E2F000507AB1 /* BitCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1983EF4E1837E2F000507AB1 /* Build configuration list for PBXNativeTarget "BitCalcTests" */;
+			buildPhases = (
+				1983EF361837E2F000507AB1 /* Sources */,
+				1983EF371837E2F000507AB1 /* Frameworks */,
+				1983EF381837E2F000507AB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1983EF401837E2F000507AB1 /* PBXTargetDependency */,
+			);
+			name = BitCalcTests;
+			productName = BitCalcTests;
+			productReference = 1983EF3A1837E2F000507AB1 /* BitCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1983EF111837E2F000507AB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eric Hopkins";
+				TargetAttributes = {
+					1983EF391837E2F000507AB1 = {
+						TestTargetID = 1983EF181837E2F000507AB1;
+					};
+				};
+			};
+			buildConfigurationList = 1983EF141837E2F000507AB1 /* Build configuration list for PBXProject "BitCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1983EF101837E2F000507AB1;
+			productRefGroup = 1983EF1A1837E2F000507AB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1983EF181837E2F000507AB1 /* BitCalc */,
+				1983EF391837E2F000507AB1 /* BitCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1983EF171837E2F000507AB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF351837E2F000507AB1 /* Images.xcassets in Resources */,
+				1983EF271837E2F000507AB1 /* InfoPlist.strings in Resources */,
+				1983EF301837E2F000507AB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1983EF381837E2F000507AB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF461837E2F000507AB1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1983EF151837E2F000507AB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF331837E2F000507AB1 /* ViewController.m in Sources */,
+				1983EF2D1837E2F000507AB1 /* AppDelegate.m in Sources */,
+				1983EF291837E2F000507AB1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1983EF361837E2F000507AB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983EF481837E2F000507AB1 /* BitCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1983EF401837E2F000507AB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1983EF181837E2F000507AB1 /* BitCalc */;
+			targetProxy = 1983EF3F1837E2F000507AB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1983EF251837E2F000507AB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1983EF261837E2F000507AB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1983EF2E1837E2F000507AB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1983EF2F1837E2F000507AB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1983EF441837E2F000507AB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1983EF451837E2F000507AB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1983EF491837E2F000507AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1983EF4A1837E2F000507AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1983EF4C1837E2F000507AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitCalc/BitCalc-Prefix.pch";
+				INFOPLIST_FILE = "BitCalc/BitCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1983EF4D1837E2F000507AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitCalc/BitCalc-Prefix.pch";
+				INFOPLIST_FILE = "BitCalc/BitCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1983EF4F1837E2F000507AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BitCalc.app/BitCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitCalc/BitCalc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BitCalcTests/BitCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1983EF501837E2F000507AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BitCalc.app/BitCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitCalc/BitCalc-Prefix.pch";
+				INFOPLIST_FILE = "BitCalcTests/BitCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1983EF141837E2F000507AB1 /* Build configuration list for PBXProject "BitCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1983EF491837E2F000507AB1 /* Debug */,
+				1983EF4A1837E2F000507AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1983EF4B1837E2F000507AB1 /* Build configuration list for PBXNativeTarget "BitCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1983EF4C1837E2F000507AB1 /* Debug */,
+				1983EF4D1837E2F000507AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1983EF4E1837E2F000507AB1 /* Build configuration list for PBXNativeTarget "BitCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1983EF4F1837E2F000507AB1 /* Debug */,
+				1983EF501837E2F000507AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1983EF111837E2F000507AB1 /* Project object */;
+}
