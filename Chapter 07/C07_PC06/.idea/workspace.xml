@@ -9,8 +9,10 @@
     <file path="/fragment.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384243273854" ignored="false" />
     <file path="$PROJECT_DIR$/../../Chapter 08/C08_PC14/src/WordSeparator.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384582000952" ignored="false" />
     <file path="/WordSeparator.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384581970081" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Chapter 08/C08_PC15/src/PigLatin.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384587326246" ignored="false" />
-    <file path="/PigLatin.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384587323787" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Chapter 08/C08_PC15/src/PigLatin.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384588717806" ignored="false" />
+    <file path="/PigLatin.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384588715471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Chapter 08/C08_PC15/src/PigLatinProg.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384588467005" ignored="false" />
+    <file path="/PigLatinProg.java" changelist="2ed07084-59b0-48a9-b26b-1460fe4db280" time="1384588465134" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <file leaf-file-name="QuarterlySalesProg.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QuarterlySalesProg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="114" selection-start="556" selection-end="556" vertical-scroll-proportion="0.37041286">
+            <state line="19" column="44" selection-start="556" selection-end="556" vertical-scroll-proportion="0.37041286">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -443,7 +445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuarterlySalesProg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="114" selection-start="556" selection-end="556" vertical-scroll-proportion="0.37041286">
+        <state line="19" column="44" selection-start="556" selection-end="556" vertical-scroll-proportion="0.37041286">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

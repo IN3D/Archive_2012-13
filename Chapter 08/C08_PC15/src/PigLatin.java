@@ -1,26 +1,29 @@
-import java.util.Scanner;
-import java.util.StringTokenizer;
-
 public class PigLatin {
 
-    public static Scanner keyboard = new Scanner(System.in);
+    private String convertMe;
 
-    public static void main(String[] args) {
 
-        String HW = "hello world";
-        StringBuilder stringBuilder = new StringBuilder(HW);
-        char letterBuffer = 'a';
-
-        //get the tokens
-        String[] tokens = HW.split(" ");
-        for (String s : tokens) {
-            letterBuffer = s.charAt(0);
-            StringBuilder sb = new StringBuilder(s);
-            sb.insert((s.length()), (letterBuffer + "ay"));
-            sb.deleteCharAt(0);
-            System.out.print(sb + " ");
-
-        }
-
+    public PigLatin() {
+        this.convertMe = "pig latin is the best language ever";
     }
+
+    public PigLatin(String convertMe) {
+        this.convertMe = convertMe;
+    }
+
+    public void pigLatinize() {
+        String[] tokens = convertMe.split(" ");
+        char buffer;
+
+        for (String s : tokens) {
+            buffer = s.charAt(0);
+
+            StringBuilder sb = new StringBuilder(s);
+            sb.insert(sb.length(),(buffer + "ay"));
+            sb.deleteCharAt(0);
+            System.out.print(sb.toString().toUpperCase() + " ");
+        }
+        System.out.println();
+    }
+
 }

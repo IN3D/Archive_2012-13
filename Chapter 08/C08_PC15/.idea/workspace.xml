@@ -4,7 +4,8 @@
     <list default="true" id="2c462e40-5eb6-4d5d-9e33-89a174712c8a" name="Default" comment="" />
     <ignored path="C08_PC15.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/PigLatin.java" changelist="2c462e40-5eb6-4d5d-9e33-89a174712c8a" time="1384587323787" ignored="false" />
+    <file path="/PigLatin.java" changelist="2c462e40-5eb6-4d5d-9e33-89a174712c8a" time="1384588715471" ignored="false" />
+    <file path="/PigLatinProg.java" changelist="2c462e40-5eb6-4d5d-9e33-89a174712c8a" time="1384588465134" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +66,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PigLatin.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PigLatinProg.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PigLatinProg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="0.2924312">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PigLatin.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PigLatin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="40" selection-start="389" selection-end="389" vertical-scroll-proportion="0.27293578">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="23" column="56" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,6 +94,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/PigLatinProg.java" />
         <option value="$PROJECT_DIR$/src/PigLatin.java" />
       </list>
     </option>
@@ -174,9 +183,9 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="Application.PigLatin">
-    <configuration default="false" name="PigLatin" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="PigLatin" />
+  <component name="RunManager" selected="Application.PigLatinProg">
+    <configuration default="false" name="PigLatinProg" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="PigLatinProg" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -286,11 +295,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.PigLatin" />
+      <item index="0" class="java.lang.String" itemvalue="Application.PigLatinProg" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.PigLatin" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PigLatinProg" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -400,10 +409,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/PigLatin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="389" selection-end="389" vertical-scroll-proportion="0.27293578">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="23" column="56" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PigLatinProg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="0.2924312">
+          <folding />
         </state>
       </provider>
     </entry>
