@@ -112,6 +112,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="CS Files\Character.cs" />
+    <Compile Include="CS Files\Province.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
