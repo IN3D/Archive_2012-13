@@ -14,13 +14,12 @@ finding what they own and then giving them money.
 -Eric 12-03-2013
 ***/
 
-
 namespace feudal
 {
-    public class character
-    {
-        private int owns[];
-        private double wealth;
-        private int ID;
-    }
+	public class character
+	{
+		private int[] owns;
+		private int ID;
+		private double wealth;
+	}
 }

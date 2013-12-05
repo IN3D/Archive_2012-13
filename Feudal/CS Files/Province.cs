@@ -11,8 +11,9 @@ namespace feudal
 		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
 		//TODO: Make decision
 		private int quality;
-		private double population;
 		private int stability;
+		private double population;
+		private double wealth;
 		//private int techMilitary;//implement tech later
 		//private int techEconomy;
 		//private int techGovernment;
@@ -23,16 +24,18 @@ namespace feudal
 		{
 			this.provinceName = "Name Me!";
 			this.quality = 3;
-			this.population = 1400.00;
+			this.population = 1000.00;
+			this.wealth = 10.00;
 			this.stability = 1;
 		}
 
-		public province(string provinceName, int quality, double population, int stability)
+		public province(string provinceName, int quality, int stability, double population, double wealth)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
-			this.population = population;
 			this.stability = stability;
+			this.population = population;
+			this.wealth = wealth;
 		}
 
 		/**Accessors**/
@@ -49,6 +52,11 @@ namespace feudal
 		public double getPopulation()
 		{
 			return this.population;
+		}
+
+		public double getWealth()
+		{
+			return this.wealth;
 		}
 
 		public int getStability()
@@ -72,6 +80,10 @@ namespace feudal
 			this.population = population;
 		}
 
+		public void setWealth(double wealth)
+		{
+			this.wealth = wealth;
+		}
 		public void setStability(int stability)
 		{
 			this.stability = stability;

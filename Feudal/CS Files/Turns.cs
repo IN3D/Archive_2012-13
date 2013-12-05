@@ -11,7 +11,10 @@ namespace Feudal
         //Eric 09-12-2013
         public static int TurnFuction(int counter)
         {
-            string[] months = new string[] {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+			string[] months = new string[] {"January", "Febuary", "March", 
+											"April", "May", "June", 
+											"July", "August", "September", 
+											"October", "November", "December"};
 
             var fm = feudalMainForm.ActiveForm as feudalMainForm;
              fm.lblMonthDate.Text = months[counter];

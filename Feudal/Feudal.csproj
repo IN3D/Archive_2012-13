@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="CS Files\Character.cs" />
     <Compile Include="CS Files\Province.cs" />
+    <Compile Include="CS Files\Religion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
