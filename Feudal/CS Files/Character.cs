@@ -14,12 +14,24 @@ finding what they own and then giving them money.
 -Eric 12-03-2013
 ***/
 
-namespace feudal
+namespace Feudal
 {
 	public class character
 	{
 		private int[] owns;
 		private int ID;
 		private double wealth;
+		private object Religion;
+
+		//TODO: should we declare religions up here? like this?
+		Religion christianity_catholic = new Religion("Catholic", "Christian", 10, 1, 1.0, 0.5, -0.5, 0.35, -0.1);
+
+		public character()
+		{
+			this.owns [0];
+			this.ID = 0;
+			this.wealth = 0.0;
+			Religion religion = new Religions (christianity_catholic);
+		}
 	}
 }

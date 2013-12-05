@@ -1,5 +1,5 @@
 using System;
-
+//TODO: Do we want to refactor the name of this file?
 namespace Feudal
 {
 	public class ReligBonuses
@@ -74,6 +74,7 @@ namespace Feudal
 	public class Religion : ReligBonuses
 	{
 		private string name;
+		private string family;
 		private int maxRange;//maybe not use these, but for now they
 		private int minRange;//were part of the original 
 		private double tolerance;
@@ -92,6 +93,7 @@ namespace Feudal
 		public Religion ()
 		{
 			name = "Not a religion";
+			family = "NULL";
 			maxRange = 10;
 			minRange = 1;
 			tolerance = 3.0;
@@ -100,22 +102,39 @@ namespace Feudal
 		}
 
 		//actually use this one
-		public Religion (string name, int maxRange, int minRange, 
-		               double tolerance, object ReligBonuses, double bonusTax, double bonusTrade, double bonusStability,
+		public Religion (string name, string family, int maxRange, int minRange, 
+		               double tolerance, double bonusTax, double bonusTrade, double bonusStability,
 		               double bonusTech)
 		{
 			this.name = name;
+			this.family = family;
 			this.maxRange = maxRange;
 			this.minRange = minRange;
 			this.tolerance = tolerance;
 			ReligBonuses
 			bonuses = new ReligBonuses (bonusTax, bonusTrade, bonusStability, bonusTech);
 		}
+		//deep copy constructor
+		public Religion(Religion e)
+		{
+			this.name = e.getName;
+			this.family = e.getFamily;
+			this.maxRange = e.getMaxRange;
+			this.minRange = e.getMinRange;
+			this.tolerance = e.getTolerance;
+			ReligBonuses
+			bonuses = new Feudal.ReligBonuses (e.getBonusTax, e.getBonusTech, e.getBonusStability, e.getBonusTech);
+		}
 
 		/**Accessors**/
 		public string getName()
 		{
 			return this.name;
+		}
+
+		public string getFamily()
+		{
+			return this.family;
 		}
 
 		public int getMaxRange()
@@ -142,6 +161,11 @@ namespace Feudal
 		public void setName(string name)
 		{
 			this.name = name;
+		}
+
+		public void setFamily(string name)
+		{
+			this.family = family;
 		}
 
 		public void setMaxRange(int maxRange)
