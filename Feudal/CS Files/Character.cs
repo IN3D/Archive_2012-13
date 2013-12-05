@@ -25,13 +25,18 @@ namespace Feudal
 
 		//TODO: should we declare religions up here? like this?
 		Religion christianity_catholic = new Religion("Catholic", "Christian", 10, 1, 1.0, 0.5, -0.5, 0.35, -0.1);
+		//or this?
+		Religions religions = new Religions();
 
 		public character()
 		{
 			this.owns [0];
 			this.ID = 0;
 			this.wealth = 0.0;
-			Religion religion = new Religions (christianity_catholic);
+			//option 1
+			//Religion religion = new Religions (christianity_catholic);
+			//option 2
+			//Religion religion = new Religions (religions.catholic);
 		}
 	}
 }
