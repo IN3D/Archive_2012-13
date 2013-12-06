@@ -28,24 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainTabControl = new System.Windows.Forms.TabControl();
-            this.tabGovt = new System.Windows.Forms.TabPage();
-            this.lblGovtStability = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnChangeGovt = new System.Windows.Forms.Button();
-            this.lblGovtLeader = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblGovtType = new System.Windows.Forms.Label();
-            this.pbxFlag = new System.Windows.Forms.PictureBox();
-            this.tabEco = new System.Windows.Forms.TabPage();
-            this.tabMil = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tabTech = new System.Windows.Forms.TabPage();
-            this.tabTrade = new System.Windows.Forms.TabPage();
-            this.tabDip = new System.Windows.Forms.TabPage();
-            this.tabBrowser = new System.Windows.Forms.TabPage();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.btnEndTurn = new System.Windows.Forms.Button();
             this.lbxInfo = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -67,204 +49,32 @@
             this.lblMonthDate = new System.Windows.Forms.Label();
             this.lblYearDate = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mainTabControl.SuspendLayout();
-            this.tabGovt.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
-            this.tabMil.SuspendLayout();
-            this.tabBrowser.SuspendLayout();
+            this.tabBrowser = new System.Windows.Forms.TabPage();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.tabDip = new System.Windows.Forms.TabPage();
+            this.tabTrade = new System.Windows.Forms.TabPage();
+            this.tabTech = new System.Windows.Forms.TabPage();
+            this.tabMil = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tabEco = new System.Windows.Forms.TabPage();
+            this.tabGovt = new System.Windows.Forms.TabPage();
+            this.pbxFlag = new System.Windows.Forms.PictureBox();
+            this.lblGovtType = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblGovtLeader = new System.Windows.Forms.Label();
+            this.btnChangeGovt = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblGovtStability = new System.Windows.Forms.Label();
+            this.mainTabControl = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tabBrowser.SuspendLayout();
+            this.tabMil.SuspendLayout();
+            this.tabGovt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
+            this.mainTabControl.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainTabControl
-            // 
-            this.mainTabControl.Controls.Add(this.tabGovt);
-            this.mainTabControl.Controls.Add(this.tabEco);
-            this.mainTabControl.Controls.Add(this.tabMil);
-            this.mainTabControl.Controls.Add(this.tabTech);
-            this.mainTabControl.Controls.Add(this.tabTrade);
-            this.mainTabControl.Controls.Add(this.tabDip);
-            this.mainTabControl.Controls.Add(this.tabBrowser);
-            this.mainTabControl.Controls.Add(this.tabPage1);
-            this.mainTabControl.Location = new System.Drawing.Point(12, 102);
-            this.mainTabControl.Name = "mainTabControl";
-            this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(872, 386);
-            this.mainTabControl.TabIndex = 0;
-            // 
-            // tabGovt
-            // 
-            this.tabGovt.AutoScroll = true;
-            this.tabGovt.Controls.Add(this.lblGovtStability);
-            this.tabGovt.Controls.Add(this.label7);
-            this.tabGovt.Controls.Add(this.btnChangeGovt);
-            this.tabGovt.Controls.Add(this.lblGovtLeader);
-            this.tabGovt.Controls.Add(this.label6);
-            this.tabGovt.Controls.Add(this.label5);
-            this.tabGovt.Controls.Add(this.lblGovtType);
-            this.tabGovt.Controls.Add(this.pbxFlag);
-            this.tabGovt.Location = new System.Drawing.Point(4, 22);
-            this.tabGovt.Name = "tabGovt";
-            this.tabGovt.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGovt.Size = new System.Drawing.Size(864, 360);
-            this.tabGovt.TabIndex = 0;
-            this.tabGovt.Text = "Government";
-            this.tabGovt.UseVisualStyleBackColor = true;
-            // 
-            // lblGovtStability
-            // 
-            this.lblGovtStability.AutoSize = true;
-            this.lblGovtStability.Location = new System.Drawing.Point(338, 50);
-            this.lblGovtStability.Name = "lblGovtStability";
-            this.lblGovtStability.Size = new System.Drawing.Size(33, 13);
-            this.lblGovtStability.TabIndex = 7;
-            this.lblGovtStability.Text = "100%";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(272, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Stability:";
-            // 
-            // btnChangeGovt
-            // 
-            this.btnChangeGovt.Location = new System.Drawing.Point(213, 25);
-            this.btnChangeGovt.Name = "btnChangeGovt";
-            this.btnChangeGovt.Size = new System.Drawing.Size(53, 23);
-            this.btnChangeGovt.TabIndex = 5;
-            this.btnChangeGovt.Text = "Change";
-            this.btnChangeGovt.UseVisualStyleBackColor = true;
-            this.btnChangeGovt.Click += new System.EventHandler(this.btnChangeGovt_Click);
-            // 
-            // lblGovtLeader
-            // 
-            this.lblGovtLeader.AutoSize = true;
-            this.lblGovtLeader.Location = new System.Drawing.Point(338, 10);
-            this.lblGovtLeader.Name = "lblGovtLeader";
-            this.lblGovtLeader.Size = new System.Drawing.Size(41, 13);
-            this.lblGovtLeader.TabIndex = 4;
-            this.lblGovtLeader.Text = "Obama";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(272, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Leader:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(272, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Govt Type:";
-            // 
-            // lblGovtType
-            // 
-            this.lblGovtType.AutoSize = true;
-            this.lblGovtType.Location = new System.Drawing.Point(338, 30);
-            this.lblGovtType.Name = "lblGovtType";
-            this.lblGovtType.Size = new System.Drawing.Size(61, 13);
-            this.lblGovtType.TabIndex = 1;
-            this.lblGovtType.Text = "Democracy";
-            // 
-            // pbxFlag
-            // 
-            this.pbxFlag.Image = global::Feudal.Properties.Resources.flagTemp;
-            this.pbxFlag.InitialImage = null;
-            this.pbxFlag.Location = new System.Drawing.Point(7, 7);
-            this.pbxFlag.Name = "pbxFlag";
-            this.pbxFlag.Size = new System.Drawing.Size(200, 150);
-            this.pbxFlag.TabIndex = 0;
-            this.pbxFlag.TabStop = false;
-            // 
-            // tabEco
-            // 
-            this.tabEco.Location = new System.Drawing.Point(4, 22);
-            this.tabEco.Name = "tabEco";
-            this.tabEco.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEco.Size = new System.Drawing.Size(864, 360);
-            this.tabEco.TabIndex = 1;
-            this.tabEco.Text = "Economy";
-            this.tabEco.UseVisualStyleBackColor = true;
-            // 
-            // tabMil
-            // 
-            this.tabMil.Controls.Add(this.comboBox1);
-            this.tabMil.Location = new System.Drawing.Point(4, 22);
-            this.tabMil.Name = "tabMil";
-            this.tabMil.Size = new System.Drawing.Size(864, 360);
-            this.tabMil.TabIndex = 2;
-            this.tabMil.Text = "Military";
-            this.tabMil.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Slave",
-            "Warrior",
-            "Proffesional",
-            "Mercenary"});
-            this.comboBox1.Location = new System.Drawing.Point(13, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Type of Military";
-            // 
-            // tabTech
-            // 
-            this.tabTech.Location = new System.Drawing.Point(4, 22);
-            this.tabTech.Name = "tabTech";
-            this.tabTech.Size = new System.Drawing.Size(864, 360);
-            this.tabTech.TabIndex = 3;
-            this.tabTech.Text = "Technology";
-            this.tabTech.UseVisualStyleBackColor = true;
-            // 
-            // tabTrade
-            // 
-            this.tabTrade.Location = new System.Drawing.Point(4, 22);
-            this.tabTrade.Name = "tabTrade";
-            this.tabTrade.Size = new System.Drawing.Size(864, 360);
-            this.tabTrade.TabIndex = 4;
-            this.tabTrade.Text = "Trade";
-            this.tabTrade.UseVisualStyleBackColor = true;
-            // 
-            // tabDip
-            // 
-            this.tabDip.Location = new System.Drawing.Point(4, 22);
-            this.tabDip.Name = "tabDip";
-            this.tabDip.Size = new System.Drawing.Size(864, 360);
-            this.tabDip.TabIndex = 5;
-            this.tabDip.Text = "Diplomacy";
-            this.tabDip.UseVisualStyleBackColor = true;
-            // 
-            // tabBrowser
-            // 
-            this.tabBrowser.Controls.Add(this.webBrowser1);
-            this.tabBrowser.Location = new System.Drawing.Point(4, 22);
-            this.tabBrowser.Name = "tabBrowser";
-            this.tabBrowser.Size = new System.Drawing.Size(864, 360);
-            this.tabBrowser.TabIndex = 6;
-            this.tabBrowser.Text = "Wiki";
-            this.tabBrowser.UseVisualStyleBackColor = true;
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(861, 360);
-            this.webBrowser1.TabIndex = 9;
-            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // btnEndTurn
             // 
@@ -442,15 +252,193 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "temp";
             // 
-            // tabPage1
+            // tabBrowser
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(864, 360);
-            this.tabPage1.TabIndex = 7;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabBrowser.Controls.Add(this.webBrowser1);
+            this.tabBrowser.Location = new System.Drawing.Point(4, 22);
+            this.tabBrowser.Name = "tabBrowser";
+            this.tabBrowser.Size = new System.Drawing.Size(864, 360);
+            this.tabBrowser.TabIndex = 6;
+            this.tabBrowser.Text = "Wiki";
+            this.tabBrowser.UseVisualStyleBackColor = true;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(861, 360);
+            this.webBrowser1.TabIndex = 9;
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
+            // 
+            // tabDip
+            // 
+            this.tabDip.Location = new System.Drawing.Point(4, 22);
+            this.tabDip.Name = "tabDip";
+            this.tabDip.Size = new System.Drawing.Size(864, 360);
+            this.tabDip.TabIndex = 5;
+            this.tabDip.Text = "Diplomacy";
+            this.tabDip.UseVisualStyleBackColor = true;
+            // 
+            // tabTrade
+            // 
+            this.tabTrade.Location = new System.Drawing.Point(4, 22);
+            this.tabTrade.Name = "tabTrade";
+            this.tabTrade.Size = new System.Drawing.Size(864, 360);
+            this.tabTrade.TabIndex = 4;
+            this.tabTrade.Text = "Trade";
+            this.tabTrade.UseVisualStyleBackColor = true;
+            // 
+            // tabTech
+            // 
+            this.tabTech.Location = new System.Drawing.Point(4, 22);
+            this.tabTech.Name = "tabTech";
+            this.tabTech.Size = new System.Drawing.Size(864, 360);
+            this.tabTech.TabIndex = 3;
+            this.tabTech.Text = "Technology";
+            this.tabTech.UseVisualStyleBackColor = true;
+            // 
+            // tabMil
+            // 
+            this.tabMil.Controls.Add(this.comboBox1);
+            this.tabMil.Location = new System.Drawing.Point(4, 22);
+            this.tabMil.Name = "tabMil";
+            this.tabMil.Size = new System.Drawing.Size(864, 360);
+            this.tabMil.TabIndex = 2;
+            this.tabMil.Text = "Military";
+            this.tabMil.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Slave",
+            "Warrior",
+            "Proffesional",
+            "Mercenary"});
+            this.comboBox1.Location = new System.Drawing.Point(13, 15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "Type of Military";
+            // 
+            // tabEco
+            // 
+            this.tabEco.Location = new System.Drawing.Point(4, 22);
+            this.tabEco.Name = "tabEco";
+            this.tabEco.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEco.Size = new System.Drawing.Size(864, 360);
+            this.tabEco.TabIndex = 1;
+            this.tabEco.Text = "Economy";
+            this.tabEco.UseVisualStyleBackColor = true;
+            // 
+            // tabGovt
+            // 
+            this.tabGovt.AutoScroll = true;
+            this.tabGovt.Controls.Add(this.lblGovtStability);
+            this.tabGovt.Controls.Add(this.label7);
+            this.tabGovt.Controls.Add(this.btnChangeGovt);
+            this.tabGovt.Controls.Add(this.lblGovtLeader);
+            this.tabGovt.Controls.Add(this.label6);
+            this.tabGovt.Controls.Add(this.label5);
+            this.tabGovt.Controls.Add(this.lblGovtType);
+            this.tabGovt.Controls.Add(this.pbxFlag);
+            this.tabGovt.Location = new System.Drawing.Point(4, 22);
+            this.tabGovt.Name = "tabGovt";
+            this.tabGovt.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGovt.Size = new System.Drawing.Size(864, 360);
+            this.tabGovt.TabIndex = 0;
+            this.tabGovt.Text = "Government";
+            this.tabGovt.UseVisualStyleBackColor = true;
+            // 
+            // pbxFlag
+            // 
+            this.pbxFlag.Image = global::Feudal.Properties.Resources.flagTemp;
+            this.pbxFlag.InitialImage = null;
+            this.pbxFlag.Location = new System.Drawing.Point(7, 7);
+            this.pbxFlag.Name = "pbxFlag";
+            this.pbxFlag.Size = new System.Drawing.Size(200, 150);
+            this.pbxFlag.TabIndex = 0;
+            this.pbxFlag.TabStop = false;
+            // 
+            // lblGovtType
+            // 
+            this.lblGovtType.AutoSize = true;
+            this.lblGovtType.Location = new System.Drawing.Point(338, 30);
+            this.lblGovtType.Name = "lblGovtType";
+            this.lblGovtType.Size = new System.Drawing.Size(61, 13);
+            this.lblGovtType.TabIndex = 1;
+            this.lblGovtType.Text = "Democracy";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(272, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Govt Type:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(272, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Leader:";
+            // 
+            // lblGovtLeader
+            // 
+            this.lblGovtLeader.AutoSize = true;
+            this.lblGovtLeader.Location = new System.Drawing.Point(338, 10);
+            this.lblGovtLeader.Name = "lblGovtLeader";
+            this.lblGovtLeader.Size = new System.Drawing.Size(41, 13);
+            this.lblGovtLeader.TabIndex = 4;
+            this.lblGovtLeader.Text = "Obama";
+            // 
+            // btnChangeGovt
+            // 
+            this.btnChangeGovt.Location = new System.Drawing.Point(213, 25);
+            this.btnChangeGovt.Name = "btnChangeGovt";
+            this.btnChangeGovt.Size = new System.Drawing.Size(53, 23);
+            this.btnChangeGovt.TabIndex = 5;
+            this.btnChangeGovt.Text = "Change";
+            this.btnChangeGovt.UseVisualStyleBackColor = true;
+            this.btnChangeGovt.Click += new System.EventHandler(this.btnChangeGovt_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(272, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Stability:";
+            // 
+            // lblGovtStability
+            // 
+            this.lblGovtStability.AutoSize = true;
+            this.lblGovtStability.Location = new System.Drawing.Point(338, 50);
+            this.lblGovtStability.Name = "lblGovtStability";
+            this.lblGovtStability.Size = new System.Drawing.Size(33, 13);
+            this.lblGovtStability.TabIndex = 7;
+            this.lblGovtStability.Text = "100%";
+            // 
+            // mainTabControl
+            // 
+            this.mainTabControl.Controls.Add(this.tabGovt);
+            this.mainTabControl.Controls.Add(this.tabEco);
+            this.mainTabControl.Controls.Add(this.tabMil);
+            this.mainTabControl.Controls.Add(this.tabTech);
+            this.mainTabControl.Controls.Add(this.tabTrade);
+            this.mainTabControl.Controls.Add(this.tabDip);
+            this.mainTabControl.Controls.Add(this.tabBrowser);
+            this.mainTabControl.Location = new System.Drawing.Point(12, 102);
+            this.mainTabControl.Name = "mainTabControl";
+            this.mainTabControl.SelectedIndex = 0;
+            this.mainTabControl.Size = new System.Drawing.Size(872, 386);
+            this.mainTabControl.TabIndex = 0;
             // 
             // feudalMainForm
             // 
@@ -476,16 +464,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Feudal (Secretly a Shrek Game)";
             this.Load += new System.EventHandler(this.feudalMainForm_Load);
-            this.mainTabControl.ResumeLayout(false);
-            this.tabGovt.ResumeLayout(false);
-            this.tabGovt.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).EndInit();
-            this.tabMil.ResumeLayout(false);
-            this.tabBrowser.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabBrowser.ResumeLayout(false);
+            this.tabMil.ResumeLayout(false);
+            this.tabGovt.ResumeLayout(false);
+            this.tabGovt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).EndInit();
+            this.mainTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,10 +481,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl mainTabControl;
-        private System.Windows.Forms.TabPage tabGovt;
-        private System.Windows.Forms.TabPage tabEco;
-        private System.Windows.Forms.TabPage tabMil;
         private System.Windows.Forms.Button btnEndTurn;
         private System.Windows.Forms.ListBox lbxInfo;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -506,33 +490,36 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabTech;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
-        private System.Windows.Forms.TabPage tabTrade;
-        private System.Windows.Forms.TabPage tabDip;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pbxFlag;
+        public System.Windows.Forms.Label lblMonthDate;
+        public System.Windows.Forms.Label lblYearDate;
+        private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem endTurnToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabBrowser;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.TabPage tabDip;
+        private System.Windows.Forms.TabPage tabTrade;
+        private System.Windows.Forms.TabPage tabTech;
+        private System.Windows.Forms.TabPage tabMil;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabPage tabEco;
+        private System.Windows.Forms.TabPage tabGovt;
+        private System.Windows.Forms.Label lblGovtStability;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnChangeGovt;
         private System.Windows.Forms.Label lblGovtLeader;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblGovtType;
-        private System.Windows.Forms.Button btnChangeGovt;
-        private System.Windows.Forms.Label lblGovtStability;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.TabPage tabBrowser;
-        public System.Windows.Forms.Label lblMonthDate;
-        public System.Windows.Forms.Label lblYearDate;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem endTurnToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.PictureBox pbxFlag;
+        private System.Windows.Forms.TabControl mainTabControl;
     }
 }
 
