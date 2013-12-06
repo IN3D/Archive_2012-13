@@ -13,6 +13,7 @@ owner and giving them money rather than stepping through every character, checki
 finding what they own and then giving them money.
 -Eric 12-03-2013
 ***/
+//testing git for VisualStudio!
 
 namespace Feudal
 {
