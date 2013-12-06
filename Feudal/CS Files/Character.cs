@@ -12,7 +12,6 @@ owner and giving them money rather than stepping through every character, checki
 finding what they own and then giving them money.
 -Eric 12-03-2013
 ***/
-//testing git for VisualStudio!
 
 namespace Feudal
 {
@@ -23,20 +22,14 @@ namespace Feudal
 		private double wealth;
 		private object Religion;
 
-		//TODO: should we declare religions up here? like this?
-		Religion christianity_catholic = new Religion("Catholic", "Christian", 10, 1, 1.0, 0.5, -0.5, 0.35, -0.1);
-		//or this?
-		Religions religions = new Religions();
+		ReligionTypes belief = new ReligionTypes();
 
 		public character()
 		{
             owns = new int[0];
 			this.ID = 0;
 			this.wealth = 0.0;
-			//option 1
-			//Religion religion = new Religions (christianity_catholic);
-			//option 2
-			//Religion religion = new Religions (religions.catholic);
+			Religion religion = new Religion (belief.catholic);
 		}
 	}
 }
