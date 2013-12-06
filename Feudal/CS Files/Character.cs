@@ -30,7 +30,7 @@ namespace Feudal
 
 		public character()
 		{
-			this.owns [0];
+            owns = new int[0];
 			this.ID = 0;
 			this.wealth = 0.0;
 			//option 1

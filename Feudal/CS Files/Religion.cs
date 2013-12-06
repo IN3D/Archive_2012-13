@@ -117,13 +117,13 @@ namespace Feudal
 		//deep copy constructor
 		public Religion(Religion e)
 		{
-			this.name = e.getName;
-			this.family = e.getFamily;
-			this.maxRange = e.getMaxRange;
-			this.minRange = e.getMinRange;
-			this.tolerance = e.getTolerance;
+            this.name = e.getName();
+			this.family = e.getFamily();
+			this.maxRange = e.getMaxRange();
+			this.minRange = e.getMinRange();
+			this.tolerance = e.getTolerance();
 			ReligBonuses
-			bonuses = new Feudal.ReligBonuses (e.getBonusTax, e.getBonusTech, e.getBonusStability, e.getBonusTech);
+			bonuses = new Feudal.ReligBonuses (e.getBonusTax(), e.getBonusTech(), e.getBonusStability(), e.getBonusTech());
 		}
 
 		/**Accessors**/
@@ -163,7 +163,7 @@ namespace Feudal
 			this.name = name;
 		}
 
-		public void setFamily(string name)
+		public void setFamily(string family)
 		{
 			this.family = family;
 		}
@@ -186,23 +186,22 @@ namespace Feudal
 		//these modifiers exist in the ReligBonuses, but are in Religion for convenience
 		public void setBonusTax(double bonus)
 		{
-			this.setBonusTax = bonus;
+            this.setBonusTax(bonus);
 		}
 
 		public void setBonusTrade(double bonus)
 		{
-			this.setBonusTrade = bonus;
+            this.setBonusTrade(bonus);
 		}
 
 		public void setBonusStability(double bonus)
 		{
-			this.setBonusStability = bonus;
+            this.setBonusStability(bonus);
 		}
 
 		public void setBonusTech(double bonus)
 		{
-			this.setBonusTech = bonus;
+            this.setBonusTech(bonus);
 		}
 	}
 }
-
