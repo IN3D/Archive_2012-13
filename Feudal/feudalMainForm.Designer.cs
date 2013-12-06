@@ -67,6 +67,7 @@
             this.lblMonthDate = new System.Windows.Forms.Label();
             this.lblYearDate = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.mainTabControl.SuspendLayout();
             this.tabGovt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
@@ -85,6 +86,7 @@
             this.mainTabControl.Controls.Add(this.tabTrade);
             this.mainTabControl.Controls.Add(this.tabDip);
             this.mainTabControl.Controls.Add(this.tabBrowser);
+            this.mainTabControl.Controls.Add(this.tabPage1);
             this.mainTabControl.Location = new System.Drawing.Point(12, 102);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -440,6 +442,16 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "temp";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(864, 360);
+            this.tabPage1.TabIndex = 7;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // feudalMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,6 +532,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem endTurnToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 
