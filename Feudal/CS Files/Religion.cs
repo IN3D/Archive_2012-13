@@ -1,5 +1,5 @@
 using System;
-//TODO: Do we want to refactor the name of this file?
+
 namespace Feudal
 {
 	public class ReligBonuses
@@ -78,7 +78,7 @@ namespace Feudal
 		private int maxRange;//maybe not use these, but for now they
 		private int minRange;//were part of the original 
 		private double tolerance;
-		private object ReligBonuses;//TODO: Agree on this
+		private object ReligBonuses;
 		//maybe make a bonuses class
 		//to have religion extend?
 		/*

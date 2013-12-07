@@ -9,7 +9,6 @@ namespace Feudal
 	{
 		private string provinceName;
 		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
-		//TODO: Make decision
 		private int quality;
 		private int stability;
 		private double population;
