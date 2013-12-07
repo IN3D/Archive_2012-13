@@ -16,12 +16,13 @@ namespace Feudal
         //Eric 09-14-2013
         //added so that the year display is no longer static
         int year = 2012;
+        Turns turns = new Turns();
 
 
         public feudalMainForm()
         {
             InitializeComponent();
-
+            
             lblYearDate.Text = year.ToString();
         }
 
@@ -62,12 +63,12 @@ namespace Feudal
                 year++;
                 lblYearDate.Text = year.ToString();
 
-                Turns.TurnFuction(counter);
+                lblMonthDate.Text = turns.getMonth(counter);
                 counter++;
             }
             else
             {
-                Turns.TurnFuction(counter);
+                lblMonthDate.Text = turns.getMonth(counter);
                 counter++;
             }
             toolStripStatusLabel.Text = "Waiting...";
