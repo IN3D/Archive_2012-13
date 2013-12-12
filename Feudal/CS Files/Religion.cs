@@ -3,12 +3,15 @@ using System;
 namespace Feudal
 {
 	public class ReligBonuses
-	{
-		private double bonusTax;
+    {
+        #region variables
+        private double bonusTax;
 		private double bonusTrade;
 		private double bonusStability;
 		private double bonusTech;
+        #endregion
 
+        #region constructors
         //default constructor because reasons
 		public ReligBonuses()
 		{
@@ -27,7 +30,9 @@ namespace Feudal
 			this.bonusStability = bonusStability;
 			this.bonusTech = bonusTech;
 		}
+        #endregion
 
+        #region accessors
         public double getBonusTax()
 		{
 			return this.bonusTax;
@@ -47,7 +52,9 @@ namespace Feudal
 		{
 			return this.bonusTech;
 		}
+        #endregion
 
+        #region modifiers
         public void setBonusTax(double bonusTax)
 		{
 			this.bonusTax = bonusTax;
@@ -67,13 +74,15 @@ namespace Feudal
 		{
 			this.bonusTech = bonusTech;
         }
+        #endregion
     }
 
 
 
 	public class Religion : ReligBonuses
-	{
-		private string name;
+    {
+        #region variables
+        private string name;
 		private string family;
 		private int maxRange;//maybe not use these, but for now they
 		private int minRange;//were part of the original 
@@ -87,7 +96,9 @@ namespace Feudal
         private double bonusStability;
         private double bonusTech;
         */
+        #endregion
 
+        #region constructors
         //don't use default
 		public Religion ()
 		{
@@ -124,7 +135,9 @@ namespace Feudal
 			ReligBonuses
 			bonuses = new Feudal.ReligBonuses (e.getBonusTax(), e.getBonusTech(), e.getBonusStability(), e.getBonusTech());
 		}
+        #endregion
 
+        #region accessors
         public string getName()
 		{
 			return this.name;
@@ -154,7 +167,9 @@ namespace Feudal
 		{
 			return ReligBonuses;
 		}
+        #endregion
 
+        #region modifiers
         public void setName(string name)
 		{
 			this.name = name;
@@ -200,5 +215,6 @@ namespace Feudal
 		{
             this.setBonusTech(bonus);
         }
+        #endregion
     }
 }

@@ -6,8 +6,9 @@ using System.Text;
 namespace Feudal
 {
 	public class province
-	{
-		private string provinceName;
+    {
+        #region variables
+        private string provinceName;
 		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
 		private int quality;
 		private int stability;
@@ -18,8 +19,11 @@ namespace Feudal
 		//private int techGovernment;
 
 		//default constructor
-		//this proobably shouldn't be used, it's here just incase
-		public province()
+        //this proobably shouldn't be used, it's here just incase
+        #endregion
+
+        #region constructor
+        public province()
 		{
 			this.provinceName = "Name Me!";
 			this.quality = 3;
@@ -36,10 +40,11 @@ namespace Feudal
 			this.population = population;
 			this.wealth = wealth;
 		}
-        ////////////////
-		/**Accessors**/
-        //////////////
-		public string getProvinceName()
+        #endregion
+
+
+        #region accessors
+        public string getProvinceName()
 		{
 			return this.provinceName;
 		}
@@ -63,10 +68,11 @@ namespace Feudal
 		{
 			return this.stability;
 		}
-        ////////////////
-		/**Modifiers**/
-        //////////////
-		public void setProvinceName(string provinceName)
+        #endregion
+
+
+        #region modifiers
+        public void setProvinceName(string provinceName)
 		{
 			this.provinceName = provinceName;
 		}
@@ -88,9 +94,10 @@ namespace Feudal
 		public void setStability(int stability)
 		{
 			this.stability = stability;
-		}
+        }
+        #endregion
 
-	}
+    }
 
 }
 			/******************************************************************

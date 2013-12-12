@@ -6,17 +6,20 @@ using System.Text;
 namespace Feudal
 {
 	public class character
-	{
-		private int[] owns;
+    {
+        #region variables
+        private int[] owns;
 		private int ID;
 		private double wealth;
         private double piety;
         private double prestiege;
 		private object Religion;
+        #endregion
 
-		Belief belief = new Belief();
+        Belief belief = new Belief();
 
-		public character()
+        #region constructors
+        public character()
 		{
             owns = new int[0];
 			this.ID = 0;
@@ -24,6 +27,7 @@ namespace Feudal
             this.piety = 0.0;
             this.prestiege = 0.0;
 			Religion religion = new Religion (belief.setCatholic());
-		}
-	}
+        }
+        #endregion
+    }
 }
