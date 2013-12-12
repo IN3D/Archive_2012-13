@@ -9,7 +9,7 @@ namespace Feudal
 		private double bonusStability;
 		private double bonusTech;
 
-		//default constructor because reasons
+        //default constructor because reasons
 		public ReligBonuses()
 		{
 			//These would make really terrible bonuses
@@ -28,8 +28,7 @@ namespace Feudal
 			this.bonusTech = bonusTech;
 		}
 
-		/**Accessors**/
-		public double getBonusTax()
+        public double getBonusTax()
 		{
 			return this.bonusTax;
 		}
@@ -49,8 +48,7 @@ namespace Feudal
 			return this.bonusTech;
 		}
 
-		/**Modifiers**/
-		public void setBonusTax(double bonusTax)
+        public void setBonusTax(double bonusTax)
 		{
 			this.bonusTax = bonusTax;
 		}
@@ -68,8 +66,10 @@ namespace Feudal
 		public void setBonusTech(double bonusTech)
 		{
 			this.bonusTech = bonusTech;
-		}
-	}
+        }
+    }
+
+
 
 	public class Religion : ReligBonuses
 	{
@@ -81,15 +81,14 @@ namespace Feudal
 		private object ReligBonuses;
 		//maybe make a bonuses class
 		//to have religion extend?
-		/*
-		private double bonusTax;
-		private double bonusTrade;
-		private double bonusStability;
-		private double bonusTech;
-		*/
+        /*
+        private double bonusTax;
+        private double bonusTrade;
+        private double bonusStability;
+        private double bonusTech;
+        */
 
-
-		//don't use default
+        //don't use default
 		public Religion ()
 		{
 			name = "Not a religion";
@@ -126,8 +125,7 @@ namespace Feudal
 			bonuses = new Feudal.ReligBonuses (e.getBonusTax(), e.getBonusTech(), e.getBonusStability(), e.getBonusTech());
 		}
 
-		/**Accessors**/
-		public string getName()
+        public string getName()
 		{
 			return this.name;
 		}
@@ -157,8 +155,7 @@ namespace Feudal
 			return ReligBonuses;
 		}
 
-		/**Modifiers**/
-		public void setName(string name)
+        public void setName(string name)
 		{
 			this.name = name;
 		}
@@ -202,6 +199,6 @@ namespace Feudal
 		public void setBonusTech(double bonus)
 		{
             this.setBonusTech(bonus);
-		}
-	}
+        }
+    }
 }

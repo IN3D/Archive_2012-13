@@ -14,7 +14,7 @@ namespace Feudal
 		private double population;
 		private double wealth;
 		//private int techMilitary;//implement tech later
-		//private int techEconomy;
+        //private int techEconomy;
 		//private int techGovernment;
 
 		//default constructor
@@ -24,7 +24,7 @@ namespace Feudal
 			this.provinceName = "Name Me!";
 			this.quality = 3;
 			this.population = 1000.00;
-			this.wealth = 10.00;
+			this.wealth = 0.25;
 			this.stability = 1;
 		}
 
@@ -36,8 +36,9 @@ namespace Feudal
 			this.population = population;
 			this.wealth = wealth;
 		}
-
+        ////////////////
 		/**Accessors**/
+        //////////////
 		public string getProvinceName()
 		{
 			return this.provinceName;
@@ -62,8 +63,9 @@ namespace Feudal
 		{
 			return this.stability;
 		}
-
+        ////////////////
 		/**Modifiers**/
+        //////////////
 		public void setProvinceName(string provinceName)
 		{
 			this.provinceName = provinceName;
