@@ -70,6 +70,7 @@
             this.pbxFlag = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabBrowser.SuspendLayout();
@@ -439,6 +440,7 @@
             // 
             // tabMap
             // 
+            this.tabMap.Controls.Add(this.button1);
             this.tabMap.Controls.Add(this.pictureBox2);
             this.tabMap.Controls.Add(this.pictureBox1);
             this.tabMap.Location = new System.Drawing.Point(4, 22);
@@ -451,7 +453,6 @@
             // 
             // pbxFlag
             // 
-            this.pbxFlag.Image = global::Feudal.Properties.Resources.flagTemp;
             this.pbxFlag.InitialImage = null;
             this.pbxFlag.Location = new System.Drawing.Point(7, 7);
             this.pbxFlag.Name = "pbxFlag";
@@ -461,7 +462,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Feudal.Properties.Resources.Map_game_map_V2;
             this.pictureBox2.Location = new System.Drawing.Point(208, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(449, 360);
@@ -476,6 +476,16 @@
             this.pictureBox1.Size = new System.Drawing.Size(864, 360);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(394, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 56);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             // 
             // feudalMainForm
             // 
@@ -563,6 +573,7 @@
         private System.Windows.Forms.TabPage tabMap;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -118,9 +118,9 @@
     <Compile Include="CS Files\Belief.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Map game map_V2.png" />
     <Content Include="Notes.txt" />
-    <None Include="Resources\Map game map_V2.png" />
+    <Content Include="Resources\Map game map_V2.png" />
+    <None Include="Resources\water world less extreme.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
