@@ -65,7 +65,10 @@ namespace Feudal
                 maxRange = 10;
                 minRange = 1;
                 tolerance = 3.0;
-                ReligBonuses bonuses = new ReligBonuses(0.0, 0.0, 0.0, 0.0);
+                BonusTax = 0.0;
+                BonusTrade = 0.0;
+                BonusTech = 0.0;
+                BonusStability = 0.0;
                 //var bonuses = ReligBonuses(0.0, 0.0, 0.0, 0.0) as ReligBonuses;
             }
 

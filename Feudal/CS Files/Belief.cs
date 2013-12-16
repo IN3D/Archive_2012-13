@@ -20,18 +20,15 @@ namespace Feudal
         private Religion mormanism = new Religion("Mormonism", "Christian", 10, 4, 0.75, 0.60, -0.20, 0.50, -0.35);
         #endregion
 
-
         #region muslim_denominations
         private Religion shiite = new Religion("Shiite", "Islam", 10, 4, 1.0, 0.35, 0.1, 0.25, 0.0);
         private Religion sunni = new Religion("Sunni", "Islam", 10, 4, 1.0, 0.35, 0.1, 0.25, 0.0);
         private Religion mutazila = new Religion("Mu'tazila", "Islam", 4, 1, 1.25, 0.0, 0.25, 0.15, 0.35);
         #endregion
 
-
         #region judaism_denominations
         private Religion judaism = new Religion("Judaism", "Judaism", 10, 1, 1.0, 0.25, 0.35, 0.75, 0.2);
         #endregion
-
 
         #region buddhism_denominations
         private Religion theravada = new Religion("Theravada", "Buddhism", 6, 1, 1.5, 0.0, 0.0, 0.75, 0.0);
@@ -39,7 +36,6 @@ namespace Feudal
         private Religion vajrayana = new Religion("Vajrayana", "Buddhism", 6, 1, 1.5, 0.0, 0.0, 0.75, 0.0);
         private Religion zen = new Religion("Zen", "Buddhism", 6, 1, 1.5, 0.0, 0.0, 0.75, 0.0);
         #endregion
-
 
         #region indian_denominations
         private Religion hinduism = new Religion("Hinduism", "Indian", 7, 1, 1.0, 0.0, 0.25, 0.50, 0.0);
@@ -53,11 +49,9 @@ namespace Feudal
         private Religion shinto = new Religion("Shinto", "Eastern", 6, 1, 1.0, 0.2, 0.0, 0.65, 0.15);
         #endregion
 
-
         #region pagan_denominations
         //TODO: Add pagan religions
         #endregion
-
 
         #region irreligion_denominations
         private Religion irreligion = new Religion("Irreligion", "Irreligion", 0, 0, 1.75, 0.0, 0.0, -0.05, 1.00);
