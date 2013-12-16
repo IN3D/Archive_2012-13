@@ -70,101 +70,101 @@ namespace Feudal
         #region accessors
 
         #region christian_accessors
-        public Religion setCatholic()
+        public Religion setCatholic
         {
-            return catholic;
+			get { return catholic; }
         }
-        public Religion setOrthodox()
+        public Religion setOrthodox
         {
-            return orthodox;
+			get { return orthodox; }
         }
-        public Religion setProtestantL()
+        public Religion setProtestantL
         {
-            return protestant_Lib;
+			get { return protestant_Lib; }
         }
-        public Religion setProtestantC()
+        public Religion setProtestantC
         {
-            return protestant_Con;
+			get { return protestant_Con; }
         }
-        public Religion setFundamentalist()
+        public Religion setFundamentalist
         {
-            return fundamentalist;
+			get { return fundamentalist; }
         }
-        public Religion setMormon()
+        public Religion setMormon
         {
-            return mormanism;
+			get { return mormanism; }
         }
         #endregion
 
         #region muslim_accessors
-        public Religion setShiite()
-        {
-            return shiite;
-        }
-        public Religion setSunni()
-        {
-            return sunni;
-        }
-        public Religion setMutazila()
-        {
-            return mutazila;
-        }
+        public Religion setShiite
+		{
+			get { return shiite; }
+		}
+        public Religion setSunni
+		{
+			get { return sunni; }
+		}
+        public Religion setMutazila
+		{
+			get { return mutazila; }
+		}
         #endregion
 
         #region jewish_accessors
-        public Religion setJewish()
-        {
-            return judaism;
-        }
+        public Religion setJewish
+		{
+			get { return judaism; }
+		}
         #endregion
 
         #region buddhism_accessors
-        public Religion setTheravada()
-        {
-            return theravada;
-        }
-        public Religion setMahayana()
-        {
-            return mahayana;
-        }
-        public Religion setVajrayana()
-        {
-            return vajrayana;
-        }
-        public Religion setZen()
-        {
-            return zen;
-        }
+        public Religion setTheravada
+		{
+			get { return theravada; }
+		}
+        public Religion setMahayana
+		{
+			get { return mahayana; }
+		}
+        public Religion setVajrayana
+		{
+			get { return vajrayana; }
+		}
+        public Religion setZen
+		{
+			get { return zen; }
+		}
         #endregion
 
         #region indian_accessors
-        public Religion setHinduism()
-        {
-            return hinduism;
-        }
-        public Religion setSikhism()
-        {
-            return sikhism;
-        }
-        public Religion setZoroastrianism()
-        {
-            return zoroastrianism;
-        }
+        public Religion setHinduism
+		{
+			get { return hinduism; }
+		}
+        public Religion setSikhism
+		{
+			get { return sikhism; }
+		}
+        public Religion setZoroastrianism
+		{
+			get { return zoroastrianism; }
+		}
         #endregion
 
         #region eastern_accessors
-        public Religion setTaoism()
-        {
-            return taoism;
-        }
-        public Religion setConfucian()
-        {
-            return confucian;
-        }
-        public Religion setShinto()
-        {
-            return shinto;
-        }
+        public Religion setTaoism
+		{
+			get { return taoism; }
+		}
+        public Religion setConfucian
+		{
+			get { return confucian; }
+		}
+        public Religion setShinto
+		{
+			get { return shinto; }
+		}
         #endregion
 
         #region pagan_accessors
@@ -172,14 +172,14 @@ namespace Feudal
         #endregion
 
         #region irreligion_accessors
-        public Religion setIrreligious()
-        {
-            return irreligion;
-        }
-        public Religion setAtheist()
-        {
-            return atheism;
-        }
+        public Religion setIrreligious
+		{
+			get { return irreligion; }
+		}
+        public Religion setAtheist
+		{
+			get { return atheism; }
+		}
         #endregion
 
         #endregion
