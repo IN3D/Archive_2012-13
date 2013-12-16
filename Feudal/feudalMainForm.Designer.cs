@@ -65,21 +65,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblGovtType = new System.Windows.Forms.Label();
+            this.pbxFlag = new System.Windows.Forms.PictureBox();
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.tabMap = new System.Windows.Forms.TabPage();
-            this.pbxFlag = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbxMap = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabBrowser.SuspendLayout();
             this.tabMil.SuspendLayout();
             this.tabGovt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
             this.mainTabControl.SuspendLayout();
             this.tabMap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -422,6 +421,16 @@
             this.lblGovtType.TabIndex = 1;
             this.lblGovtType.Text = "Democracy";
             // 
+            // pbxFlag
+            // 
+            this.pbxFlag.Image = global::Feudal.Properties.Resources.flagTemp;
+            this.pbxFlag.InitialImage = null;
+            this.pbxFlag.Location = new System.Drawing.Point(7, 7);
+            this.pbxFlag.Name = "pbxFlag";
+            this.pbxFlag.Size = new System.Drawing.Size(200, 150);
+            this.pbxFlag.TabIndex = 0;
+            this.pbxFlag.TabStop = false;
+            // 
             // mainTabControl
             // 
             this.mainTabControl.Controls.Add(this.tabGovt);
@@ -440,8 +449,7 @@
             // 
             // tabMap
             // 
-            this.tabMap.Controls.Add(this.button1);
-            this.tabMap.Controls.Add(this.pictureBox2);
+            this.tabMap.Controls.Add(this.pbxMap);
             this.tabMap.Controls.Add(this.pictureBox1);
             this.tabMap.Location = new System.Drawing.Point(4, 22);
             this.tabMap.Name = "tabMap";
@@ -451,23 +459,16 @@
             this.tabMap.Text = "Map";
             this.tabMap.UseVisualStyleBackColor = true;
             // 
-            // pbxFlag
+            // pbxMap
             // 
-            this.pbxFlag.InitialImage = null;
-            this.pbxFlag.Location = new System.Drawing.Point(7, 7);
-            this.pbxFlag.Name = "pbxFlag";
-            this.pbxFlag.Size = new System.Drawing.Size(200, 150);
-            this.pbxFlag.TabIndex = 0;
-            this.pbxFlag.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(208, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(449, 360);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pbxMap.Image = global::Feudal.Properties.Resources.water_world_less_extreme;
+            this.pbxMap.Location = new System.Drawing.Point(208, 0);
+            this.pbxMap.Name = "pbxMap";
+            this.pbxMap.Size = new System.Drawing.Size(449, 360);
+            this.pbxMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxMap.TabIndex = 1;
+            this.pbxMap.TabStop = false;
+            this.pbxMap.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -476,16 +477,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(864, 360);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(394, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 56);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
             // 
             // feudalMainForm
             // 
@@ -519,10 +510,10 @@
             this.tabMil.ResumeLayout(false);
             this.tabGovt.ResumeLayout(false);
             this.tabGovt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).EndInit();
             this.mainTabControl.ResumeLayout(false);
             this.tabMap.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -571,9 +562,8 @@
         private System.Windows.Forms.PictureBox pbxFlag;
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage tabMap;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbxMap;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
     }
 }
 

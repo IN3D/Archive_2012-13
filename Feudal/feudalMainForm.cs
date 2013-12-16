@@ -79,5 +79,11 @@ namespace Feudal
         {
             btnEndTurn.PerformClick();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var mapfrm = new Feudal.Forms.Map();
+            mapfrm.Show();
+        }
     }
 }

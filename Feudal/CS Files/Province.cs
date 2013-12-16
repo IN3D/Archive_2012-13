@@ -50,7 +50,7 @@ namespace Feudal
 			set { provinceName = value; }
 		}
 
-		public string Quality
+		public int Quality
 		{
 			get { return quality; }
 			set { quality = value; }

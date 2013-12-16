@@ -2,7 +2,7 @@ using System;
 
 namespace Feudal
 {
-    abstract class ReligBonuses
+    public abstract class ReligBonuses
     {
         #region variables
         private double bonusTax;

@@ -27,7 +27,7 @@ namespace Feudal
             this.piety = 0.0;
             this.prestiege = 0.0;
 			//Religion religion = new Religion (belief.setCatholic());
-			Religion religion = new Religion (belief.setCatholic ());
+			Religion religion = new Religion (belief.setCatholic);
         }
         #endregion
     }
