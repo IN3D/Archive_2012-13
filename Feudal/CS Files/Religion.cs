@@ -2,133 +2,135 @@ using System;
 
 namespace Feudal
 {
-	abstract class ReligBonuses
+    abstract class ReligBonuses
     {
         #region variables
-        private double bonusTax;
-		private double bonusTrade;
-		private double bonusStability;
-		private double bonusTech;
-        #endregion
-
-		#region accessors
-		public double BonusTax
-		{
-			get { return bonusTax; }
-			set { bonusTax = value; }
-		}
-		public double BonusTrade
-		{
-			get { return bonusTrade; }
-			set { bonusTrade = value; }
-		}
-		public double BonusStability
-		{
-			get { return bonusStability; }
-			set { bonusStability = value; }
-		}
-		public double BonusTech
-		{
-			get { return bonusTech; }
-			set {bonusTech = value; }
-
-		}
-		#endregion
-
-		public class Religion : ReligBonuses
-    {
-        #region variables
-        private string name;
-		private string family;
-		private int maxRange;//maybe not use these, but for now they
-		private int minRange;//were part of the original 
-		private double tolerance;
-		private object ReligBonuses;
-		//maybe make a bonuses class
-		//to have religion extend?
-        /*
         private double bonusTax;
         private double bonusTrade;
         private double bonusStability;
         private double bonusTech;
-        */
-        #endregion
-
-        #region constructors
-        //don't use default
-		public Religion ()
-		{
-			name = "Not a religion";
-			family = "NULL";
-			maxRange = 10;
-			minRange = 1;
-			tolerance = 3.0;
-			ReligBonuses bonuses = new ReligBonuses (0.0, 0.0, 0.0, 0.0);
-			//var bonuses = ReligBonuses(0.0, 0.0, 0.0, 0.0) as ReligBonuses;
-		}
-
-		//actually use this one
-		public Religion (string name, string family, int maxRange, int minRange, 
-		               double tolerance, double bonusTax, double bonusTrade, double bonusStability,
-		               double bonusTech)
-		{
-			this.name = name;
-			this.family = family;
-			this.maxRange = maxRange;
-			this.minRange = minRange;
-			this.tolerance = tolerance;
-			//ReligBonuses
-			this.BonusTrade = bonusTrade;
-			this.BonusTax = bonusTax;
-			this.BonusTech = bonusTech;
-			this.BonusStability = bonusStability;
-		}
-		//deep copy constructor
-		public Religion(Religion e)
-		{
-			this.name = e.Name;
-			this.family = e.Family;
-			this.maxRange = e.MaxRange;
-			this.minRange = e.MinRange;
-			this.tolerance = e.Tolerance;
-			//ReligBonuses
-			this.BonusTax = e.BonusTax;
-			this.BonusTrade = e.BonusTrade;
-			this.BonusTech = e.BonusTech;
-			this.BonusStability = e.BonusStability;
-		}
         #endregion
 
         #region accessors
-		public string Name
-			{
-				get { return name; }
-				set { name = value; }
-			}
+        public double BonusTax
+        {
+            get { return bonusTax; }
+            set { bonusTax = value; }
+        }
+        public double BonusTrade
+        {
+            get { return bonusTrade; }
+            set { bonusTrade = value; }
+        }
+        public double BonusStability
+        {
+            get { return bonusStability; }
+            set { bonusStability = value; }
+        }
+        public double BonusTech
+        {
+            get { return bonusTech; }
+            set { bonusTech = value; }
 
-		public string Family
-			{
-				get { return family; }
-				set { family = value; }
-			}
-
-		public int MaxRange
-			{
-				get { return maxRange; }
-				set { maxRange = value; }
-			}
-
-		public int MinRange
-			{
-				get { return minRange; }
-				set { minRange = value; }
-			}
-
-		public double Tolerance
-			{
-				get { return tolerance; }
-				set { tolerance = value; }
-			}
+        }
         #endregion
+
+    }
+
+    public class Religion : ReligBonuses
+    {
+        #region variables
+            private string name;
+            private string family;
+            private int maxRange;//maybe not use these, but for now they
+            private int minRange;//were part of the original 
+            private double tolerance;
+            private object ReligBonuses;
+            //maybe make a bonuses class
+            //to have religion extend?
+            /*
+            private double bonusTax;
+            private double bonusTrade;
+            private double bonusStability;
+            private double bonusTech;
+            */
+            #endregion
+
+        #region constructors
+            //don't use default
+            public Religion()
+            {
+                name = "Not a religion";
+                family = "NULL";
+                maxRange = 10;
+                minRange = 1;
+                tolerance = 3.0;
+                ReligBonuses bonuses = new ReligBonuses(0.0, 0.0, 0.0, 0.0);
+                //var bonuses = ReligBonuses(0.0, 0.0, 0.0, 0.0) as ReligBonuses;
+            }
+
+            //actually use this one
+            public Religion(string name, string family, int maxRange, int minRange,
+                           double tolerance, double bonusTax, double bonusTrade, double bonusStability,
+                           double bonusTech)
+            {
+                this.name = name;
+                this.family = family;
+                this.maxRange = maxRange;
+                this.minRange = minRange;
+                this.tolerance = tolerance;
+                //ReligBonuses
+                this.BonusTrade = bonusTrade;
+                this.BonusTax = bonusTax;
+                this.BonusTech = bonusTech;
+                this.BonusStability = bonusStability;
+            }
+            //deep copy constructor
+            public Religion(Religion e)
+            {
+                this.name = e.Name;
+                this.family = e.Family;
+                this.maxRange = e.MaxRange;
+                this.minRange = e.MinRange;
+                this.tolerance = e.Tolerance;
+                //ReligBonuses
+                this.BonusTax = e.BonusTax;
+                this.BonusTrade = e.BonusTrade;
+                this.BonusTech = e.BonusTech;
+                this.BonusStability = e.BonusStability;
+            }
+            #endregion
+
+        #region accessors
+            public string Name
+            {
+                get { return name; }
+                set { name = value; }
+            }
+
+            public string Family
+            {
+                get { return family; }
+                set { family = value; }
+            }
+
+            public int MaxRange
+            {
+                get { return maxRange; }
+                set { maxRange = value; }
+            }
+
+            public int MinRange
+            {
+                get { return minRange; }
+                set { minRange = value; }
+            }
+
+            public double Tolerance
+            {
+                get { return tolerance; }
+                set { tolerance = value; }
+            }
+            #endregion
     }
 }
