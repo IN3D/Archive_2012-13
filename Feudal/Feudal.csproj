@@ -129,6 +129,44 @@
   <ItemGroup>
     <Content Include="Notes.txt" />
     <Content Include="Resources\Map game map_V2.png" />
+    <Content Include="Resources\religIcons\Buddhism\Religion_Buddhism_Mahayana.png" />
+    <Content Include="Resources\religIcons\Buddhism\Religion_Buddhism_Theravada.png" />
+    <Content Include="Resources\religIcons\Buddhism\Religion_Buddhism_Vajrayana.png" />
+    <Content Include="Resources\religIcons\Buddhism\Religion_buddhism_Zen.jpg" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Catholic.png" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Fundamentalism.png" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Mormanism.png" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Orthodox.png" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Protestant_Conservative.png" />
+    <Content Include="Resources\religIcons\Christian\Religion_Christianity_Protestant_Liberal.png" />
+    <Content Include="Resources\religIcons\Eastern\Religion_Eastern_Confucian.png" />
+    <Content Include="Resources\religIcons\Eastern\Religion_Eastern_Shinto.png" />
+    <Content Include="Resources\religIcons\Eastern\Religion_Eastern_Taoism.png" />
+    <Content Include="Resources\religIcons\Indian\Religion_Hinduism.png" />
+    <Content Include="Resources\religIcons\Indian\Religion_Sikhism.png" />
+    <Content Include="Resources\religIcons\Irreligion\Religion_Irreligion_Atheism.png" />
+    <Content Include="Resources\religIcons\Irreligion\Religion_Irreligion_Humanism.png" />
+    <Content Include="Resources\religIcons\Islam\Religion_Islam_Mu%27tazila.png" />
+    <Content Include="Resources\religIcons\Islam\Religion_Islam_Shiite.png" />
+    <Content Include="Resources\religIcons\Islam\Religion_Islam_Sunni.png" />
+    <Content Include="Resources\religIcons\Other\Question_mark.png" />
+    <Content Include="Resources\religIcons\Other\Religion_Judaism.png" />
+    <Content Include="Resources\religIcons\Other\Religion_Zoroastrianism.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_African.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Armenian.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Asatru.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Celtic.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Hellenic.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Hunab-Ku.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Khemitic.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Romuva.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Slavic.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Suomenusko.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Suomenusko_2.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Suomenusko_3.png" />
+    <Content Include="Resources\religIcons\Pagan\Pagan_Tengriism.png" />
+    <Content Include="Resources\religIcons\Pagan\Religion_new_Neo Religion.gif" />
+    <Content Include="Resources\religIcons\Pagan\Religion_Pagan_Native American.png" />
     <None Include="Resources\water world less extreme.png" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +196,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

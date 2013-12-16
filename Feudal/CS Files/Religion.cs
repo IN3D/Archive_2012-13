@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 
 namespace Feudal
 {
@@ -46,6 +47,7 @@ namespace Feudal
             private int minRange;//were part of the original 
             private double tolerance;
             private object ReligBonuses;
+            private Image icon;
             //maybe make a bonuses class
             //to have religion extend?
             /*
@@ -69,13 +71,14 @@ namespace Feudal
                 BonusTrade = 0.0;
                 BonusTech = 0.0;
                 BonusStability = 0.0;
+                icon = Image.FromFile("..\\Resources\\religIcons\\Other\\Question_mark.png");
                 //var bonuses = ReligBonuses(0.0, 0.0, 0.0, 0.0) as ReligBonuses;
             }
 
             //actually use this one
             public Religion(string name, string family, int maxRange, int minRange,
                            double tolerance, double bonusTax, double bonusTrade, double bonusStability,
-                           double bonusTech)
+                           double bonusTech, string fileLoc)
             {
                 this.name = name;
                 this.family = family;
@@ -87,6 +90,8 @@ namespace Feudal
                 this.BonusTax = bonusTax;
                 this.BonusTech = bonusTech;
                 this.BonusStability = bonusStability;
+                //Image
+                this.Icon = Image.FromFile(fileLoc);
             }
             //deep copy constructor
             public Religion(Religion e)
@@ -133,6 +138,11 @@ namespace Feudal
             {
                 get { return tolerance; }
                 set { tolerance = value; }
+            }
+            public Image Icon
+            {
+                get { return icon; }
+                private set { icon = value; }
             }
             #endregion
     }
