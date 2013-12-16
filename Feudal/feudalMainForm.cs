@@ -35,7 +35,7 @@ namespace Feudal
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Shows the about form
-            aboutPage abtfrm = new aboutPage();
+            var abtfrm = new aboutPage();
             abtfrm.Show();
         }
 
@@ -80,7 +80,7 @@ namespace Feudal
             btnEndTurn.PerformClick();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pbxMap_Click(object sender, EventArgs e)
         {
             var mapfrm = new Feudal.Forms.Map();
             mapfrm.Show();
