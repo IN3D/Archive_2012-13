@@ -44,62 +44,39 @@ namespace Feudal
 
 
         #region accessors
-        public string getProvinceName()
+		public string ProvinceName
 		{
-			return this.provinceName;
+			get { return provinceName; }
+			set { provinceName = value; }
 		}
 
-		public int getQuality()
+		public string Quality
 		{
-			return this.quality;
+			get { return quality; }
+			set { quality = value; }
 		}
 
-		public double getPopulation()
+		public double Population
 		{
-			return this.population;
+			get { return population; }
+			set { population = value; }
 		}
 
-		public double getWealth()
+		public double Wealth
 		{
-			return this.wealth;
+			get { return wealth; }
+			set { wealth = value; }
 		}
 
-		public int getStability()
+		public int Stability
 		{
-			return this.stability;
+			get { return stability; }
+			set { stability = value; }
 		}
         #endregion
-
-
-        #region modifiers
-        public void setProvinceName(string provinceName)
-		{
-			this.provinceName = provinceName;
-		}
-
-		public void setQuality(int quality)
-		{
-			this.quality = quality;
-		}
-
-		public void setPopulation(double population)
-		{
-			this.population = population;
-		}
-
-		public void setWealth(double wealth)
-		{
-			this.wealth = wealth;
-		}
-		public void setStability(int stability)
-		{
-			this.stability = stability;
-        }
-        #endregion
-
     }
-
 }
+			#region uglyComment
 			/******************************************************************
 			*Q: What the hell is this??										  *
 			*A: This was me working out exactly how characters should recieve *
@@ -133,3 +110,4 @@ namespace Feudal
             //{
             //    dbl_provIncome += 0.00;
             //}
+			#endregion

@@ -2,7 +2,7 @@ using System;
 
 namespace Feudal
 {
-	public class ReligBonuses
+	abstract class ReligBonuses
     {
         #region variables
         private double bonusTax;
@@ -11,75 +11,31 @@ namespace Feudal
 		private double bonusTech;
         #endregion
 
-        #region constructors
-        //default constructor because reasons
-		public ReligBonuses()
+		#region accessors
+		public double BonusTax
 		{
-			//These would make really terrible bonuses
-			this.bonusTax = 0.0;
-			this.bonusTrade = 0.0;
-			this.bonusStability = 0.0;
-			this.bonusTech = 0.0;
+			get { return bonusTax; }
+			set { bonusTax = value; }
 		}
-
-		//USE ME
-		public ReligBonuses(double bonusTax, double bonusTrade, double bonusStability, double bonusTech)
+		public double BonusTrade
 		{
-			this.bonusTax = bonusTax;
-			this.bonusTrade = bonusTrade;
-			this.bonusStability = bonusStability;
-			this.bonusTech = bonusTech;
+			get { return bonusTrade; }
+			set { bonusTrade = value; }
 		}
-        #endregion
-
-        #region accessors
-        public double getBonusTax()
+		public double BonusStability
 		{
-			return this.bonusTax;
+			get { return bonusStability; }
+			set { bonusStability = value; }
 		}
-
-		public double getBonusTrade()
+		public double BonusTech
 		{
-			return this.bonusTrade;
+			get { return bonusTech; }
+			set {bonusTech = value; }
+
 		}
+		#endregion
 
-		public double getBonusStability()
-		{
-			return this.bonusStability;
-		}
-
-		public double getBonusTech()
-		{
-			return this.bonusTech;
-		}
-        #endregion
-
-        #region modifiers
-        public void setBonusTax(double bonusTax)
-		{
-			this.bonusTax = bonusTax;
-		}
-
-		public void setBonusTrade(double bonusTrade)
-		{
-			this.bonusTrade = bonusTrade;
-		}
-
-		public void setBonusStability(double bonusStability)
-		{
-			this.bonusStability = bonusStability;
-		}
-
-		public void setBonusTech(double bonusTech)
-		{
-			this.bonusTech = bonusTech;
-        }
-        #endregion
-    }
-
-
-
-	public class Religion : ReligBonuses
+		public class Religion : ReligBonuses
     {
         #region variables
         private string name;
@@ -121,100 +77,58 @@ namespace Feudal
 			this.maxRange = maxRange;
 			this.minRange = minRange;
 			this.tolerance = tolerance;
-			ReligBonuses
-			bonuses = new ReligBonuses (bonusTax, bonusTrade, bonusStability, bonusTech);
+			//ReligBonuses
+			this.BonusTrade = bonusTrade;
+			this.BonusTax = bonusTax;
+			this.BonusTech = bonusTech;
+			this.BonusStability = bonusStability;
 		}
 		//deep copy constructor
 		public Religion(Religion e)
 		{
-            this.name = e.getName();
-			this.family = e.getFamily();
-			this.maxRange = e.getMaxRange();
-			this.minRange = e.getMinRange();
-			this.tolerance = e.getTolerance();
-			ReligBonuses
-			bonuses = new Feudal.ReligBonuses (e.getBonusTax(), e.getBonusTech(), e.getBonusStability(), e.getBonusTech());
+			this.name = e.Name;
+			this.family = e.Family;
+			this.maxRange = e.MaxRange;
+			this.minRange = e.MinRange;
+			this.tolerance = e.Tolerance;
+			//ReligBonuses
+			this.BonusTax = e.BonusTax;
+			this.BonusTrade = e.BonusTrade;
+			this.BonusTech = e.BonusTech;
+			this.BonusStability = e.BonusStability;
 		}
         #endregion
 
         #region accessors
-        public string getName()
-		{
-			return this.name;
-		}
+		public string Name
+			{
+				get { return name; }
+				set { name = value; }
+			}
 
-		public string getFamily()
-		{
-			return this.family;
-		}
+		public string Family
+			{
+				get { return family; }
+				set { family = value; }
+			}
 
-		public int getMaxRange()
-		{
-			return this.maxRange;
-		}
+		public int MaxRange
+			{
+				get { return maxRange; }
+				set { maxRange = value; }
+			}
 
-		public int getMinRange()
-		{
-			return this.minRange;
-		}
+		public int MinRange
+			{
+				get { return minRange; }
+				set { minRange = value; }
+			}
 
-		public double getTolerance()
-		{
-			return this.tolerance;
-		}
-
-		public object getBonuses()
-		{
-			return ReligBonuses;
-		}
-        #endregion
-
-        #region modifiers
-        public void setName(string name)
-		{
-			this.name = name;
-		}
-
-		public void setFamily(string family)
-		{
-			this.family = family;
-		}
-
-		public void setMaxRange(int maxRange)
-		{
-			this.maxRange = maxRange;
-		}
-
-		public void setMinRange(int minRange)
-		{
-			this.minRange = minRange;
-		}
-
-		public void setTolerance(double tolerance)
-		{
-			this.tolerance = tolerance;
-		}
-
-		//these modifiers exist in the ReligBonuses, but are in Religion for convenience
-		public void setBonusTax(double bonus)
-		{
-            this.setBonusTax(bonus);
-		}
-
-		public void setBonusTrade(double bonus)
-		{
-            this.setBonusTrade(bonus);
-		}
-
-		public void setBonusStability(double bonus)
-		{
-            this.setBonusStability(bonus);
-		}
-
-		public void setBonusTech(double bonus)
-		{
-            this.setBonusTech(bonus);
-        }
+		public double Tolerance
+			{
+				get { return tolerance; }
+				set { tolerance = value; }
+			}
         #endregion
     }
 }
