@@ -1,12 +1,14 @@
 using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Feudal
 {
-	public class province
+	public class Province
     {
+        Belief belief = new Belief();
         #region variables
         private string provinceName;
 		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
@@ -14,6 +16,7 @@ namespace Feudal
 		private int stability;
 		private double population;
 		private double wealth;
+        private Religion provReligion;
 		//private int techMilitary;//implement tech later
         //private int techEconomy;
 		//private int techGovernment;
@@ -23,22 +26,33 @@ namespace Feudal
         #endregion
 
         #region constructor
-        public province()
+        public Province()
 		{
 			this.provinceName = "Name Me!";
 			this.quality = 3;
 			this.population = 1000.00;
 			this.wealth = 0.25;
 			this.stability = 1;
+            this.provReligion = belief.setMormon;
 		}
+        public Province(string provinceName)
+        {
+            this.provinceName = provinceName;
+            this.quality = 3;
+            this.population = 1000.00;
+            this.wealth = 0.25;
+            this.stability = 1;
+            this.provReligion = belief.setProtestantL;
+        }
 
-		public province(string provinceName, int quality, int stability, double population, double wealth)
+		public Province(string provinceName, int quality, int stability, double population, double wealth, Religion provReligion)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
 			this.stability = stability;
 			this.population = population;
 			this.wealth = wealth;
+            this.provReligion = provReligion;
 		}
         #endregion
 
@@ -73,6 +87,27 @@ namespace Feudal
 			get { return stability; }
 			set { stability = value; }
 		}
+        public string ProvReligionName
+        {
+            get { return provReligion.Name; }
+            private set { provReligion.Name = value; }
+        }
+        public Image ProvReligionIcon
+        {
+            get { return provReligion.Icon; }
+        }
+        public void provReligionConvert(Religion r)
+        {
+            this.provReligion.Name = r.Name;
+            this.provReligion.Family = r.Family;
+            this.provReligion.MaxRange = r.MaxRange;
+            this.provReligion.MinRange = r.MinRange;
+            this.provReligion.Tolerance = r.Tolerance;
+            this.provReligion.BonusTax = r.BonusTax;
+            this.provReligion.BonusTrade = r.BonusTrade;
+            this.provReligion.BonusStability = r.BonusStability;
+            this.provReligion.ChangeIcon(r);
+        }
         #endregion
     }
 }

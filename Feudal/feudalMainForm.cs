@@ -18,12 +18,18 @@ namespace Feudal
         int year = 2012;
         Turns turns = new Turns();
 
+        //province Classes
+        public static Belief belief = new Belief();
+        Province prov1 = new Province();
+        Province prov2 = new Province("Jarnhal");
+
 
         public feudalMainForm()
         {
             InitializeComponent();
             
             lblYearDate.Text = year.ToString();
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -84,6 +90,25 @@ namespace Feudal
         {
             var mapfrm = new Feudal.Forms.Map();
             mapfrm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = prov1.ProvinceName;
+            lblGovtLeader.Text = prov1.Population.ToString();
+            lblGovtType.Text = prov1.Wealth.ToString();
+            lblReligon.Text = prov1.ProvReligionName;
+            provReligPicBox.Image = prov1.ProvReligionIcon;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = prov2.ProvinceName;
+            lblGovtLeader.Text = prov2.Population.ToString();
+            lblGovtType.Text = prov2.Wealth.ToString();
+            lblReligon.Text = prov2.ProvReligionName;
+            provReligPicBox.Image = prov2.ProvReligionIcon;
         }
     }
 }
