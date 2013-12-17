@@ -63,6 +63,26 @@ namespace Feudal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Baluha_arms {
+            get {
+                object obj = ResourceManager.GetObject("Baluha_arms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CoA_Eirkiring {
+            get {
+                object obj = ResourceManager.GetObject("CoA_Eirkiring", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flagTemp {
             get {
                 object obj = ResourceManager.GetObject("flagTemp", resourceCulture);
@@ -76,6 +96,16 @@ namespace Feudal.Properties {
         internal static System.Drawing.Bitmap flagTemp1 {
             get {
                 object obj = ResourceManager.GetObject("flagTemp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fuck_you_I_do_what_I_want {
+            get {
+                object obj = ResourceManager.GetObject("Fuck-you-I-do-what-I-want", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

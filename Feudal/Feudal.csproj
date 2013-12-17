@@ -81,6 +81,19 @@
       <DependentUpon>feudalMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CS Files\Program.cs" />
+    <Compile Include="CS Files\devConParsing.cs" />
+    <Compile Include="Forms\devConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\devConsole.Designer.cs">
+      <DependentUpon>devConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Map.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="feudalMainForm.resx">
       <DependentUpon>feudalMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\devConsole.resx">
+      <DependentUpon>devConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
@@ -128,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
+    <None Include="Resources\Fuck-you-I-do-what-I-want.gif" />
+    <None Include="Resources\Baluha_arms.png" />
+    <None Include="Resources\CoA_Eirkiring.png" />
     <Content Include="Resources\Map game map_V2.png" />
     <Content Include="Resources\religIcons\Buddhism\Religion_Buddhism_Mahayana.png" />
     <Content Include="Resources\religIcons\Buddhism\Religion_Buddhism_Theravada.png" />

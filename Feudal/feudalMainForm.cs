@@ -18,7 +18,6 @@ namespace Feudal
         int year = 2012;
         Turns turns = new Turns();
 
-
         public feudalMainForm()
         {
             InitializeComponent();
@@ -35,7 +34,7 @@ namespace Feudal
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Shows the about form
-            var abtfrm = new aboutPage();
+            var abtfrm = new Feudal.Forms.aboutPage();
             abtfrm.Show();
         }
 
@@ -85,5 +84,23 @@ namespace Feudal
             var mapfrm = new Feudal.Forms.Map();
             mapfrm.Show();
         }
+
+        private void devConsoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var devCon = new Feudal.Forms.devConsole();
+            devCon.Show();
+        }
+
+        private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new Feudal.Forms.mainMenu();
+            mainMenu.Show();
+        }
+
+        public void setLabelMoney(string setter)
+        {
+            lblMoney.Text = setter;
+        }
+
     }
 }

@@ -32,11 +32,13 @@
             this.lbxInfo = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.endTurnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devConsoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -82,6 +84,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.boxGovt = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblOwner = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.pbxFlag = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnChangeGovt = new System.Windows.Forms.Button();
@@ -92,12 +97,8 @@
             this.lblGovtLeader = new System.Windows.Forms.Label();
             this.pbxMap = new System.Windows.Forms.PictureBox();
             this.mainTabControl = new System.Windows.Forms.TabControl();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tabBrowser = new System.Windows.Forms.TabPage();
-            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblOwner = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabMil.SuspendLayout();
@@ -149,16 +150,23 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // mainMenuToolStripMenuItem
+            // 
+            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.mainMenuToolStripMenuItem.Text = "Main Menu";
+            this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
+            // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -173,22 +181,30 @@
             // endTurnToolStripMenuItem
             // 
             this.endTurnToolStripMenuItem.Name = "endTurnToolStripMenuItem";
-            this.endTurnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.endTurnToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.endTurnToolStripMenuItem.Text = "End Turn";
             this.endTurnToolStripMenuItem.Click += new System.EventHandler(this.endTurnToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.devConsoleToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // devConsoleToolStripMenuItem
+            // 
+            this.devConsoleToolStripMenuItem.Name = "devConsoleToolStripMenuItem";
+            this.devConsoleToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.devConsoleToolStripMenuItem.Text = "Dev Console";
+            this.devConsoleToolStripMenuItem.Click += new System.EventHandler(this.devConsoleToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -200,6 +216,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 498);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(896, 22);
+            this.statusStrip1.Stretch = false;
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -705,6 +722,33 @@
             this.boxGovt.TabStop = false;
             this.boxGovt.Text = "Province Attributes";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(89, 235);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Sigil";
+            // 
+            // lblOwner
+            // 
+            this.lblOwner.AutoSize = true;
+            this.lblOwner.Location = new System.Drawing.Point(74, 30);
+            this.lblOwner.Name = "lblOwner";
+            this.lblOwner.Size = new System.Drawing.Size(45, 13);
+            this.lblOwner.TabIndex = 9;
+            this.lblOwner.Text = "America";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Name:";
+            // 
             // pbxFlag
             // 
             this.pbxFlag.Image = global::Feudal.Properties.Resources.flagTemp;
@@ -806,15 +850,6 @@
             this.mainTabControl.Size = new System.Drawing.Size(872, 386);
             this.mainTabControl.TabIndex = 0;
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(861, 360);
-            this.webBrowser1.TabIndex = 9;
-            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
-            // 
             // tabBrowser
             // 
             this.tabBrowser.Controls.Add(this.webBrowser1);
@@ -825,38 +860,14 @@
             this.tabBrowser.Text = "Wiki";
             this.tabBrowser.UseVisualStyleBackColor = true;
             // 
-            // mainMenuToolStripMenuItem
+            // webBrowser1
             // 
-            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.mainMenuToolStripMenuItem.Text = "Main Menu";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 30);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Name:";
-            // 
-            // lblOwner
-            // 
-            this.lblOwner.AutoSize = true;
-            this.lblOwner.Location = new System.Drawing.Point(74, 30);
-            this.lblOwner.Name = "lblOwner";
-            this.lblOwner.Size = new System.Drawing.Size(45, 13);
-            this.lblOwner.TabIndex = 9;
-            this.lblOwner.Text = "America";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(89, 235);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Sigil";
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(861, 360);
+            this.webBrowser1.TabIndex = 9;
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // feudalMainForm
             // 
@@ -876,6 +887,7 @@
             this.Controls.Add(this.btnEndTurn);
             this.Controls.Add(this.mainTabControl);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "feudalMainForm";
@@ -916,7 +928,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label lblMonthDate;
         public System.Windows.Forms.Label lblYearDate;
@@ -965,12 +976,14 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
         private System.Windows.Forms.TabPage tabBrowser;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label lblOwner;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.ToolStripMenuItem devConsoleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
+        public System.Windows.Forms.Label lblMoney;
     }
 }
 

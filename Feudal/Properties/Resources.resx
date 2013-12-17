@@ -121,13 +121,22 @@
   <data name="flagTemp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flagTemp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Map game map_V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Map game map_V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="flagTemp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flagTemp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Map game map_V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map game map_V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fuck-you-I-do-what-I-want" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fuck-you-I-do-what-I-want.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="water world less extreme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\water world less extreme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Baluha_arms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Baluha_arms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CoA_Eirkiring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CoA_Eirkiring.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
