@@ -8,12 +8,13 @@ namespace Feudal
 	public class province
     {
         #region variables
-        private string provinceName;
+        private //can set private/public and all following until otherwise stated will be that
+        string provinceName;
 		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
-		private int quality;
-		private int stability;
-		private double population;
-		private double wealth;
+		int quality;
+		int stability;
+		double population;
+		double wealth;
 		//private int techMilitary;//implement tech later
         //private int techEconomy;
 		//private int techGovernment;
