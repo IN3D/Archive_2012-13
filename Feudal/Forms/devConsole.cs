@@ -24,5 +24,11 @@ namespace Feudal.Forms
             var dvp = new devConParsing();
             dvp.parseCommand(command);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var fu = new feudalMainForm();
+            fu.lblMoney.Text = "FUCK YOU";
+        }
     }
 }

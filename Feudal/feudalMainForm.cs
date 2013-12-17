@@ -97,10 +97,5 @@ namespace Feudal
             mainMenu.Show();
         }
 
-        public void setLabelMoney(string setter)
-        {
-            lblMoney.Text = setter;
-        }
-
     }
 }

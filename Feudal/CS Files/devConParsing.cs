@@ -8,13 +8,13 @@ namespace Feudal.Forms
 {
     class devConParsing
     {
-        #region grab text
+        #region grab command
         public void parseCommand(string command)
         {
             feudalMainForm feuFrm = new feudalMainForm();
             if (command.Substring(0, 1) == "$")
             {
-                feuFrm.setLabelMoney("MONEY!!!!!");
+                feuFrm.lblMoney.Text="MONEY!!!!!";
                 System.Windows.Forms.MessageBox.Show("WORKED");
             }
             else
