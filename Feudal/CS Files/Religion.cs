@@ -1,4 +1,5 @@
 using System;
+using System.Windows;
 using System.Drawing;
 
 namespace Feudal
@@ -47,6 +48,7 @@ namespace Feudal
             private int minRange;//were part of the original 
             private double tolerance;
             private object ReligBonuses;
+            private string fileLoc;
             private Image icon;
             //maybe make a bonuses class
             //to have religion extend?
@@ -91,7 +93,14 @@ namespace Feudal
                 this.BonusTech = bonusTech;
                 this.BonusStability = bonusStability;
                 //Image
-                this.Icon = Image.FromFile(fileLoc);
+                try
+                {
+                    this.Icon = Image.FromFile(fileLoc);
+                }
+                catch
+                {
+                    Console.WriteLine("Could not find " + fileLoc);
+                }
             }
             //deep copy constructor
             public Religion(Religion e)
@@ -139,10 +148,26 @@ namespace Feudal
                 get { return tolerance; }
                 set { tolerance = value; }
             }
-            public Image Icon
+            public Image Icon//This doesn't seem to WAD
             {
                 get { return icon; }
-                private set { icon = value; }
+                set { icon = value; }
+            }
+            public string FileLoc
+            {
+                get { return fileLoc; }
+                set { fileLoc = value; }
+            }
+            public void ChangeIcon(Religion r)
+            {
+                try
+                {
+                    this.Icon = Image.FromFile(r.fileLoc);
+                }
+                catch
+                {
+                    Console.WriteLine("Could not find object's " + r.fileLoc);
+                }
             }
             public double getBonusTax
             {
