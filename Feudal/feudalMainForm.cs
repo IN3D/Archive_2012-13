@@ -11,7 +11,7 @@ using Feudal.Forms;//add dev Console
 namespace Feudal
 {
     public partial class feudalMainForm : Form
-    {   
+    {
         //declare variables
         int counter = 0;
         //added so that the year display is no longer static
@@ -31,14 +31,15 @@ namespace Feudal
             dc.AdviseParent += new devConsole.AdviseParentEventHandler(changeMainFormText);//added dev console
 
             lblYearDate.Text = year.ToString();
-            
+
         }
 
         private void feudalMainForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-            
+            button1.Text = prov1.ProvinceName;
+            button2.Text = prov2.ProvinceName;
 
         }
 
@@ -61,8 +62,8 @@ namespace Feudal
             // Shows the change government form
             var chngGovt = new changeGovernment();
             chngGovt.Show();
-        }   
-  
+        }
+
         private void devConsoleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dc.ShowDialog();//added dev console
@@ -76,6 +77,11 @@ namespace Feudal
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
             button1.Text = prov1.ProvinceName;
             button2.Text = prov2.ProvinceName;
+        }
+
+        private void endTurnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnEndTurn.PerformClick();
         }
         #endregion
 
@@ -102,26 +108,6 @@ namespace Feudal
 
         }
 
-        private void endTurnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            btnEndTurn.PerformClick();
-        }
-        /*
-        private void pbxMap_Click(object sender, EventArgs e)
-        {
-            var mapfrm = new Feudal.Forms.Map();
-            mapfrm.Show();
-        }
-        #endregion
-
-        #region Methods
-        private void changeMainFormText(string text)//added dev console
-        {
-            lblMoney.Text = text;
-        }
-        #endregion
-         */
-
         private void button1_Click(object sender, EventArgs e)
         {
             lblOwner.Text = prov1.ProvinceName;
@@ -139,5 +125,24 @@ namespace Feudal
             lblGovtType.Text = prov2.Wealth.ToString();
             lblReligon.Text = prov2.ProvReligionName;
             provReligPicBox.Image = prov2.ProvReligionIcon;
+        }
+
+        /*
+        private void pbxMap_Click(object sender, EventArgs e)
+        {
+            var mapfrm = new Feudal.Forms.Map();
+            mapfrm.Show();
+        }*/
+        #endregion
+
+        #region Methods
+        private void changeMainFormText(string text)//added dev console
+        {
+            lblMoney.Text = text;
+        }
+        #endregion
+
+
+
     }
 }
