@@ -29,6 +29,14 @@ namespace Feudal
             lblYearDate.Text = year.ToString();
         }
 
+        private void feudalMainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
+            //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
+
+        }
+
+        #region MenuStripItems
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Closes the program
@@ -47,15 +55,21 @@ namespace Feudal
             // Shows the change government form
             var chngGovt = new changeGovernment();
             chngGovt.Show();
-        }
-        
-        private void feudalMainForm_Load(object sender, EventArgs e)
+        }   
+  
+        private void devConsoleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
-            //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-
+            dc.ShowDialog();//added dev console
         }
 
+        private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new Feudal.Forms.mainMenu();
+            mainMenu.Show();
+        }
+        #endregion
+
+        #region onClickEvents
         private void btnEndTurn_Click(object sender, EventArgs e)
         {
             toolStripStatusLabel.Text = "Advancing Turn";
@@ -88,21 +102,13 @@ namespace Feudal
             var mapfrm = new Feudal.Forms.Map();
             mapfrm.Show();
         }
+        #endregion
 
-        private void devConsoleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            dc.ShowDialog();//added dev console
-        }
-
-        private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var mainMenu = new Feudal.Forms.mainMenu();
-            mainMenu.Show();
-        }
-
+        #region Methods
         private void changeMainFormText(string text)//added dev console
         {
             lblMoney.Text = text;
         }
+        #endregion
     }
 }
