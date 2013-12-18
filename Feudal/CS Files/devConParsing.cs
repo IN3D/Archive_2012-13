@@ -11,11 +11,11 @@ namespace Feudal.Forms
         #region grab command
         public void parseCommand(string command)
         {
-            feudalMainForm feuFrm = new feudalMainForm();
+            feudalMainForm fmf = new feudalMainForm();
             if (command.Substring(0, 1) == "$")
             {
-                feuFrm.lblMoney.Text="MONEY!!!!!";
-                System.Windows.Forms.MessageBox.Show("WORKED");
+                fmf.lblMoney.Text="MONEY!!!!!";
+                //System.Windows.Forms.MessageBox.Show("WORKED");//not needed
             }
             else
             {

@@ -11,6 +11,9 @@ namespace Feudal.Forms
 {
     public partial class devConsole : Form
     {
+        public delegate void AdviseParentEventHandler(string text);//added dev console
+        public event AdviseParentEventHandler AdviseParent;//added dev console
+
         public devConsole()
         {
             InitializeComponent();
@@ -18,17 +21,15 @@ namespace Feudal.Forms
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            txbxCommand.Focus();
-            string command = txbxCommand.Text;
-            txbxCommand.Clear();
-            var dvp = new devConParsing();
-            dvp.parseCommand(command);
+            labelChange(txbxCommand.Text);//added dev console  
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void labelChange(string text)//added dev console
         {
-            var fu = new feudalMainForm();
-            fu.lblMoney.Text = "FUCK YOU";
+            if (AdviseParent != null)
+            {
+                AdviseParent(text);
+            }
         }
     }
 }

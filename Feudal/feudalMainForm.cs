@@ -6,22 +6,26 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Feudal.Forms;//add dev Console
 
 namespace Feudal
 {
     public partial class feudalMainForm : Form
-    {
+    {   
         //declare variables
         int counter = 0;
-        //Eric 09-14-2013
         //added so that the year display is no longer static
         int year = 2012;
         Turns turns = new Turns();
 
+        private devConsole dc = new devConsole();//added dev console
+
         public feudalMainForm()
         {
             InitializeComponent();
-            
+
+            dc.AdviseParent += new devConsole.AdviseParentEventHandler(changeMainFormText);//added dev console
+
             lblYearDate.Text = year.ToString();
         }
 
@@ -87,8 +91,7 @@ namespace Feudal
 
         private void devConsoleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var devCon = new Feudal.Forms.devConsole();
-            devCon.Show();
+            dc.ShowDialog();//added dev console
         }
 
         private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,5 +100,9 @@ namespace Feudal
             mainMenu.Show();
         }
 
+        private void changeMainFormText(string text)//added dev console
+        {
+            lblMoney.Text = text;
+        }
     }
 }
