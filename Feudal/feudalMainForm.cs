@@ -56,7 +56,8 @@ namespace Feudal
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-
+            button1.Text = prov1.ProvinceName;
+            button2.Text = prov2.ProvinceName;
         }
 
         private void btnEndTurn_Click(object sender, EventArgs e)
@@ -85,12 +86,13 @@ namespace Feudal
         {
             btnEndTurn.PerformClick();
         }
-
+        /*
         private void pbxMap_Click(object sender, EventArgs e)
         {
             var mapfrm = new Feudal.Forms.Map();
             mapfrm.Show();
         }
+         */
 
         private void button1_Click(object sender, EventArgs e)
         {
