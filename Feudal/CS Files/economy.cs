@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Feudal.CS_Files
 {
-    public class economy : province
+    public class Economy : province
     {
         #region variables
         private
@@ -17,7 +17,7 @@ namespace Feudal.CS_Files
         #endregion
 
         #region constructor
-		public economy()
+		public Economy()
         {
             this.money = 1000000;
             this.industry = 500;
