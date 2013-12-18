@@ -17,9 +17,12 @@ namespace Feudal
         //added so that the year display is no longer static
         int year = 2012;
         Turns turns = new Turns();
-        public Province prov1 = new Province();
 
         private devConsole dc = new devConsole();//added dev console
+        //province Classes
+        public static Belief belief = new Belief();
+        Province prov1 = new Province();
+        Province prov2 = new Province("Jarnhal");
 
         public feudalMainForm()
         {
@@ -28,6 +31,7 @@ namespace Feudal
             dc.AdviseParent += new devConsole.AdviseParentEventHandler(changeMainFormText);//added dev console
 
             lblYearDate.Text = year.ToString();
+            
         }
 
         private void feudalMainForm_Load(object sender, EventArgs e)
@@ -68,6 +72,10 @@ namespace Feudal
         {
             var mainMenu = new Feudal.Forms.mainMenu();
             mainMenu.Show();
+            // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
+            //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
+            button1.Text = prov1.ProvinceName;
+            button2.Text = prov2.ProvinceName;
         }
         #endregion
 
@@ -98,7 +106,7 @@ namespace Feudal
         {
             btnEndTurn.PerformClick();
         }
-
+        /*
         private void pbxMap_Click(object sender, EventArgs e)
         {
             var mapfrm = new Feudal.Forms.Map();
@@ -112,5 +120,24 @@ namespace Feudal
             lblMoney.Text = text;
         }
         #endregion
+         */
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = prov1.ProvinceName;
+            lblGovtLeader.Text = prov1.Population.ToString();
+            lblGovtType.Text = prov1.Wealth.ToString();
+            lblReligon.Text = prov1.ProvReligionName;
+            provReligPicBox.Image = prov1.ProvReligionIcon;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = prov2.ProvinceName;
+            lblGovtLeader.Text = prov2.Population.ToString();
+            lblGovtType.Text = prov2.Wealth.ToString();
+            lblReligon.Text = prov2.ProvReligionName;
+            provReligPicBox.Image = prov2.ProvReligionIcon;
     }
 }

@@ -14,6 +14,15 @@ namespace Feudal.Forms
         public aboutPage()
         {
             InitializeComponent();
+            /* NO CODE FOR YOU!
+            this.Text = String.Format("About {0}", AssemblyTitle);
+            this.labelProductName.Text = AssemblyProduct;
+            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
+            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelCompanyName.Text = AssemblyCompany;
+            this.textBoxDescription.Text = AssemblyDescription;
+             */
+            //this.label3.Text = String.Format("Version {0}", AssemblyVersion);
         }
 
         private void pbxLogo_Click(object sender, EventArgs e)

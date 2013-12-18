@@ -11,23 +11,23 @@ namespace Feudal
 
         //TODO: Note, I honestly just threw some numbers in there that seemed sorta right. Right now my goal is to just have them usable.
         //not necessarily fully featured and balanced (yet).
-        //TODO: also, for best practice these should be private, and have accessors to them, not be public. So fix this later.
+        //TODO: if there is a way these can be relative the should eventually be
 
         #region christian_denominations
         private Religion catholic = new Religion("Catholic", "Christian", 10, 1, 1.0, 0.5, -0.35, 0.35, -0.1, 
-        "..\\Resources\\religIcons\\Christian\\Religion_Christianity_Catholic.png");
+        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Catholic.png");
         private Religion orthodox = new Religion("Orthodox", "Christian", 10, 1, 1.0, 0.5, -0.25, 0.35, 0.0,
-        "..\\Resources\\religIcons\\Christian\\Religion_Christianity_Orthodox.png");
+        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Orthodox.png");
         private Religion protestant_Lib = new Religion("Liberal Protestant", "Christian", 6, 1, 1.25, 0.0, 0.25, 0.25, 0.15,
-        "..\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Liberal.png");
+        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Liberal.png");
         private Religion protestant_Con = new Religion("Conservative Protestant", "Christian", 7, 4, 0.85, 0.25, 0.35, 0.40, -0.20,
-        "..\\Resoures\\religIcons\\Christian\\Religion_Christianity_Protestant_Conservative.png");
+        "C:Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Conservative.png");
         private Religion fundamentalist = new Religion("Fundamentalist", "Christian", 10, 7, 0.25, 0.75, 0.25, 0.75, -0.7,
-        "..\\Resources\\religIcons\\Christian\\Religion_Christianity_Fundamentalism.png");
+        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Fundamentalism.png");
         private Religion mormanism = new Religion("Mormonism", "Christian", 10, 4, 0.75, 0.60, -0.20, 0.50, -0.35,
-        "..\\Resources\\religIcons\\Christian\\Religion_Christianity_Mormanism.png");
+        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Mormanism.png");
         #endregion
-
+        /*UNDO
         #region muslim_denominations
         private Religion shiite = new Religion("Shiite", "Islam", 10, 4, 1.0, 0.35, 0.1, 0.25, 0.0,
         "..\\Resources\\religIcons\\Islam\\Religion_Islam_Shiite.png");
@@ -83,7 +83,7 @@ namespace Feudal
         #endregion
 
         #endregion
-
+        UNDO*/
         public Belief ()
 		{
             //...the answers to life
@@ -119,7 +119,7 @@ namespace Feudal
 			get { return mormanism; }
         }
         #endregion
-
+        /*UNDO
         #region muslim_accessors
         public Religion setShiite
 		{
@@ -205,7 +205,8 @@ namespace Feudal
 			get { return atheism; }
 		}
         #endregion
-
+        UNDO*/
         #endregion
+        #endregion//KILL ME LATER
     }
 }
