@@ -144,6 +144,11 @@ namespace Feudal
                 get { return icon; }
                 private set { icon = value; }
             }
+            public double getBonusTax
+            {
+                get { return this.BonusTax; }
+                set { this.BonusTax = value; }
+            }
             #endregion
     }
 }

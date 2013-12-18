@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Feudal.CS_Files
 {
-    public class Economy : province
+    public class Economy : Province
     {
         #region variables
         private

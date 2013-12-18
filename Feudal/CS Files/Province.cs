@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Feudal
 {
-	public class province
+	public class Province
     {
         #region variables
         private //set all variables as private
@@ -23,7 +23,7 @@ namespace Feudal
         #region constructor
         //default constructor
         //this probably shouldn't be used, it's here just incase
-        public province()
+        public Province()
 		{
 			this.provinceName = "Name Me!";
 			this.quality = 3;
@@ -32,7 +32,7 @@ namespace Feudal
 			this.stability = 1;
 		}
 
-		public province(string provinceName, int quality, int stability, double population, double wealth)
+		public Province(string provinceName, int quality, int stability, double population, double wealth)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;

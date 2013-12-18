@@ -17,6 +17,7 @@ namespace Feudal
         //added so that the year display is no longer static
         int year = 2012;
         Turns turns = new Turns();
+        public Province prov1 = new Province();
 
         private devConsole dc = new devConsole();//added dev console
 
@@ -33,6 +34,7 @@ namespace Feudal
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
+            
 
         }
 
