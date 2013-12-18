@@ -22,6 +22,8 @@ namespace Feudal.Forms
         private void btnEnter_Click(object sender, EventArgs e)
         {
             labelChange(txbxCommand.Text);//added dev console  
+            txbxCommand.Clear();
+            txbxCommand.Focus();
         }
 
         public void labelChange(string text)//added dev console
