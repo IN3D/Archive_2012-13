@@ -133,36 +133,44 @@ namespace Feudal
             get { return fileLoc; }
 			set { fileLoc = value; }
         }
-        public void ChangeIcon(Religion r)
-        {
-            try
-			{
-                this.Icon = Image.FromFile(r.fileLoc);
-            }
-			catch
-            {
-                Console.WriteLine("Could not find object's " + r.fileLoc);
-			}
-        }
+
+		//ReligBonus Accessors
         public double BonusTax
 		{
 			get { return bonusTax; }
 			set { bonusTax = value; }
         }
+
 		public double BonusTrade
 		{
 			get { return bonusTrade; }
 			set { bonusTrade = value; }
 		}
+
 		public double BonusStability
 		{
 			get { return bonusStability; }
 			set { bonusStability = value; }
 		}
+
 		public double BonusTech
 		{
 			get { return bonusTech; }
 			set { bonusTech = value; }
+		}
+
+		/* I think the Icon accessor is working as designed, if it isn't
+		 * this should -Eric*/
+		public void ChangeIcon(Religion r)
+		{
+			try
+			{
+				this.Icon = Image.FromFile(r.fileLoc);
+			}
+			catch
+			{
+				Console.WriteLine("Could not find object's " + r.fileLoc);
+			}
 		}
 		#endregion
     }

@@ -8,7 +8,7 @@ namespace Feudal
 	public class character
     {
         #region variables
-        private int[] owns;
+		private int[] owns;//this might not be necessary
 		private int ID;
 		private double wealth;
         private double piety;
@@ -19,14 +19,14 @@ namespace Feudal
         Belief belief = new Belief();
 
         #region constructors
-        public character()
+		//default constructor
+		public character()
 		{
             owns = new int[0];
 			this.ID = 0;
 			this.wealth = 0.0;
             this.piety = 0.0;
             this.prestiege = 0.0;
-			//Religion religion = new Religion (belief.setCatholic());
 			Religion religion = new Religion (belief.setCatholic);
         }
         #endregion
