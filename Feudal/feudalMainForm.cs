@@ -74,31 +74,31 @@ namespace Feudal
             new Province("Province 25", .85, .9, 1015, .35, Color.Thistle, belief.setCatholic)};
             #endregion
             #region buttonTextSet
-            button1.Text = provinces[0].ProvinceName;
-            button2.Text = provinces[1].ProvinceName;
-            button3.Text = provinces[2].ProvinceName;
-            button1.Text = provinces[3].ProvinceName;
-            button2.Text = provinces[4].ProvinceName;
-            button3.Text = provinces[5].ProvinceName;
-            button1.Text = provinces[6].ProvinceName;
-            button2.Text = provinces[7].ProvinceName;
-            button3.Text = provinces[8].ProvinceName;
-            button1.Text = provinces[9].ProvinceName;
-            button2.Text = provinces[10].ProvinceName;
-            button3.Text = provinces[11].ProvinceName;
-            button1.Text = provinces[12].ProvinceName;
-            button2.Text = provinces[13].ProvinceName;
-            button3.Text = provinces[14].ProvinceName;
-            button1.Text = provinces[15].ProvinceName;
-            button2.Text = provinces[16].ProvinceName;
-            button3.Text = provinces[17].ProvinceName;
-            button1.Text = provinces[18].ProvinceName;
-            button2.Text = provinces[19].ProvinceName;
-            button3.Text = provinces[20].ProvinceName;
-            button1.Text = provinces[21].ProvinceName;
-            button2.Text = provinces[22].ProvinceName;
-            button3.Text = provinces[23].ProvinceName;
-            button1.Text = provinces[24].ProvinceName;
+            province1.Text = provinces[0].ProvinceName;
+            province2.Text = provinces[1].ProvinceName;
+            province3.Text = provinces[2].ProvinceName;
+            province1.Text = provinces[3].ProvinceName;
+            province2.Text = provinces[4].ProvinceName;
+            province3.Text = provinces[5].ProvinceName;
+            province1.Text = provinces[6].ProvinceName;
+            province2.Text = provinces[7].ProvinceName;
+            province3.Text = provinces[8].ProvinceName;
+            province1.Text = provinces[9].ProvinceName;
+            province2.Text = provinces[10].ProvinceName;
+            province3.Text = provinces[11].ProvinceName;
+            province1.Text = provinces[12].ProvinceName;
+            province2.Text = provinces[13].ProvinceName;
+            province3.Text = provinces[14].ProvinceName;
+            province1.Text = provinces[15].ProvinceName;
+            province2.Text = provinces[16].ProvinceName;
+            province3.Text = provinces[17].ProvinceName;
+            province1.Text = provinces[18].ProvinceName;
+            province2.Text = provinces[19].ProvinceName;
+            province3.Text = provinces[20].ProvinceName;
+            province1.Text = provinces[21].ProvinceName;
+            province2.Text = provinces[22].ProvinceName;
+            province3.Text = provinces[23].ProvinceName;
+            province1.Text = provinces[24].ProvinceName;
             #endregion
 
         }
@@ -167,21 +167,21 @@ namespace Feudal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lblOwner.Text = prov1.ProvinceName;
+            /*lblOwner.Text = prov1.ProvinceName;
             lblGovtLeader.Text = prov1.Population.ToString();
             lblGovtType.Text = prov1.Wealth.ToString();
             lblReligon.Text = prov1.ProvReligionName;
-            provReligPicBox.Image = prov1.ProvReligionIcon;
+            provReligPicBox.Image = prov1.ProvReligionIcon;*/
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lblOwner.Text = prov2.ProvinceName;
+            /*lblOwner.Text = prov2.ProvinceName;
             lblGovtLeader.Text = prov2.Population.ToString();
             lblGovtType.Text = prov2.Wealth.ToString();
             lblReligon.Text = prov2.ProvReligionName;
-            provReligPicBox.Image = prov2.ProvReligionIcon;
+            provReligPicBox.Image = prov2.ProvReligionIcon;*/
         }
 
         /*
