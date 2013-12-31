@@ -13,6 +13,7 @@ namespace Feudal
 {
     public partial class feudalMainForm : Form
     {
+        //TODO: I feel like these variables should go somewhere else -Eric
         //declare variables
         int counter = 0;
         //added so that the year display is no longer static
