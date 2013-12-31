@@ -23,7 +23,6 @@ namespace Feudal
         private Religion provReligion;
         public int[] neighbors;
         private long ownerID;
-        private bool isOwned;//maybe not needed?
 
 		//private int techMilitary;//implement tech later
         //private int techEconomy;
@@ -51,8 +50,20 @@ namespace Feudal
             this.provReligion = belief.setProtestantL;
         }
 
+        public Province(string provinceName, double quality, double stability, double population, double wealth,
+            Color provinceColor, Religion provReligion)
+        {
+            this.provinceName = provinceName;
+            this.quality = quality;
+            this.stability = stability;
+            this.population = population;
+            this.wealth = wealth;
+            this.provinceColor = provinceColor;
+            this.provReligion = provReligion;
+        }
+
 		public Province(string provinceName, double quality, double stability, double population, double wealth, 
-            Color provinceColor, Religion provReligion, int[] neighbors, string buttonName)
+            Color provinceColor, Religion provReligion, string buttonName)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
@@ -61,7 +72,6 @@ namespace Feudal
 			this.wealth = wealth;
             this.provinceColor = provinceColor;
             this.provReligion = provReligion;
-            this.neighbors = neighbors;
             this.buttonName = buttonName;
 		}
         #endregion

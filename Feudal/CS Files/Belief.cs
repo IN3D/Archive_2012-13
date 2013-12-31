@@ -84,10 +84,6 @@ namespace Feudal
 
         #endregion
         UNDO*/
-        public Belief ()
-		{
-            //...the answers to life
-		}
         //!!--Accessors for Religions--!!//
         //TODO: in the future it will probably pay to have two sets of accessors for initially setting the religion,
 		//and for conversions their mechanics will likely be different.

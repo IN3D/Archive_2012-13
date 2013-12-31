@@ -43,33 +43,35 @@ namespace Feudal
         #endregion
 
         #region ArrayDeclaration
-        Province[] provinces= {
-        new Province("Province 1", .9, 1, 1000, .25, Color.Maroon, belief.setProtestantC, prov1, "province1"),
-        new Province("Province 2", .8, 1, 1005, .35, Color.Red, belief.setProtestantC, prov2, "province2"),
-        new Province("Province 3", .75, .9, 995, .15, Color.Brown, belief.setFundamentalist, prov3, "province3"),
-        new Province("Province 4", .8, 1, 1020, .3, Color.Firebrick, belief.setProtestantC, prov4, "province4"),
-        new Province("Province 5", .85, .9, 1010, .3, Color.IndianRed, belief.setProtestantL, prov5, "province5"),
-        new Province("Province 6", .9, 1, 1050, .45, Color.DarkGoldenrod, belief.setProtestantL, prov6, "province6"),
-        new Province("Province 7", .8, .9, 990, .2, Color.Goldenrod, belief.setProtestantC, prov7, "province7"),
-        new Province("Province 8", .9, 1, 1065, .35, Color.Gold, belief.setProtestantL, prov8, "province8"),
-        new Province("Province 9", .85, .9, 1000, .3, Color.Khaki, belief.setProtestantL, prov9, "province9"),
-        new Province("Province 10", .8, .9, 1015, .4, Color.Yellow, belief.setProtestantC, prov10, "province10"),
-        new Province("Province 11", .75, 1, 1010, .25, Color.DarkOliveGreen, belief.setProtestantC, prov11, "province11"),
-        new Province("Province 12", .85, .95, 1005, .2, Color.OliveDrab, belief.setProtestantC, prov12, "province12"),
-        new Province("Province 13", .8, .95, 1095, .15, Color.YellowGreen, belief.setFundamentalist, prov13, "province13"),
-        new Province("Province 14", .85, .9, 1010, .2, Color.LimeGreen, belief.setFundamentalist, prov14, "province14"),
-        new Province("Province 15", .8, .9, 1020, .15, Color.PaleGreen, belief.setFundamentalist, prov15, "province15"),
-        new Province("Province 16", .8, .85, 1025, .2, Color.DarkSlateGray, belief.setProtestantL, prov16, "province16"),
-        new Province("Province 17", .85, .9, 1010, .3, Color.Teal, belief.setProtestantL, prov17, "province17"),
-        new Province("Province 18", .8, .9, 1015, .35, Color.LightSeaGreen, belief.setCatholic, prov18, "province18"),
-        new Province("Province 19", .9, 1, 1000, .4, Color.MediumSeaGreen, belief.setCatholic, prov19, "province19"),
-        new Province("Province 20", .8, .9, 1010, .3, Color.MediumTurquoise, belief.setCatholic, prov20, "province20"),
-        new Province("Province 21", .85, .9, 1005, .25, Color.Indigo, belief.setOrthodox, prov21, "province21"),
-        new Province("Province 22", .9, .9, 1055, .45, Color.DarkViolet, belief.setOrthodox, prov22, "province22"),
-        new Province("Province 23", .8, .85, 1025, .35, Color.DarkOrchid, belief.setOrthodox, prov23, "province23"),
-        new Province("Province 24", .8, .85, 1010, .3, Color.MediumPurple, belief.setCatholic, prov24, "province24"),
-        new Province("Province 25", .85, .9, 1015, .35, Color.Thistle, belief.setCatholic, prov25, "province25")};
+        static Province p1 = new Province("Province 1", .9, 1, 1000, .25, Color.Maroon, belief.setProtestantC);
+        static Province p2 = new Province("Province 2", .8, 1, 1005, .35, Color.Red, belief.setProtestantC);
+        static Province p3 = new Province("Province 3", .75, .9, 995, .15, Color.Brown, belief.setFundamentalist);
+        static Province p4 = new Province("Province 4", .8, 1, 1020, .3, Color.Firebrick, belief.setProtestantC);
+        static Province p5 = new Province("Province 5", .85, .9, 1010, .3, Color.IndianRed, belief.setProtestantL);
+        static Province p6 = new Province("Province 6", .9, 1, 1050, .45, Color.DarkGoldenrod, belief.setProtestantL);
+        static Province p7 = new Province("Province 7", .8, .9, 990, .2, Color.Goldenrod, belief.setProtestantC);
+        static Province p8 = new Province("Province 8", .9, 1, 1065, .35, Color.Gold, belief.setProtestantL);
+        static Province p9 = new Province("Province 9", .85, .9, 1000, .3, Color.Khaki, belief.setProtestantL);
+        static Province p10 = new Province("Province 10", .8, .9, 1015, .4, Color.Yellow, belief.setProtestantC);
+        static Province p11 = new Province("Province 11", .75, 1, 1010, .25, Color.DarkOliveGreen, belief.setProtestantC);
+        static Province p12 = new Province("Province 12", .85, .95, 1005, .2, Color.OliveDrab, belief.setProtestantC);
+        static Province p13 = new Province("Province 13", .8, .95, 1095, .15, Color.YellowGreen, belief.setFundamentalist);
+        static Province p14 = new Province("Province 14", .85, .9, 1010, .2, Color.LimeGreen, belief.setFundamentalist);
+        static Province p15 = new Province("Province 15", .8, .9, 1020, .15, Color.PaleGreen, belief.setFundamentalist);
+        static Province p16 = new Province("Province 16", .8, .85, 1025, .2, Color.DarkSlateGray, belief.setProtestantL);
+        static Province p17 = new Province("Province 17", .85, .9, 1010, .3, Color.Teal, belief.setProtestantL);
+        static Province p18 = new Province("Province 18", .8, .9, 1015, .35, Color.LightSeaGreen, belief.setCatholic);
+        static Province p19 = new Province("Province 19", .9, 1, 1000, .4, Color.MediumSeaGreen, belief.setCatholic);
+        static Province p20 = new Province("Province 20", .8, .9, 1010, .3, Color.MediumTurquoise, belief.setCatholic);
+        static Province p21 = new Province("Province 21", .85, .9, 1005, .25, Color.Indigo, belief.setOrthodox);
+        static Province p22 = new Province("Province 22", .9, .9, 1055, .45, Color.DarkViolet, belief.setOrthodox);
+        static Province p23 = new Province("Province 23", .8, .85, 1025, .35, Color.DarkOrchid, belief.setOrthodox);
+        static Province p24 = new Province("Province 24", .8, .85, 1010, .3, Color.MediumPurple, belief.setCatholic);
+        static Province p25 = new Province("Province 25", .85, .9, 1015, .35, Color.Thistle, belief.setCatholic);
         #endregion
+
+        Province[] provinces = { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
+                               p21, p22, p23, p24, p25};
 
         public Maps()
         {
@@ -138,5 +140,6 @@ namespace Feudal
             provinces[provToChange].Color = provinces[lord.CapitalProvID].Color;
         }
         #endregion
+
     }
 }

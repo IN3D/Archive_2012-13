@@ -38,7 +38,7 @@ namespace Feudal
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-            /*
+            
             #region buttonTextSet
             province1.Text = maps.getProvinceName(0);
             province2.Text = maps.getProvinceName(1);
@@ -67,10 +67,11 @@ namespace Feudal
             province25.Text = maps.getProvinceName(24);
             #endregion
 
+            #region FOR_THE_AI_TEST
             Character player = new Character(100.00, 100.00, 100.00, belief.setProtestantC);
             maps.setProvinceOwnerID(0, player.getID);
             province1.BackColor = maps.getProvinceColor(player.CapitalProvID);
-             */
+            #endregion
 
         }
 
