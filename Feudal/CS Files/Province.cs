@@ -3,21 +3,28 @@ using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Feudal
 {
 	public class Province
     {
         Belief belief = new Belief();
+        Maps maps = new Maps();
+
         #region variables
-        private //set all variables as private
-        string provinceName;
+        private string provinceName;
+        private string buttonName;
 		private Color provinceColor;
 		private double quality;
 		private double stability;
 		private double population;
 		private double wealth;
         private Religion provReligion;
+        public int[] neighbors;
+        private long ownerID;
+        private bool isOwned;//maybe not needed?
+
 		//private int techMilitary;//implement tech later
         //private int techEconomy;
 		//private int techGovernment;
@@ -44,7 +51,8 @@ namespace Feudal
             this.provReligion = belief.setProtestantL;
         }
 
-		public Province(string provinceName, double quality, double stability, double population, double wealth, Color provinceColor, Religion provReligion)
+		public Province(string provinceName, double quality, double stability, double population, double wealth, 
+            Color provinceColor, Religion provReligion, int[] neighbors, string buttonName)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
@@ -53,6 +61,8 @@ namespace Feudal
 			this.wealth = wealth;
             this.provinceColor = provinceColor;
             this.provReligion = provReligion;
+            this.neighbors = neighbors;
+            this.buttonName = buttonName;
 		}
         #endregion
 
@@ -111,6 +121,22 @@ namespace Feudal
         public Color Color
         {
             get { return provinceColor; }
+            set { provinceColor = value; }
+        }
+        public int[] Neighbors//do I need this?
+        {
+            get { return neighbors; }
+            set { neighbors = value; }
+        }
+        public long OwnerID
+        {
+            get { return ownerID; }
+            set { ownerID = value; }
+        }
+        public string ButtonName
+        {
+            get { return buttonName; }
+            //this should never set
         }
         #endregion
     }

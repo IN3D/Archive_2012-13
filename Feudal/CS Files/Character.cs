@@ -12,6 +12,7 @@ namespace Feudal
          *and every id should be set to personCount.*/
         private long personCount = 0;
         #region variables
+        private int capitalProvID;
 		private long ID;
 		private double wealth;
         private double piety;
@@ -79,6 +80,11 @@ namespace Feudal
         {
             get { return religion; }
             //no set
+        }
+        public int CapitalProvID
+        {
+            get { return capitalProvID; }
+            set { capitalProvID = value; }
         }
         #endregion
     }

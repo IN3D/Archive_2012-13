@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CS Files\AI.cs" />
     <Compile Include="CS Files\Economy.cs" />
     <Compile Include="CS Files\Maps.cs" />
     <Compile Include="Forms\aboutPage.cs">
