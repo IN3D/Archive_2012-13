@@ -44,16 +44,6 @@ namespace Feudal
             this.provReligion = belief.setProtestantL;
         }
 
-        public Province(string provinceName, double quality, double stability, double population, double wealth, Color provinceColor)
-        {
-            this.provinceName = provinceName;
-            this.quality = quality;
-            this.stability = stability;
-            this.population = population;
-            this.wealth = wealth;
-            this.provinceColor = provinceColor;
-        }
-
 		public Province(string provinceName, double quality, double stability, double population, double wealth, Color provinceColor, Religion provReligion)
 		{
 			this.provinceName = provinceName;
@@ -117,6 +107,10 @@ namespace Feudal
             this.provReligion.BonusTrade = r.BonusTrade;
             this.provReligion.BonusStability = r.BonusStability;
             this.provReligion.ChangeIcon(r);
+        }
+        public Color Color
+        {
+            get { return provinceColor; }
         }
         #endregion
     }

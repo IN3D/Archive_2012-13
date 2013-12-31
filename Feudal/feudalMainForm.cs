@@ -19,12 +19,11 @@ namespace Feudal
         int year = 2012;
         Turns turns = new Turns();
 
+        #region ClassDeclarations
         private devConsole dc = new devConsole();//added dev console
         public static Belief belief = new Belief();
-        /*
-        Province prov1 = new Province();
-        Province prov2 = new Province("Jarnhal");
-        */
+        public static Maps maps = new Maps();
+        #endregion
 
         public feudalMainForm()
         {
@@ -40,65 +39,33 @@ namespace Feudal
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-            
-            
-            //button1.Text = prov1.ProvinceName;
-            //button2.Text = prov2.ProvinceName;
 
-            #region provinceArray
-            Province[] provinces = {
-            new Province("Province 1", .9, 1, 1000, .25, Color.Maroon, belief.setProtestantC),
-            new Province("Province 2", .8, 1, 1005, .35, Color.Red, belief.setProtestantC),
-            new Province("Province 3", .75, .9, 995, .15, Color.Brown, belief.setFundamentalist),
-            new Province("Province 4", .8, 1, 1020, .3, Color.Firebrick, belief.setProtestantC),
-            new Province("Province 5", .85, .9, 1010, .3, Color.IndianRed, belief.setProtestantL),
-            new Province("Province 6", .9, 1, 1050, .45, Color.DarkGoldenrod, belief.setProtestantL),
-            new Province("Province 7", .8, .9, 990, .2, Color.Goldenrod, belief.setProtestantC),
-            new Province("Province 8", .9, 1, 1065, .35, Color.Gold, belief.setProtestantL),
-            new Province("Province 9", .85, .9, 1000, .3, Color.Khaki, belief.setProtestantL),
-            new Province("Province 10", .8, .9, 1015, .4, Color.Yellow, belief.setProtestantC),
-            new Province("Province 11", .75, 1, 1010, .25, Color.DarkOliveGreen, belief.setProtestantC),
-            new Province("Province 12", .85, .95, 1005, .2, Color.OliveDrab, belief.setProtestantC),
-            new Province("Province 13", .8, .95, 1095, .15, Color.YellowGreen, belief.setFundamentalist),
-            new Province("Province 14", .85, .9, 1010, .2, Color.LimeGreen, belief.setFundamentalist),
-            new Province("Province 15", .8, .9, 1020, .15, Color.PaleGreen, belief.setFundamentalist),
-            new Province("Province 16", .8, .85, 1025, .2, Color.DarkSlateGray, belief.setProtestantL),
-            new Province("Province 17", .85, .9, 1010, .3, Color.Teal, belief.setProtestantL),
-            new Province("Province 18", .8, .9, 1015, .35, Color.LightSeaGreen, belief.setCatholic),
-            new Province("Province 19", .9, 1, 1000, .4, Color.MediumSeaGreen, belief.setCatholic),
-            new Province("Province 20", .8, .9, 1010, .3, Color.MediumTurquoise, belief.setCatholic),
-            new Province("Province 21", .85, .9, 1005, .25, Color.Indigo, belief.setOrthodox),
-            new Province("Province 22", .9, .9, 1055, .45, Color.DarkViolet, belief.setOrthodox),
-            new Province("Province 23", .8, .85, 1025, .35, Color.DarkOrchid, belief.setOrthodox),
-            new Province("Province 24", .8, .85, 1010, .3, Color.MediumPurple, belief.setCatholic),
-            new Province("Province 25", .85, .9, 1015, .35, Color.Thistle, belief.setCatholic)};
-            #endregion
             #region buttonTextSet
-            province1.Text = provinces[0].ProvinceName;
-            province2.Text = provinces[1].ProvinceName;
-            province3.Text = provinces[2].ProvinceName;
-            province4.Text = provinces[3].ProvinceName;
-            province5.Text = provinces[4].ProvinceName;
-            province6.Text = provinces[5].ProvinceName;
-            province7.Text = provinces[6].ProvinceName;
-            province8.Text = provinces[7].ProvinceName;
-            province9.Text = provinces[8].ProvinceName;
-            province10.Text = provinces[9].ProvinceName;
-            province11.Text = provinces[10].ProvinceName;
-            province12.Text = provinces[11].ProvinceName;
-            province13.Text = provinces[12].ProvinceName;
-            province14.Text = provinces[13].ProvinceName;
-            province15.Text = provinces[14].ProvinceName;
-            province16.Text = provinces[15].ProvinceName;
-            province17.Text = provinces[16].ProvinceName;
-            province18.Text = provinces[17].ProvinceName;
-            province19.Text = provinces[18].ProvinceName;
-            province20.Text = provinces[19].ProvinceName;
-            province21.Text = provinces[20].ProvinceName;
-            province22.Text = provinces[21].ProvinceName;
-            province23.Text = provinces[22].ProvinceName;
-            province24.Text = provinces[23].ProvinceName;
-            province25.Text = provinces[24].ProvinceName;
+            province1.Text = maps.getProvinceName(0);
+            province2.Text = maps.getProvinceName(1);
+            province3.Text = maps.getProvinceName(2);
+            province4.Text = maps.getProvinceName(3);
+            province5.Text = maps.getProvinceName(4);
+            province6.Text = maps.getProvinceName(5);
+            province7.Text = maps.getProvinceName(6);
+            province8.Text = maps.getProvinceName(7);
+            province9.Text = maps.getProvinceName(8);
+            province10.Text = maps.getProvinceName(9);
+            province11.Text = maps.getProvinceName(10);
+            province12.Text = maps.getProvinceName(11);
+            province13.Text = maps.getProvinceName(12);
+            province14.Text = maps.getProvinceName(13);
+            province15.Text = maps.getProvinceName(14);
+            province16.Text = maps.getProvinceName(15);
+            province17.Text = maps.getProvinceName(16);
+            province18.Text = maps.getProvinceName(17);
+            province19.Text = maps.getProvinceName(18);
+            province20.Text = maps.getProvinceName(19);
+            province21.Text = maps.getProvinceName(20);
+            province22.Text = maps.getProvinceName(21);
+            province23.Text = maps.getProvinceName(22);
+            province24.Text = maps.getProvinceName(23);
+            province25.Text = maps.getProvinceName(24);
             #endregion
 
         }
@@ -198,7 +165,6 @@ namespace Feudal
             lblMoney.Text = text;
         }
         #endregion
-
 
 
     }

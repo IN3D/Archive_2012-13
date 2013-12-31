@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CS Files\Economy.cs" />
+    <Compile Include="CS Files\Maps.cs" />
     <Compile Include="Forms\aboutPage.cs">
       <SubType>Form</SubType>
     </Compile>
