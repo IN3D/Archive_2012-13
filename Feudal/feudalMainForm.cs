@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using Feudal.Forms;//add dev Console
 
@@ -19,10 +20,11 @@ namespace Feudal
         Turns turns = new Turns();
 
         private devConsole dc = new devConsole();//added dev console
-        //province Classes
         public static Belief belief = new Belief();
+        /*
         Province prov1 = new Province();
         Province prov2 = new Province("Jarnhal");
+        */
 
         public feudalMainForm()
         {
@@ -38,8 +40,66 @@ namespace Feudal
         {
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
             //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-            button1.Text = prov1.ProvinceName;
-            button2.Text = prov2.ProvinceName;
+            
+            
+            //button1.Text = prov1.ProvinceName;
+            //button2.Text = prov2.ProvinceName;
+
+            #region provinceArray
+            Province[] provinces = {
+            new Province("Province 1", .9, 1, 1000, .25, Color.Maroon, belief.setProtestantC),
+            new Province("Province 2", .8, 1, 1005, .35, Color.Red, belief.setProtestantC),
+            new Province("Province 3", .75, .9, 995, .15, Color.Brown, belief.setFundamentalist),
+            new Province("Province 4", .8, 1, 1020, .3, Color.Firebrick, belief.setProtestantC),
+            new Province("Province 5", .85, .9, 1010, .3, Color.IndianRed, belief.setProtestantL),
+            new Province("Province 6", .9, 1, 1050, .45, Color.DarkGoldenrod, belief.setProtestantL),
+            new Province("Province 7", .8, .9, 990, .2, Color.Goldenrod, belief.setProtestantC),
+            new Province("Province 8", .9, 1, 1065, .35, Color.Gold, belief.setProtestantL),
+            new Province("Province 9", .85, .9, 1000, .3, Color.Khaki, belief.setProtestantL),
+            new Province("Province 10", .8, .9, 1015, .4, Color.Yellow, belief.setProtestantC),
+            new Province("Province 11", .75, 1, 1010, .25, Color.DarkOliveGreen, belief.setProtestantC),
+            new Province("Province 12", .85, .95, 1005, .2, Color.OliveDrab, belief.setProtestantC),
+            new Province("Province 13", .8, .95, 1095, .15, Color.YellowGreen, belief.setFundamentalist),
+            new Province("Province 14", .85, .9, 1010, .2, Color.LimeGreen, belief.setFundamentalist),
+            new Province("Province 15", .8, .9, 1020, .15, Color.PaleGreen, belief.setFundamentalist),
+            new Province("Province 16", .8, .85, 1025, .2, Color.DarkSlateGray, belief.setProtestantL),
+            new Province("Province 17", .85, .9, 1010, .3, Color.Teal, belief.setProtestantL),
+            new Province("Province 18", .8, .9, 1015, .35, Color.LightSeaGreen, belief.setCatholic),
+            new Province("Province 19", .9, 1, 1000, .4, Color.MediumSeaGreen, belief.setCatholic),
+            new Province("Province 20", .8, .9, 1010, .3, Color.MediumTurquoise, belief.setCatholic),
+            new Province("Province 21", .85, .9, 1005, .25, Color.Indigo, belief.setOrthodox),
+            new Province("Province 22", .9, .9, 1055, .45, Color.DarkViolet, belief.setOrthodox),
+            new Province("Province 23", .8, .85, 1025, .35, Color.DarkOrchid, belief.setOrthodox),
+            new Province("Province 24", .8, .85, 1010, .3, Color.MediumPurple, belief.setCatholic),
+            new Province("Province 25", .85, .9, 1015, .35, Color.Thistle, belief.setCatholic)};
+            #endregion
+            #region buttonTextSet
+            button1.Text = provinces[0].ProvinceName;
+            button2.Text = provinces[1].ProvinceName;
+            button3.Text = provinces[2].ProvinceName;
+            button1.Text = provinces[3].ProvinceName;
+            button2.Text = provinces[4].ProvinceName;
+            button3.Text = provinces[5].ProvinceName;
+            button1.Text = provinces[6].ProvinceName;
+            button2.Text = provinces[7].ProvinceName;
+            button3.Text = provinces[8].ProvinceName;
+            button1.Text = provinces[9].ProvinceName;
+            button2.Text = provinces[10].ProvinceName;
+            button3.Text = provinces[11].ProvinceName;
+            button1.Text = provinces[12].ProvinceName;
+            button2.Text = provinces[13].ProvinceName;
+            button3.Text = provinces[14].ProvinceName;
+            button1.Text = provinces[15].ProvinceName;
+            button2.Text = provinces[16].ProvinceName;
+            button3.Text = provinces[17].ProvinceName;
+            button1.Text = provinces[18].ProvinceName;
+            button2.Text = provinces[19].ProvinceName;
+            button3.Text = provinces[20].ProvinceName;
+            button1.Text = provinces[21].ProvinceName;
+            button2.Text = provinces[22].ProvinceName;
+            button3.Text = provinces[23].ProvinceName;
+            button1.Text = provinces[24].ProvinceName;
+            #endregion
 
         }
 
@@ -74,9 +134,6 @@ namespace Feudal
             var mainMenu = new Feudal.Forms.mainMenu();
             mainMenu.Show();
             // TODO: This line of code loads data into the 'feudalDatabaseDataSet.Province_Information' table. You can move, or remove it, as needed.
-            //this.province_InformationTableAdapter.Fill(this.feudalDatabaseDataSet.Province_Information);
-            button1.Text = prov1.ProvinceName;
-            button2.Text = prov2.ProvinceName;
         }
 
         private void endTurnToolStripMenuItem_Click(object sender, EventArgs e)

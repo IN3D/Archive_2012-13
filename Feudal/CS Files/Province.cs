@@ -12,9 +12,9 @@ namespace Feudal
         #region variables
         private //set all variables as private
         string provinceName;
-		//private color provinceColor;//not sure if color should be attached to a province or a person yet.
-		private int quality;
-		private int stability;
+		private Color provinceColor;
+		private double quality;
+		private double stability;
 		private double population;
 		private double wealth;
         private Religion provReligion;
@@ -24,33 +24,44 @@ namespace Feudal
         #endregion
 
         #region constructor
-        //default constructor
-        //this probably shouldn't be used, it's here just incase
+        //default constructor: this probably shouldn't be used, it's here just incase
         public Province()
 		{
 			this.provinceName = "Name Me!";
-			this.quality = 3;
+			this.quality = .5;
 			this.population = 1000.00;
 			this.wealth = 0.25;
 			this.stability = 1;
-            this.provReligion = belief.setMormon;
+            this.provReligion = belief.setProtestantC;
 		}
         public Province(string provinceName)
         {
             this.provinceName = provinceName;
-            this.quality = 3;
+            this.quality = .5;
             this.population = 1000.00;
             this.wealth = 0.25;
             this.stability = 1;
             this.provReligion = belief.setProtestantL;
         }
-		public Province(string provinceName, int quality, int stability, double population, double wealth, Religion provReligion)
+
+        public Province(string provinceName, double quality, double stability, double population, double wealth, Color provinceColor)
+        {
+            this.provinceName = provinceName;
+            this.quality = quality;
+            this.stability = stability;
+            this.population = population;
+            this.wealth = wealth;
+            this.provinceColor = provinceColor;
+        }
+
+		public Province(string provinceName, double quality, double stability, double population, double wealth, Color provinceColor, Religion provReligion)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
 			this.stability = stability;
 			this.population = population;
 			this.wealth = wealth;
+            this.provinceColor = provinceColor;
             this.provReligion = provReligion;
 		}
         #endregion
@@ -63,7 +74,7 @@ namespace Feudal
 			set { provinceName = value; }
 		}
 
-		public int Quality
+		public double Quality
 		{
 			get { return quality; }
 			set { quality = value; }
@@ -81,7 +92,7 @@ namespace Feudal
 			set { wealth = value; }
 		}
 
-		public int Stability
+		public double Stability
 		{
 			get { return stability; }
 			set { stability = value; }

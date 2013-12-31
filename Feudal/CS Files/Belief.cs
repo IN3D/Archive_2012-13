@@ -15,17 +15,17 @@ namespace Feudal
 
         #region christian_denominations
         private Religion catholic = new Religion("Catholic", "Christian", 10, 1, 1.0, 0.5, -0.35, 0.35, -0.1, 
-        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Catholic.png");
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Catholic.png");
         private Religion orthodox = new Religion("Orthodox", "Christian", 10, 1, 1.0, 0.5, -0.25, 0.35, 0.0,
-        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Orthodox.png");
-        private Religion protestant_Lib = new Religion("Liberal Protestant", "Christian", 6, 1, 1.25, 0.0, 0.25, 0.25, 0.15,
-        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Liberal.png");
-        private Religion protestant_Con = new Religion("Conservative Protestant", "Christian", 7, 4, 0.85, 0.25, 0.35, 0.40, -0.20,
-        "C:Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Conservative.png");
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Orthodox.png");
+        private Religion protestant_Lib = new Religion("Liberal\nProtestant", "Christian", 6, 1, 1.25, 0.0, 0.25, 0.25, 0.15,
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Liberal.png");
+        private Religion protestant_Con = new Religion("Conservative\nProtestant", "Christian", 7, 4, 0.85, 0.25, 0.35, 0.40, -0.20,
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Protestant_Conservative.png");
         private Religion fundamentalist = new Religion("Fundamentalist", "Christian", 10, 7, 0.25, 0.75, 0.25, 0.75, -0.7,
-        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Fundamentalism.png");
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Fundamentalism.png");
         private Religion mormanism = new Religion("Mormonism", "Christian", 10, 4, 0.75, 0.60, -0.20, 0.50, -0.35,
-        "C:\\Users\\Eric\\Documents\\GitHub\\Feudal\\Feudal\\Resources\\religIcons\\Christian\\Religion_Christianity_Mormanism.png");
+        "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Mormanism.png");
         #endregion
         /*UNDO
         #region muslim_denominations
