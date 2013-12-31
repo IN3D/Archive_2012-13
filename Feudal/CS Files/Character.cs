@@ -9,8 +9,7 @@ namespace Feudal
     {
         /*Rather than having to come up with a unique id for each
          *characer this personCount int should increment in every constructor
-         *and every id should be set to personCount.
-         */
+         *and every id should be set to personCount.*/
         private long personCount = 0;
         #region variables
 		private long ID;
