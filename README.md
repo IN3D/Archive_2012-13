@@ -1,6 +1,7 @@
 <h3><strong>Feudal</strong></h3>
-<hr/>
 <!--Back in Action!!-->
+congratulations getting past our 100th commit!
+
 ======
 <b>Feudal is back in action!</b>
 <br/>
