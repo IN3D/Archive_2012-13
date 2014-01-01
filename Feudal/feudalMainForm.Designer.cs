@@ -101,6 +101,7 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.tabBrowser = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.label12 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabMil.SuspendLayout();
@@ -369,6 +370,7 @@
             // tabGovt
             // 
             this.tabGovt.AutoScroll = true;
+            this.tabGovt.Controls.Add(this.label12);
             this.tabGovt.Controls.Add(this.province25);
             this.tabGovt.Controls.Add(this.province20);
             this.tabGovt.Controls.Add(this.province15);
@@ -594,6 +596,7 @@
             this.province7.Size = new System.Drawing.Size(60, 61);
             this.province7.TabIndex = 19;
             this.province7.UseVisualStyleBackColor = false;
+            this.province7.Click += new System.EventHandler(this.province7_Click);
             // 
             // province21
             // 
@@ -642,6 +645,7 @@
             this.province6.Size = new System.Drawing.Size(60, 60);
             this.province6.TabIndex = 15;
             this.province6.UseVisualStyleBackColor = false;
+            this.province6.Click += new System.EventHandler(this.province6_Click);
             // 
             // province5
             // 
@@ -654,6 +658,7 @@
             this.province5.Size = new System.Drawing.Size(60, 60);
             this.province5.TabIndex = 14;
             this.province5.UseVisualStyleBackColor = false;
+            this.province5.Click += new System.EventHandler(this.province5_Click);
             // 
             // province4
             // 
@@ -666,6 +671,7 @@
             this.province4.Size = new System.Drawing.Size(60, 60);
             this.province4.TabIndex = 13;
             this.province4.UseVisualStyleBackColor = false;
+            this.province4.Click += new System.EventHandler(this.province4_Click);
             // 
             // province3
             // 
@@ -678,6 +684,7 @@
             this.province3.Size = new System.Drawing.Size(60, 60);
             this.province3.TabIndex = 12;
             this.province3.UseVisualStyleBackColor = false;
+            this.province3.Click += new System.EventHandler(this.province3_Click);
             // 
             // province2
             // 
@@ -891,6 +898,15 @@
             this.webBrowser1.TabIndex = 9;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(213, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "label12";
+            // 
             // feudalMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -922,6 +938,7 @@
             this.statusStrip1.PerformLayout();
             this.tabMil.ResumeLayout(false);
             this.tabGovt.ResumeLayout(false);
+            this.tabGovt.PerformLayout();
             this.boxGovt.ResumeLayout(false);
             this.boxGovt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.provReligPicBox)).EndInit();
@@ -1008,6 +1025,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox provReligPicBox;
         private System.Windows.Forms.Label lblReligon;
+        private System.Windows.Forms.Label label12;
     }
 }
 
