@@ -24,6 +24,9 @@ namespace Feudal
         private devConsole dc = new devConsole();//added dev console
         public static Belief belief = new Belief();
         public static Maps maps = new Maps();
+        public static  AI ai = new AI();
+        //FOR TEST
+        Character player = new Character(100.00, 100.00, 100.00, belief.setProtestantC);
         #endregion
 
         public feudalMainForm()
@@ -68,7 +71,7 @@ namespace Feudal
             #endregion
 
             #region FOR_THE_AI_TEST
-            Character player = new Character(100.00, 100.00, 100.00, belief.setProtestantC);
+            
             maps.setProvinceOwnerID(0, player.getID);
             province1.BackColor = maps.getProvinceColor(player.CapitalProvID);
             #endregion
@@ -118,6 +121,10 @@ namespace Feudal
         private void btnEndTurn_Click(object sender, EventArgs e)
         {
             toolStripStatusLabel.Text = "Advancing Turn";
+
+            //
+            ai.ComputeMove(player);
+
             if (counter == 12)
             {
                 counter = 0;

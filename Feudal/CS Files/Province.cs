@@ -63,7 +63,7 @@ namespace Feudal
         }
 
 		public Province(string provinceName, double quality, double stability, double population, double wealth, 
-            Color provinceColor, Religion provReligion, string buttonName)
+            Color provinceColor, Religion provReligion, int[] neighbors, string buttonName)
 		{
 			this.provinceName = provinceName;
 			this.quality = quality;
@@ -72,6 +72,7 @@ namespace Feudal
 			this.wealth = wealth;
             this.provinceColor = provinceColor;
             this.provReligion = provReligion;
+            this.neighbors = neighbors;
             this.buttonName = buttonName;
 		}
         #endregion
@@ -149,6 +150,8 @@ namespace Feudal
             //this should never set
         }
         #endregion
+
+
     }
 }
 			#region uglyComment
