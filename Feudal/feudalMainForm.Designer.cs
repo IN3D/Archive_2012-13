@@ -416,6 +416,7 @@
             this.province25.Size = new System.Drawing.Size(60, 60);
             this.province25.TabIndex = 34;
             this.province25.UseVisualStyleBackColor = false;
+            this.province25.Click += new System.EventHandler(this.province25_Click);
             // 
             // province20
             // 
@@ -428,6 +429,7 @@
             this.province20.Size = new System.Drawing.Size(60, 59);
             this.province20.TabIndex = 33;
             this.province20.UseVisualStyleBackColor = false;
+            this.province20.Click += new System.EventHandler(this.province20_Click);
             // 
             // province15
             // 
@@ -440,6 +442,7 @@
             this.province15.Size = new System.Drawing.Size(60, 58);
             this.province15.TabIndex = 32;
             this.province15.UseVisualStyleBackColor = false;
+            this.province15.Click += new System.EventHandler(this.province15_Click);
             // 
             // province10
             // 
@@ -452,6 +455,7 @@
             this.province10.Size = new System.Drawing.Size(60, 60);
             this.province10.TabIndex = 31;
             this.province10.UseVisualStyleBackColor = false;
+            this.province10.Click += new System.EventHandler(this.province10_Click);
             // 
             // province24
             // 
@@ -464,6 +468,7 @@
             this.province24.Size = new System.Drawing.Size(60, 60);
             this.province24.TabIndex = 30;
             this.province24.UseVisualStyleBackColor = false;
+            this.province24.Click += new System.EventHandler(this.province24_Click);
             // 
             // province19
             // 
@@ -476,6 +481,7 @@
             this.province19.Size = new System.Drawing.Size(60, 59);
             this.province19.TabIndex = 29;
             this.province19.UseVisualStyleBackColor = false;
+            this.province19.Click += new System.EventHandler(this.province19_Click);
             // 
             // province14
             // 
@@ -488,6 +494,7 @@
             this.province14.Size = new System.Drawing.Size(60, 60);
             this.province14.TabIndex = 28;
             this.province14.UseVisualStyleBackColor = false;
+            this.province14.Click += new System.EventHandler(this.province14_Click);
             // 
             // province9
             // 
@@ -500,6 +507,7 @@
             this.province9.Size = new System.Drawing.Size(60, 60);
             this.province9.TabIndex = 27;
             this.province9.UseVisualStyleBackColor = false;
+            this.province9.Click += new System.EventHandler(this.province9_Click);
             // 
             // province23
             // 
@@ -512,6 +520,7 @@
             this.province23.Size = new System.Drawing.Size(60, 60);
             this.province23.TabIndex = 26;
             this.province23.UseVisualStyleBackColor = false;
+            this.province23.Click += new System.EventHandler(this.province23_Click);
             // 
             // province18
             // 
@@ -524,6 +533,7 @@
             this.province18.Size = new System.Drawing.Size(60, 60);
             this.province18.TabIndex = 25;
             this.province18.UseVisualStyleBackColor = false;
+            this.province18.Click += new System.EventHandler(this.province18_Click);
             // 
             // province13
             // 
@@ -536,6 +546,7 @@
             this.province13.Size = new System.Drawing.Size(60, 60);
             this.province13.TabIndex = 24;
             this.province13.UseVisualStyleBackColor = false;
+            this.province13.Click += new System.EventHandler(this.province13_Click);
             // 
             // province8
             // 
@@ -548,6 +559,7 @@
             this.province8.Size = new System.Drawing.Size(60, 60);
             this.province8.TabIndex = 23;
             this.province8.UseVisualStyleBackColor = false;
+            this.province8.Click += new System.EventHandler(this.province8_Click);
             // 
             // province22
             // 
@@ -560,6 +572,7 @@
             this.province22.Size = new System.Drawing.Size(60, 60);
             this.province22.TabIndex = 22;
             this.province22.UseVisualStyleBackColor = false;
+            this.province22.Click += new System.EventHandler(this.province22_Click);
             // 
             // province17
             // 
@@ -572,6 +585,7 @@
             this.province17.Size = new System.Drawing.Size(60, 59);
             this.province17.TabIndex = 21;
             this.province17.UseVisualStyleBackColor = false;
+            this.province17.Click += new System.EventHandler(this.province17_Click);
             // 
             // province12
             // 
@@ -584,6 +598,7 @@
             this.province12.Size = new System.Drawing.Size(60, 60);
             this.province12.TabIndex = 20;
             this.province12.UseVisualStyleBackColor = false;
+            this.province12.Click += new System.EventHandler(this.province12_Click);
             // 
             // province7
             // 
@@ -609,6 +624,7 @@
             this.province21.Size = new System.Drawing.Size(60, 60);
             this.province21.TabIndex = 18;
             this.province21.UseVisualStyleBackColor = false;
+            this.province21.Click += new System.EventHandler(this.province21_Click);
             // 
             // province16
             // 
@@ -621,6 +637,7 @@
             this.province16.Size = new System.Drawing.Size(60, 60);
             this.province16.TabIndex = 17;
             this.province16.UseVisualStyleBackColor = false;
+            this.province16.Click += new System.EventHandler(this.province16_Click);
             // 
             // province11
             // 
@@ -633,6 +650,7 @@
             this.province11.Size = new System.Drawing.Size(60, 60);
             this.province11.TabIndex = 16;
             this.province11.UseVisualStyleBackColor = false;
+            this.province11.Click += new System.EventHandler(this.province11_Click);
             // 
             // province6
             // 

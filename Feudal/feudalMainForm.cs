@@ -229,6 +229,222 @@ namespace Feudal
             label12.Text = maps.getProvinceOwnerID(6).ToString();
         }
 
+        private void province8_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(7);
+            lblGovtLeader.Text = maps.getProvincePopulation(7).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(7).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(7).ToString();
+            lblReligon.Text = maps.provinces[7].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[7].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(7).ToString();
+        }
+
+        private void province9_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(8);
+            lblGovtLeader.Text = maps.getProvincePopulation(8).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(8).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(8).ToString();
+            lblReligon.Text = maps.provinces[8].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[8].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(8).ToString();
+        }
+
+        private void province10_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(9);
+            lblGovtLeader.Text = maps.getProvincePopulation(9).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(9).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(9).ToString();
+            lblReligon.Text = maps.provinces[9].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[9].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(9).ToString();
+        }
+
+        private void province11_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(10);
+            lblGovtLeader.Text = maps.getProvincePopulation(10).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(10).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(10).ToString();
+            lblReligon.Text = maps.provinces[10].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[10].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(10).ToString();
+        }
+
+        private void province12_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(11);
+            lblGovtLeader.Text = maps.getProvincePopulation(11).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(11).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(11).ToString();
+            lblReligon.Text = maps.provinces[11].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[11].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(11).ToString();
+        }
+
+        private void province13_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(12);
+            lblGovtLeader.Text = maps.getProvincePopulation(12).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(12).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(12).ToString();
+            lblReligon.Text = maps.provinces[12].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[12].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(12).ToString();
+        }
+
+        private void province14_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(13);
+            lblGovtLeader.Text = maps.getProvincePopulation(13).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(13).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(13).ToString();
+            lblReligon.Text = maps.provinces[13].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[13].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(13).ToString();
+        }
+
+        private void province15_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(14);
+            lblGovtLeader.Text = maps.getProvincePopulation(14).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(14).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(14).ToString();
+            lblReligon.Text = maps.provinces[14].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[14].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(14).ToString();
+        }
+
+        private void province16_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(15);
+            lblGovtLeader.Text = maps.getProvincePopulation(15).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(15).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(15).ToString();
+            lblReligon.Text = maps.provinces[15].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[15].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(15).ToString();
+        }
+
+        private void province17_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(16);
+            lblGovtLeader.Text = maps.getProvincePopulation(16).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(16).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(16).ToString();
+            lblReligon.Text = maps.provinces[16].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[16].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(16).ToString();
+        }
+
+        private void province18_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(17);
+            lblGovtLeader.Text = maps.getProvincePopulation(17).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(17).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(17).ToString();
+            lblReligon.Text = maps.provinces[17].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[17].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(17).ToString();
+        }
+
+        private void province19_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(18);
+            lblGovtLeader.Text = maps.getProvincePopulation(18).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(18).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(18).ToString();
+            lblReligon.Text = maps.provinces[18].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[18].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(18).ToString();
+        }
+
+        private void province20_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(19);
+            lblGovtLeader.Text = maps.getProvincePopulation(19).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(19).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(19).ToString();
+            lblReligon.Text = maps.provinces[19].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[19].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(19).ToString();
+        }
+
+        private void province21_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(20);
+            lblGovtLeader.Text = maps.getProvincePopulation(20).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(20).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(20).ToString();
+            lblReligon.Text = maps.provinces[20].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[20].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(20).ToString();
+        }
+
+        private void province22_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(21);
+            lblGovtLeader.Text = maps.getProvincePopulation(21).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(21).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(21).ToString();
+            lblReligon.Text = maps.provinces[21].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[21].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(21).ToString();
+        }
+
+        private void province23_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(22);
+            lblGovtLeader.Text = maps.getProvincePopulation(22).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(22).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(22).ToString();
+            lblReligon.Text = maps.provinces[22].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[22].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(22).ToString();
+        }
+
+        private void province24_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(23);
+            lblGovtLeader.Text = maps.getProvincePopulation(23).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(23).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(23).ToString();
+            lblReligon.Text = maps.provinces[23].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[23].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(23).ToString();
+        }
+
+        private void province25_Click(object sender, EventArgs e)
+        {
+            lblOwner.Text = maps.getProvinceName(24);
+            lblGovtLeader.Text = maps.getProvincePopulation(24).ToString();
+            lblGovtType.Text = maps.getProvinceWealth(24).ToString();
+            lblGovtStability.Text = maps.getProvinceStability(24).ToString();
+            lblReligon.Text = maps.provinces[24].ProvReligionName;
+            provReligPicBox.Image = maps.provinces[24].ProvReligionIcon;
+
+            label12.Text = maps.getProvinceOwnerID(24).ToString();
+        }
+
         /*
         private void pbxMap_Click(object sender, EventArgs e)
         {

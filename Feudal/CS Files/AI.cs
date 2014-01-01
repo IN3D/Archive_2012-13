@@ -38,28 +38,36 @@ namespace Feudal
                         if (maps.provinces[j].OwnerID != player.getID)//if the player doesn't own that neighboring province
                         {
                             int provNum = maps.provinces[i].neighbors[j];
-                            double initValue = maps.provinces[provNum].Wealth * maps.provinces[provNum].Population;
-                            double finalVal = initValue * maps.provinces[provNum].Quality;
 
-                            if (finalVal > bestOptionVal)//if the province evalued is better, replace the values.
+                            if (maps.provinces[provNum].OwnerID != player.getID)//if the player doesn't already own the province
                             {
-                                bestOption = provNum;
-                                bestOptionVal = finalVal;
+                                double initValue = maps.provinces[provNum].Wealth * maps.provinces[provNum].Population;
+                                double finalVal = initValue * maps.provinces[provNum].Quality;
 
-                                if (bestOptionVal >= contenderOptionVal)//if a newer, better value is found set contender to false.
+                                if (finalVal > bestOptionVal)//if the province evalued is better, replace the values.
                                 {
-                                    contender = false;
+                                    bestOption = provNum;
+                                    bestOptionVal = finalVal;
+
+                                    if (bestOptionVal >= contenderOptionVal)//if a newer, better value is found set contender to false.
+                                    {
+                                        contender = false;
+                                    }
                                 }
-                            }
-                            else if (finalVal == bestOptionVal)//if the values are even.
-                            {
-                                contender = true;
-                                contenderOption = provNum;
-                                contenderOptionVal = finalVal;
+                                else if (finalVal == bestOptionVal)//if the values are even.
+                                {
+                                    contender = true;
+                                    contenderOption = provNum;
+                                    contenderOptionVal = finalVal;
+                                }
+                                else
+                                {
+                                    //the value was lower so skip it
+                                }
                             }
                             else
                             {
-                                //the value was lower so skip it
+                                //the player owns it so skip it
                             }
                         }
                         else
@@ -110,17 +118,44 @@ namespace Feudal
                 {
                     maps.setProvinceOwnerID(bestOption, player.getID);
                     ((Button)fmf.Controls.Find(maps.provinces[bestOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
+
+                    //reset the vals
+                    bestOption = 0;
+                    bestOptionVal = 0.0;
+                    contender = false;
+                    contenderOption = 0;
+                    contenderOptionVal = 0.0;
+                    bestCounter = 0;
+                    contenderCounter = 0;
                 }
                 else
                 {
                     maps.setProvinceOwnerID(contenderOption, player.getID);
                     ((Button)fmf.Controls.Find(maps.provinces[contenderOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
+
+                    //reset the vals
+                    bestOption = 0;
+                    bestOptionVal = 0.0;
+                    contender = false;
+                    contenderOption = 0;
+                    contenderOptionVal = 0.0;
+                    bestCounter = 0;
+                    contenderCounter = 0;
                 }
             }
             else//if there was no conflict
             {
                 maps.setProvinceOwnerID(bestOption, player.getID);
                 ((Button)fmf.Controls.Find(maps.provinces[bestOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
+
+                //reset the vals
+                bestOption = 0;
+                bestOptionVal = 0.0;
+                contender = false;
+                contenderOption = 0;
+                contenderOptionVal = 0.0;
+                bestCounter = 0;
+                contenderCounter = 0;
             }
         }
     }
