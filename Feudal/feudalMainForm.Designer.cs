@@ -58,6 +58,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabEco = new System.Windows.Forms.TabPage();
             this.tabGovt = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
             this.province25 = new System.Windows.Forms.Button();
             this.province20 = new System.Windows.Forms.Button();
             this.province15 = new System.Windows.Forms.Button();
@@ -101,7 +102,8 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.tabBrowser = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabMil.SuspendLayout();
@@ -370,6 +372,8 @@
             // tabGovt
             // 
             this.tabGovt.AutoScroll = true;
+            this.tabGovt.Controls.Add(this.button1);
+            this.tabGovt.Controls.Add(this.textBox1);
             this.tabGovt.Controls.Add(this.label12);
             this.tabGovt.Controls.Add(this.province25);
             this.tabGovt.Controls.Add(this.province20);
@@ -404,6 +408,15 @@
             this.tabGovt.TabIndex = 0;
             this.tabGovt.Text = "Government";
             this.tabGovt.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(213, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "label12";
             // 
             // province25
             // 
@@ -916,14 +929,22 @@
             this.webBrowser1.TabIndex = 9;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
-            // label12
+            // textBox1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(213, 16);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "label12";
+            this.textBox1.Location = new System.Drawing.Point(727, 56);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(738, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // feudalMainForm
             // 
@@ -1044,6 +1065,8 @@
         private System.Windows.Forms.PictureBox provReligPicBox;
         private System.Windows.Forms.Label lblReligon;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

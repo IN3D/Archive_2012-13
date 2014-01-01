@@ -33,6 +33,7 @@ namespace Feudal
         {
             InitializeComponent();
             dc.AdviseParent += new devConsole.AdviseParentEventHandler(changeMainFormText);//added dev console
+            ai.AdviseParent += new AI.AdviseParentEventHandler(changeProvColor);//AL for AI
             lblYearDate.Text = year.ToString();
 
         }
@@ -152,7 +153,7 @@ namespace Feudal
             lblGovtStability.Text = maps.getProvinceStability(0).ToString();
             lblReligon.Text = maps.provinces[0].ProvReligionName;
             provReligPicBox.Image = maps.provinces[0].ProvReligionIcon;
-
+            //for Dev
             label12.Text = maps.getProvinceOwnerID(0).ToString();
 
         }
@@ -458,7 +459,21 @@ namespace Feudal
         {
             lblMoney.Text = text;
         }
+
+        private void changeProvColor(int choice, Character player)//AL for AI
+        {
+            Controls.Find(maps.provinces[choice].ButtonName, true).FirstOrDefault().BackColor = 
+                maps.getProvinceColor(player.CapitalProvID);
+        }
         #endregion
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //this just exists so that I can test if the color not changing is because of an event handler
+            //UPDATE: it looks like it is in fact, an event handler thing.
+            Controls.Find(textBox1.Text, true).FirstOrDefault().BackColor = Color.Wheat;
+                                                                          //^hahaha geddit?
+        }
 
 
 
