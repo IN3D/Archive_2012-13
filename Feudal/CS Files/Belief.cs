@@ -27,7 +27,7 @@ namespace Feudal
         private Religion mormanism = new Religion("Mormonism", "Christian", 10, 4, 0.75, 0.60, -0.20, 0.50, -0.35,
         "..\\..\\Resources\\religIcons\\Christian\\Religion_Christianity_Mormanism.png");
         #endregion
-        /*UNDO
+        
         #region muslim_denominations
         private Religion shiite = new Religion("Shiite", "Islam", 10, 4, 1.0, 0.35, 0.1, 0.25, 0.0,
         "..\\Resources\\religIcons\\Islam\\Religion_Islam_Shiite.png");
@@ -83,7 +83,7 @@ namespace Feudal
         #endregion
 
         #endregion
-        UNDO*/
+
         //!!--Accessors for Religions--!!//
         //TODO: in the future it will probably pay to have two sets of accessors for initially setting the religion,
 		//and for conversions their mechanics will likely be different.
@@ -115,7 +115,6 @@ namespace Feudal
 			get { return mormanism; }
         }
         #endregion
-        /*UNDO
         #region muslim_accessors
         public Religion setShiite
 		{
@@ -201,8 +200,6 @@ namespace Feudal
 			get { return atheism; }
 		}
         #endregion
-        UNDO*/
         #endregion
-        #endregion//KILL ME LATER
     }
 }

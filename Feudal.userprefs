@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Feudal/CS Files/Religion.cs">
     <Files>
-      <File FileName="Feudal/CS Files/Province.cs" Line="57" Column="19" />
+      <File FileName="Feudal/CS Files/Province.cs" Line="1" Column="1" />
       <File FileName="Feudal/CS Files/Belief.cs" Line="1" Column="1" />
-      <File FileName="Feudal/CS Files/Character.cs" Line="10" Column="26" />
-      <File FileName="Feudal/CS Files/Religion.cs" Line="42" Column="40" />
+      <File FileName="Feudal/CS Files/Character.cs" Line="1" Column="1" />
+      <File FileName="Feudal/CS Files/Religion.cs" Line="42" Column="37" />
       <File FileName="Feudal/CS Files/Turns.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
