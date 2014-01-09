@@ -29,9 +29,6 @@ namespace Feudal
         //prototype, this should eventually go through a linklist
         public void ComputeMove(Character player)
         {
-            //here for reference
-            //((Button)fmf.Controls.Find("province1", true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
-
             for (int i = 0; i < maps.provinces.Length; i++)
             {
                 if (maps.provinces[i].OwnerID == player.getID)//a province is found that the player owns
@@ -119,7 +116,6 @@ namespace Feudal
                 if (bestCounter >= contenderCounter)
                 {
                     maps.setProvinceOwnerID(bestOption, player.getID);
-                    //((Button)fmf.Controls.Find(maps.provinces[bestOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
                     updateButton(bestOption, player);
 
                     resetValues();
@@ -127,7 +123,6 @@ namespace Feudal
                 else
                 {
                     maps.setProvinceOwnerID(contenderOption, player.getID);
-                    //((Button)fmf.Controls.Find(maps.provinces[contenderOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
                     updateButton(contenderOption, player);
 
                     resetValues();
@@ -136,8 +131,6 @@ namespace Feudal
             else//if there was no conflict
             {
                 maps.setProvinceOwnerID(bestOption, player.getID);
-                //((Button)fmf.Controls.Find(maps.provinces[bestOption].ButtonName, true)[0]).BackColor = maps.getProvinceColor(player.CapitalProvID);
-                //fmf.Controls.Find(maps.provinces[bestOption].ButtonName, true).First().BackColor = maps.getProvinceColor(player.CapitalProvID);
                 updateButton(bestOption, player);
                 resetValues();
             }
