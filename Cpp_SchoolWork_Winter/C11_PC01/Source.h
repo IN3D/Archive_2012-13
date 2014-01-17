@@ -28,36 +28,39 @@ public:
 	int getNum() const { return num; }
 	void setNum(int n) { num = n; }
 
-	std::string toEnglish()
-	{
-        std::string returnString = "";
-        //first check to see that the num is in the correct range
-        if (num > 9999) {
-            std::cout << "The number must be less than 9,999!";
-            returnString = "try again please.";
-            
-        } else { //the number is valid so begin parsing it
-        
-            //this will be needed for determining what digits num is made of
-            std::string numString = std::to_string(num);
-            if(num <= 12) {
-                return underTwelve[num];
-            }
-            if(num >= 13 && num <= 99) {
-                returnString = resolveTens(numString, 0, 1);
-            }
-            if(num >= 100 && num <= 999) {
-                returnString = resolveHundreds(numString, 0, 1, 2);
-            }
-            if(num >=1000) {
-                returnString = resolveThousands(numString, 0, 1, 2, 3);
-            }
-            
-        }
-        return returnString;
-    }
-
+	std::string toEnglish();
 };
+
+
+std::string Number::toEnglish()
+{
+    std::string returnString = "";
+    //first check to see that the num is in the correct range
+    if (num > 9999) {
+        std::cout << "The number must be less than 9,999!";
+        returnString = "try again please.";
+        
+    } else { //the number is valid so begin parsing it
+        
+        //this will be needed for determining what digits num is made of
+        std::string numString = std::to_string(num);
+        if(num <= 12) {
+            return underTwelve[num];
+        }
+        if(num >= 13 && num <= 99) {
+            returnString = resolveTens(numString, 0, 1);
+        }
+        if(num >= 100 && num <= 999) {
+            returnString = resolveHundreds(numString, 0, 1, 2);
+        }
+        if(num >=1000) {
+            returnString = resolveThousands(numString, 0, 1, 2, 3);
+        }
+        
+    }
+    return returnString;
+}
+
 
 std::string Number::resolveTens(std::string nString, int tens, int ones)
 {
@@ -86,6 +89,7 @@ std::string Number::resolveTens(std::string nString, int tens, int ones)
     return rString;
 }
 
+
 std::string Number::resolveHundreds(std::string nString, int hundreds, int tens, int ones)
 {
     char firstChar = nString[hundreds];
@@ -103,6 +107,7 @@ std::string Number::resolveHundreds(std::string nString, int hundreds, int tens,
     }
     return rString;
 }
+
 
 std::string Number::resolveThousands(std::string nString, int thousands, int hundreds, int tens, int ones)
 {
