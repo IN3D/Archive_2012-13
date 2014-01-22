@@ -11,7 +11,6 @@ int main()
     string tempDate = "";
     string buffer = "";
     double tempNum = 0;
-    char again = 'y';
     
     Employee employee(tempNum);
     
