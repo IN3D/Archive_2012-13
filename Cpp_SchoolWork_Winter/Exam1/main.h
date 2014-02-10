@@ -38,17 +38,17 @@ char* Capitalize::capitalizeLetters() {
     for (int i = 0; i <= length; i++) {
 
         char currentChar = thisStr[i];
-        char nextChar = thisStr[i + 1];
+        char nextChar = thisStr[i + 2];
         bool isLowerCase (thisStr[i] >= 97 && thisStr[i] <= 122);
 
         if (i == 0 && isLowerCase) { //tests to see if the first letter is lowercase
             thisStr[i] = toupper(thisStr[i]);
 
-        } else if (currentChar == 32) { //if currentChar is a space
+        } else if (currentChar == 46) { //if currentChar is a space
 
             if (islower(nextChar)) { //and the char after it is lowercase
 
-                thisStr[i + 1] = toupper(nextChar); //make it uppercase
+                thisStr[i + 2] = toupper(nextChar); //make it uppercase
             }
         }
     }

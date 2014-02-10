@@ -18,8 +18,8 @@ int main(int argc, const char * argv[])
     cout << "That string capitalized is: " << endl << endl;
 
     cout << capitalize->capitalizeLetters() << endl;
-    
-    delete capitalize;
+
+	delete capitalize;
 
     return 0;
 }
