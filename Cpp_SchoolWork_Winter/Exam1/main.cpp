@@ -15,7 +15,7 @@ int main(int argc, const char * argv[])
 
     Capitalize* capitalize = new Capitalize(str);
 
-    cout << "That string capitalized is: " << endl;
+    cout << "That string capitalized is: " << endl << endl;
 
     cout << capitalize->capitalizeLetters() << endl;
 
