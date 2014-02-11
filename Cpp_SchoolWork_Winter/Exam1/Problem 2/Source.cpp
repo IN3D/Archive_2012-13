@@ -32,6 +32,8 @@ int main() {
 	DayOfYear *dayOfYear = new DayOfYear(day);
 
 	cout << dayOfYear->print();
+	
+	delete dayOfYear;
 
 	return 0;
 }
