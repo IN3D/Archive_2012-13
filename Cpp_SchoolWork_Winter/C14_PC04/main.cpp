@@ -1,8 +1,14 @@
 /* Name: Eric Hopkins
  * Status: Complete
  * Chapter 14: Programming Challenge 4
- * Description:
- * lorem ipsum dolor sit amet
+ * Description: This program uses a recursive function to add
+ * array together. The user is asked for how large of an array
+ * they would like to be created, then the user is looped through
+ * the array and populate it. It is then passed into the function,
+ * along with the highest index of the array (the size the user requested
+ * minus 1, as arrays are 0 index). and a sum to begin with, which
+ * is a 0. When the function is finished (the count reaches -1)
+ * it outputs the sum.
  */
 
 #include <iostream>
