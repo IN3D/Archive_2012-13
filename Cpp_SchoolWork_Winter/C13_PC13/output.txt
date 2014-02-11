@@ -1,0 +1,22 @@
+North
+quarter 1: $130.21
+quarter 2: $124.52
+quarter 3: $340.54
+quarter 4: $124.65
+South
+quarter 1: $430.124
+quarter 2: $421.12
+quarter 3: $541.31
+quarter 4: $543.21
+East
+quarter 1: $231.76
+quarter 2: $215.88
+quarter 3: $218.48
+quarter 4: $301.11
+West
+quarter 1: $214.55
+quarter 2: $316.77
+quarter 3: $311.12
+quarter 4: $215.55
+
+Final Sales of all divisions and quarters is: $4680.9
