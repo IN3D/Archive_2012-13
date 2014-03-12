@@ -1,11 +1,13 @@
 /**
  * MechWarrior 3rd Edition Character Generator
  * Created by Eric Hopkins on 2/26/14.
+ *
+ * This file contains the base class for character traits.
  */
 public class Trait {
 
     //private
-    private boolean fromGen;
+    private boolean fromGen; //if a trait should generally only be gained during character generation (ie. not in the buy phase)
     private int value;
     private int maxValue;
     private String name;
@@ -35,11 +37,21 @@ public class Trait {
     public void setFromGen(boolean fromGen) {
         this.fromGen = fromGen;
     }
-
+	
+	//included for convention, it would be more convenient to have a method that simpily adds to value
+	//rather than doing the math, then adding it to the value.
     public void setValue(int value) {
-        this.value = value;
+        
+		if (value < this.maxValue) {
+		
+			this.value = this.maxValue;
+		} else {
+			
+			this.value = value;
+		}
     }
-
+	
+	//probably should never be used, but is here for convention
     public void setMaxValue(int maxValue) {
         this.maxValue = maxValue;
     }

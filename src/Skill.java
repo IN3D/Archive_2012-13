@@ -1,6 +1,8 @@
 /**
  * MechWarrior 3rd Edition Character Generator
  * Created by Eric Hopkins on 2/26/14.
+ *
+ * This file contains the base class for Skills.
  */
 public class Skill {
 

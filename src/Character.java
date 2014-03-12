@@ -1,6 +1,8 @@
 /**
  * MechWarrior 3rd Edition Character Generator
  * Created by Eric Hopkins on 2/26/14.
+ *
+ * This file contains the base class for Characters.
  */
 import java.util.*;
 
@@ -18,8 +20,8 @@ public class Character {
     use it public for the the moment*/
     
     //lists
-    List<Skill> skillsList = new LinkedList<Skill>();
-    List<Trait> traitsList = new LinkedList<Trait>();
+    public List<Skill> skillsList = new LinkedList<Skill>();
+    public List<Trait> traitsList = new LinkedList<Trait>();
     
     //getters
     public String getName() {
