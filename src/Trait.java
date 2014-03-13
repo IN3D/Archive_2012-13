@@ -15,6 +15,16 @@ public class Trait {
 
     //public
 
+
+    //constructor
+    public Trait(boolean fromGen, String name) {
+        this.fromGen = fromGen;
+        this.value = 0;
+        this.maxValue = 0;
+        this.name = name;
+    }
+
+
     //getters
     public boolean getFromGen() {
         return fromGen;
@@ -38,7 +48,7 @@ public class Trait {
         this.fromGen = fromGen;
     }
 	
-	//included for convention, it would be more convenient to have a method that simpily adds to value
+	//included for convention, it would be more convenient to have a method that simply adds to value
 	//rather than doing the math, then adding it to the value.
     public void setValue(int value) {
         

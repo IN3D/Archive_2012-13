@@ -16,6 +16,16 @@ public class Skill {
     //public
 
 
+    //constructor
+    public Skill(boolean difficult, String name, String subName) {
+        this.difficult = difficult;
+        this.points = 0;
+        this.bonus = 0;
+        this.name = name;
+        this.subName = subName;
+
+    }
+
     //getters
     public boolean getDifficult() {
         return difficult;

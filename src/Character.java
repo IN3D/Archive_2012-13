@@ -12,16 +12,13 @@ public class Character {
     private String name;
     private int age;
 
+    //lists
+    private List<Skill> skillsList = new LinkedList<Skill>();
+    private List<Trait> traitsList = new LinkedList<Trait>();
 
     //public
 
-    /*note: I'm not sure these -should- actually be public
-    but given my lack of experience with linked lists, I'll just
-    use it public for the the moment*/
-    
-    //lists
-    public List<Skill> skillsList = new LinkedList<Skill>();
-    public List<Trait> traitsList = new LinkedList<Trait>();
+
     
     //getters
     public String getName() {
@@ -40,5 +37,25 @@ public class Character {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+
+    //other methods
+    public void addToSkillsList(Skill skill) {
+        skillsList.add(skill);
+        //TODO: sort list after an addition
+    }
+
+    public void addToTraitsList(Trait trait) {
+        traitsList.add(trait);
+        //TODO: sort list after an addition
+    }
+
+    public void removeFromSkillsListAt(int i) {
+        skillsList.remove(i);
+    }
+
+    public void removeFromTraitsListAt(int i) {
+        traitsList.remove(i);
     }
 }
