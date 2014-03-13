@@ -7,7 +7,7 @@
 import java.util.*;
 
 public class Character {
-
+    //TODO: create a class to facilitate sorting the object lists
     //private
     private String name;
     private int age;

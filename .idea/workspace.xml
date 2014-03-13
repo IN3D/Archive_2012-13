@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5cd688f2-ad0b-48f6-8c60-8a1939d5b960" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Skill.java" afterPath="$PROJECT_DIR$/src/Skill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trait.java" afterPath="$PROJECT_DIR$/src/Trait.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mechwarrior_CharGen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,18 +69,18 @@
       <file leaf-file-name="Character.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="0.09848485" vertical-offset="130" max-vertical-offset="1054">
+            <state line="9" column="65" selection-start="261" selection-end="261" vertical-scroll-proportion="0.07359307" vertical-offset="0" max-vertical-offset="1054">
               <folding>
-                <element signature="e#321#328#0" expanded="true" />
-                <element signature="e#383#390#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#386#393#0" expanded="true" />
+                <element signature="e#448#455#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
                 <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +147,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Skill.java" />
-        <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Trait.java" />
+        <option value="$PROJECT_DIR$/src/Character.java" />
       </list>
     </option>
   </component>
@@ -436,16 +432,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
           <folding>
-            <element signature="e#321#328#0" expanded="true" />
-            <element signature="e#383#390#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#386#393#0" expanded="true" />
+            <element signature="e#448#455#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -536,18 +532,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="0.09848485" vertical-offset="130" max-vertical-offset="1054">
+        <state line="9" column="65" selection-start="261" selection-end="261" vertical-scroll-proportion="0.07359307" vertical-offset="0" max-vertical-offset="1054">
           <folding>
-            <element signature="e#321#328#0" expanded="true" />
-            <element signature="e#383#390#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#386#393#0" expanded="true" />
+            <element signature="e#448#455#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
