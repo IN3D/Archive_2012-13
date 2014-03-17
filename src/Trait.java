@@ -61,8 +61,8 @@ public class Trait {
     public void setValue(int value) {
         
 		if (value < this.maxValue) {
-		
 			this.value = this.maxValue;
+
 		} else {
 			
 			this.value = value;
