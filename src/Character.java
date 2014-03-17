@@ -10,7 +10,6 @@
  * by: Eric Hopkins
  *
  *
- *
  * This file contains the base class for Characters.
  */
 import java.util.*;
