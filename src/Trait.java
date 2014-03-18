@@ -6,7 +6,7 @@
  * by: Eric Hopkins
  *
  * --Last Edited--
- * on: 3/17/14
+ * on: 3/18/14
  * by: Eric Hopkins
  *
  *
@@ -16,6 +16,8 @@ public class Trait {
 
     //private
     private boolean fromGen; //if a trait should generally only be gained during character generation (ie. not in the buy phase)
+    private int level;
+    private int modifier;
     private int value;
     private int maxValue;
     private String name;
@@ -25,8 +27,10 @@ public class Trait {
 
 
     //constructor
-    public Trait(boolean fromGen, String name) {
+    public Trait(boolean fromGen, int modifier, String name) {
         this.fromGen = fromGen;
+        this.level = 0;
+        this.modifier = modifier;
         this.value = 0;
         this.maxValue = 0;
         this.name = name;
@@ -36,6 +40,14 @@ public class Trait {
     //getters
     public boolean getFromGen() {
         return fromGen;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public int getModifier() {
+        return modifier;
     }
 
     public int getValue() {
@@ -54,6 +66,14 @@ public class Trait {
     //setters
     public void setFromGen(boolean fromGen) {
         this.fromGen = fromGen;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setModifier(int modifier) {
+        this.modifier = modifier;
     }
 	
 	//included for convention, it would be more convenient to have a method that simply adds to value

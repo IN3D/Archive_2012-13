@@ -19,6 +19,7 @@ public class Character {
     //private
     private String name;
     private int age;
+    private int characterPoints;
 
     //lists
     private List<Skill> skillsList = new LinkedList<Skill>();
@@ -28,6 +29,7 @@ public class Character {
     public Character(String name, int age) {
         this.name = name;
         this.age = age;
+        this.characterPoints = 50; //default number
 
     }
 
@@ -35,6 +37,10 @@ public class Character {
     //getters
     public int getAge() {
         return age;
+    }
+
+    public int getCharacterPoints() {
+        return characterPoints;
     }
 
     public String getName() {
@@ -51,12 +57,20 @@ public class Character {
         this.age = age;
     }
 
+    public void setCharacterPoints(int characterPoints) {
+        this.characterPoints = characterPoints;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
 
     //other methods
+    public void addCharacterPoints(int addition) {
+        this.characterPoints += addition;
+    }
+
     public void addToSkillsList(Skill skill) {
         skillsList.add(skill);
 
