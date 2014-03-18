@@ -25,7 +25,11 @@ public class Character {
     private List<Trait> traitsList = new LinkedList<Trait>();
 
     //public
+    public Character(String name, int age) {
+        this.name = name;
+        this.age = age;
 
+    }
 
     
     //getters
@@ -35,6 +39,10 @@ public class Character {
 
     public int getAge() {
         return age;
+    }
+
+    public List getSkillsList() {
+        return skillsList;
     }
 
 
@@ -65,5 +73,18 @@ public class Character {
 
     public void removeFromTraitsListAt(int i) {
         traitsList.remove(i);
+    }
+
+    //TEST: for sorting
+    public void sortSkillList() {
+        Collections.sort(skillsList, new SkillComparator());
+    }
+
+    //TEST: for priting
+    public void printSkillsList() {
+
+        for(Skill s:skillsList) {
+            System.out.println(s.getName());
+        }
     }
 }
