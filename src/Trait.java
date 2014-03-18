@@ -27,12 +27,12 @@ public class Trait {
 
 
     //constructor
-    public Trait(boolean fromGen, int modifier, String name) {
+    public Trait(boolean fromGen, int modifier, int maxValue, String name) {
         this.fromGen = fromGen;
         this.level = 0;
         this.modifier = modifier;
         this.value = 0;
-        this.maxValue = 0;
+        this.maxValue = maxValue;
         this.name = name;
     }
 
