@@ -10,9 +10,9 @@
  * by: Eric Hopkins
  *
  *
- * This is the Main file of the program, the program runs through this file.
+ * This is the Source file of the program, the program runs through this file.
  */
-public class Main {
+public class Source {
 
     public static void main(String args[]) {
 
