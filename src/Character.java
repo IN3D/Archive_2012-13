@@ -105,7 +105,7 @@ public class Character {
         traitsList.remove(i);
     }
 
-    /* NOTE: This was originally part of a test branch, both of the additions
+    /* NOTE: These were originally part of a test branch, both of the additions
      * now support inherent sorting. Whenever something is added to either list
      * this is left here just in case. */
     public void sortSkillList() {
