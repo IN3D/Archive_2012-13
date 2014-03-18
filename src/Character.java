@@ -74,7 +74,12 @@ public class Character {
     public void printSkillsList() {
 
         for(Skill s:skillsList) {
-            System.out.println(s.getName());
+
+            if(s.getSubName().equals("")) {
+                System.out.println(s.getName());
+            } else {
+                System.out.println(s.getName() + "/" + s.getSubName());
+            }
         }
     }
 
