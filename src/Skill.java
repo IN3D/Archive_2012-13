@@ -24,7 +24,18 @@ public class Skill {
     //public
 
 
-    //constructor
+    //constructors
+
+    //primary
+    public Skill(boolean difficult, String name) {
+        this.difficult = difficult;
+        this.points = 0;
+        this.bonus = 0;
+        this.name = name;
+        this.subName = "";
+    }
+
+    //alternate
     public Skill(boolean difficult, String name, String subName) {
         this.difficult = difficult;
         this.points = 0;
