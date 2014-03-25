@@ -1,12 +1,12 @@
 /**
  * MechWarrior 3rd Edition Character Generator
  *
- * --Last Edited--
+ * --Created--
  * on: 3/17/14
  * by: Eric Hopkins
  *
  * --Last Edited--
- * on: 3/18/14
+ * on: 3/24/14
  * by: Eric Hopkins
  *
  *
@@ -77,7 +77,7 @@ public class Source {
 
 
 
-
+        /*
         Character char1 = new Character("testCharacter", 24);
 
         //tests: these should of course work
@@ -94,10 +94,11 @@ public class Source {
         char1.addToSkillsList(new Skill(false, "Zero-G Operations", ""));
 
         char1.printSkillsList();
+        */
 
         for (Skill s:completeSkillsList) {
 
-            System.out.println("Name: " + s.getName()+ "\n Is difficult: " + s.getDifficult());
+            System.out.println("Name: " + s.getName()+ "\nIs difficult: " + s.getDifficult());
         }
 
     }
