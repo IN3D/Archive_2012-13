@@ -24,11 +24,12 @@ import java.io.File;
 
 public class XMLReader {
 
-    public static void readSkillsXML(String s) {
+    public static void readSkillsXML(String fileLocation) {
+
         //read in the xml file.
         try {
 
-            File skillsFile = new File("./xml/skills.xml");
+            File skillsFile = new File(fileLocation);
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -47,18 +48,19 @@ public class XMLReader {
 
                     Element currentElement = (Element) currentNode;
 
+                    //temp variables to hold data parsed out of the xml
                     String tempName;
                     boolean tempDifficult;
+                    boolean tempMilitary;
+
 
                     tempName = currentElement.getElementsByTagName("name").item(0).getTextContent();
 
-                    if (currentElement.getElementsByTagName("difficult").item(0).getTextContent().equals("true")) {
-                        tempDifficult = true;
-                    } else {
-                        tempDifficult = false;
-                    }
+                    tempDifficult = currentElement.getElementsByTagName("difficult").item(0).getTextContent().equals("true");
 
-                    //completeSkillsList.add(new Skill(tempDifficult, tempName));
+                    tempMilitary = currentElement.getElementsByTagName("military").item(0).getTextContent().equals("true");
+
+                    GameData.completeSkillsList.add(new Skill(tempDifficult, tempMilitary, tempName));
                 }
             }
 
@@ -67,4 +69,5 @@ public class XMLReader {
             e.printStackTrace();
         }
     }
+
 }

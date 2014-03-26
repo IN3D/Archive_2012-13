@@ -6,7 +6,7 @@
  * by: Eric Hopkins
  *
  * --Last Edited--
- * on: 3/17/14
+ * on: 3/26/14
  * by: Eric Hopkins
  *
  *
@@ -16,6 +16,7 @@ public class Skill {
 
     //private
     private boolean difficult;
+    private boolean military;
     private int points;
     private int bonus;
     private String name;
@@ -26,9 +27,15 @@ public class Skill {
 
     //constructors
 
+    //default
+    public Skill() {
+        this(false, false, "WHAT AM I??!");
+    }
+
     //primary
-    public Skill(boolean difficult, String name) {
+    public Skill(boolean difficult, boolean military, String name) {
         this.difficult = difficult;
+        this.military = military;
         this.points = 0;
         this.bonus = 0;
         this.name = name;
@@ -36,8 +43,9 @@ public class Skill {
     }
 
     //alternate
-    public Skill(boolean difficult, String name, String subName) {
+    public Skill(boolean difficult, boolean military, String name, String subName) {
         this.difficult = difficult;
+        this.military = military;
         this.points = 0;
         this.bonus = 0;
         this.name = name;
@@ -48,6 +56,10 @@ public class Skill {
     //getters
     public boolean getDifficult() {
         return difficult;
+    }
+
+    public boolean getMilitary() {
+        return military;
     }
 
     public int getPoints() {
@@ -70,6 +82,10 @@ public class Skill {
     //setters
     public void setDifficult(boolean difficult) {
         this.difficult = difficult;
+    }
+
+    public void setMilitary(boolean military) {
+        this.military = military;
     }
 
     public void setPoints(int points) {

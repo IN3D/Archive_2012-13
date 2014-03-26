@@ -25,10 +25,6 @@ public class Source {
 
     public static void main(String args[]) {
 
-
-        //create a linked list to have the skills into
-        List<Skill> completeSkillsList = new LinkedList<Skill>();
-
         /*
         Character char1 = new Character("testCharacter", 24);
 
@@ -47,10 +43,15 @@ public class Source {
 
         char1.printSkillsList();
         */
+        XMLReader.readSkillsXML("./xml/skills.xml");
 
-        for (Skill s:completeSkillsList) {
 
-            System.out.println("Name: " + s.getName()+ "\nIs difficult: " + s.getDifficult());
+        System.out.println();
+        //PERSONAL NOTE: I'm not sure if I should encapsulate this skills list or not. I'm feeling like I aught to but
+        //for convenience, I'll leave it as is for now.
+        for (Skill s:GameData.completeSkillsList) {
+
+            System.out.println("Name: " + s.getName()+ "\nIs difficult: " + s.getDifficult() + "\nIs military: " + s.getMilitary() + "\n");
         }
 
     }
