@@ -29,54 +29,6 @@ public class Source {
         //create a linked list to have the skills into
         List<Skill> completeSkillsList = new LinkedList<Skill>();
 
-        //read in the xml file.
-        try {
-
-            File skillsFile = new File("./xml/skills.xml");
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document skillsDoc = dBuilder.parse(skillsFile);
-
-            skillsDoc.getDocumentElement().normalize();
-
-            System.out.println("XML parse test");
-            System.out.println("Root element: " + skillsDoc.getDocumentElement().getNodeName());
-
-            NodeList skillNodes = skillsDoc.getElementsByTagName("skill");
-
-            for (int i = 0; i < skillNodes.getLength(); i ++) {
-
-
-                Node currentNode = skillNodes.item(i);
-
-                if (currentNode.getNodeType() == Node.ELEMENT_NODE) {
-
-                    Element currentElement = (Element) currentNode;
-
-                    String tempName;
-                    boolean tempDifficult;
-
-                    tempName = currentElement.getElementsByTagName("name").item(0).getTextContent();
-
-                    if (currentElement.getElementsByTagName("difficult").item(0).getTextContent().equals("true")) {
-                        tempDifficult = true;
-                    } else {
-                        tempDifficult = false;
-                    }
-
-                    completeSkillsList.add(new Skill(tempDifficult, tempName));
-
-                }
-            }
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-
-
         /*
         Character char1 = new Character("testCharacter", 24);
 
