@@ -23,8 +23,6 @@ public class Skill {
     private String subName;
 
     //public
-
-
     //constructors
 
     //default
@@ -102,5 +100,10 @@ public class Skill {
 
     public void setSubName(String subName) {
         this.subName = subName;
+    }
+
+    //other methods
+    public void incrementPoints(int points) {
+        this.points += points;
     }
 }

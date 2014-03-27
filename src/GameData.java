@@ -19,8 +19,8 @@ public class GameData {
 
     //these lists will contain all data used by the program during runtime
     public static List<Skill> completeSkillsList = new LinkedList<Skill>();
-    //NYI
-    //public static List<Trait> completeTraitList = new LinkedList<Trait>();
+
+    public static List<Trait> completeTraitList = new LinkedList<Trait>();
 
     //TODO: Affiliations
     /*
