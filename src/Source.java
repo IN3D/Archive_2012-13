@@ -12,14 +12,6 @@
  *
  * This is the Source file of the program, the program runs through this file.
  */
-import java.util.*;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
-import java.io.File;
 
 public class Source {
 
