@@ -1,5 +1,6 @@
 #include <iostream>
-#include "IntBinaryTree.h"
+#include <vector>
+#include "DblBinaryTree.h"
 
 using namespace std;
 
@@ -7,7 +8,7 @@ using namespace std;
 // header define                 //
 //*******************************//
 
-void IntBinaryTree::insert(TreeNode *&tree, int num) {
+void DblBinaryTree::insert(TreeNode *&tree, double num) {
     
     if(!tree) {
         tree = new TreeNode(num);
@@ -25,7 +26,7 @@ void IntBinaryTree::insert(TreeNode *&tree, int num) {
     }
 }
 
-void IntBinaryTree::destroySubtree(TreeNode *tree) {
+void DblBinaryTree::destroySubtree(TreeNode *tree) {
     
     if(!tree) return;
     destroySubtree(tree->left);
@@ -34,7 +35,7 @@ void IntBinaryTree::destroySubtree(TreeNode *tree) {
     delete tree;
 }
 
-bool IntBinaryTree::search(int num) const {
+bool DblBinaryTree::search(double num) const {
     
     TreeNode *tree = root;
     
@@ -50,7 +51,7 @@ bool IntBinaryTree::search(int num) const {
     return false;
 }
 
-void IntBinaryTree::remove(TreeNode *&tree, int num) {
+void DblBinaryTree::remove(TreeNode *&tree, double num) {
     
     if(tree == NULL) return;
     if(num < tree->value)
@@ -61,7 +62,7 @@ void IntBinaryTree::remove(TreeNode *&tree, int num) {
         makeDeletion(tree);
 }
 
-void IntBinaryTree::makeDeletion(TreeNode *&tree) {
+void DblBinaryTree::makeDeletion(TreeNode *&tree) {
     
     //Used to hold the node that will be deleted
     TreeNode *nodeToDelete = tree;
@@ -101,7 +102,7 @@ void IntBinaryTree::makeDeletion(TreeNode *&tree) {
     delete nodeToDelete;
 }
 
-void IntBinaryTree::displayInOrder(TreeNode *tree) const {
+void DblBinaryTree::displayInOrder(TreeNode *tree) const {
     
     if(tree) {
         
@@ -111,7 +112,7 @@ void IntBinaryTree::displayInOrder(TreeNode *tree) const {
     }
 }
 
-void IntBinaryTree::displayPreOrder(TreeNode *tree) const {
+void DblBinaryTree::displayPreOrder(TreeNode *tree) const {
     
     if(tree) {
         
@@ -121,7 +122,7 @@ void IntBinaryTree::displayPreOrder(TreeNode *tree) const {
     }
 }
 
-void IntBinaryTree::displayPostOrder(TreeNode *tree) const {
+void DblBinaryTree::displayPostOrder(TreeNode *tree) const {
     
     if(tree) {
         
@@ -130,24 +131,40 @@ void IntBinaryTree::displayPostOrder(TreeNode *tree) const {
         cout << tree->value << "  ";
     }
 }
-
 //*******************************//
 // end header define             //
 //*******************************//
 
 int main() {
 
-    IntBinaryTree tree;
+    DblBinaryTree tree;
     
+
+	//insert numbers into the tree
     cout << "Inserting numbers. ";
-    tree.insert(5);
-    tree.insert(8);
-    tree.insert(3);
-    tree.insert(12);
-    tree.insert(9);
-    
-    cout << "Done.\n";
-    
+    tree.insert(5.5);
+    tree.insert(8.1);
+    tree.insert(3.76);
+    tree.insert(12.3);
+    tree.insert(9.99);
+	cout << "\n\n";
+
+
+	//create a vector for the inorder function
+	vector<double> dblVector;
+
+	cout << "Printing the contents of the vector:\n";
+	//pass dblVector by reference
+	tree.inorder(dblVector);
+
+	
+	//loop through dblVector to print out the values now stored in it
+	for (int i = 0; i < dblVector.size(); i++) {
+	
+		cout << dblVector[i] << endl;
+	}
+
+
     return 0;
 }
 
